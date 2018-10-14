@@ -9,7 +9,11 @@ import {
   faHeart,
   faPhone,
   faHome,
-  faEnvelope
+  faEnvelope,
+  faIdCard,
+  faCopyright,
+  faImage,
+  faStickyNote
 } from "@fortawesome/free-solid-svg-icons";
 // 监听router的变化，进度加载条
 Router.events.on("routeChangeStart", url => {
@@ -19,7 +23,7 @@ Router.events.on("routeChangeComplete", () => NProgress.done());
 Router.events.on("routeChangeError", () => NProgress.done());
 
 // 页面初始化引入图标
-library.add(fab, faGhost, faHeart, faPhone, faHome, faEnvelope);
+library.add(fab, faGhost, faHeart, faPhone, faHome, faEnvelope, faIdCard, faCopyright, faImage, faStickyNote);
 
 export default class MyApp extends App {
   static async getInitialProps({ Component, ctx }) {

@@ -1,12 +1,12 @@
 import React from "react";
 import Head from "components/Head";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import Icon from 'components/Icon';
 import dynamic from "next/dynamic";
 const Button = dynamic(import("../components/Button"));
 // library.add(faGhost);
 const Style = () => (
   <>
-    <style jsx>{`
+    <style jsx="true">{`
       .index-page {
         width: 100vw;
         height: 100vh;
@@ -46,6 +46,9 @@ const Style = () => (
       a {
         text-decoration: none;
       }
+      .icon{
+        margin-right: 4px;
+      }
     `}</style>
     <style global jsx>{`
       * {
@@ -67,22 +70,21 @@ const ButtonData = [
   },
   {
     name: "BLOG",
-    icon: "home",
+    icon: "sticky-note",
     href: "/blog"
   },
   {
     name: "RESUME",
-    icon: "home",
+    icon: "id-card",
     href: "/resume"
-  },
-  {
-    name: "ABOUT",
-    icon: "ghost",
-    href: "/about"
+  },{
+    name: "PHOTOWALL",
+    icon: "image",
+    href: "/photo"
   },
   {
     name: "GITHUB",
-    icon: ['fab', 'github'],
+    icon: ["fab", "github"],
     href: "https://github.com/feikaixin"
   }
 ];
@@ -95,7 +97,6 @@ export default class IndexPage extends React.Component {
     return (
       <div className="index">
         <Head title="主页" />
-        <Style />
         <div className="index-page">
           <img
             className="blog_bg"
@@ -106,16 +107,17 @@ export default class IndexPage extends React.Component {
           <h1>雨中·漫步</h1>
           <p>最想去的地方怎能在半路返航</p>
           <div className="show">
-            {ButtonData.map(item => (
-              <li>
+            {ButtonData.map((item, index) => (
+              <li key={index}>
                 <Button href={item.href}>
-                  <FontAwesomeIcon icon={item.icon} style={{marginRight:'4px'}}/>
+                  <Icon icon={item.icon} className='icon'/>
                   {item.name}
                 </Button>
               </li>
             ))}
           </div>
         </div>
+        <Style />
       </div>
     );
   }
