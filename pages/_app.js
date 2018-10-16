@@ -20,6 +20,7 @@ import {
   faQrcode,
   faSearch,
   faUser,
+  faChevronUp
 } from "@fortawesome/free-solid-svg-icons";
 // 监听router的变化，进度加载条
 Router.events.on("routeChangeStart", url => {
@@ -46,7 +47,8 @@ library.add(
   faPlay,
   faQrcode,
   faSearch,
-  faUser
+  faUser,
+  faChevronUp
 );
 
 export default class MyApp extends App {

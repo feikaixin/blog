@@ -1,5 +1,7 @@
 import React from 'react';
 import Head from '../components/Head';
+import Pagination from '../components/Pagination';
+import ToTop from '../components/ToTop';
 import Search from '../components/Search';
 import Footer from '../components/Footer';
 export default class BasicLayout extends React.Component {
@@ -17,6 +19,7 @@ export default class BasicLayout extends React.Component {
         <div className='head_search'>
           <Search onChange={this.handleChange}/>
         </div>
+        <ToTop/>
         <div className='footer'>
           <Footer/>
         </div>
