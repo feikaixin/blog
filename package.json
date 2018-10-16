@@ -22,10 +22,17 @@
     "next": "^7.0.1",
     "nprogress": "^0.2.0",
     "react": "^16.5.2",
-    "react-dom": "^16.5.2"
+    "react-dom": "^16.5.2",
+    "scroll-progress-react": "^0.1.4"
   },
   "devDependencies": {
+    "css-loader": "^1.0.0",
     "eslint": "^5.7.0",
-    "eslint-plugin-react": "^7.11.1"
+    "eslint-plugin-react": "^7.11.1",
+    "postcss-loader": "^3.0.0",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.1",
+    "webpack": "^4.20.2",
+    "webpack-cli": "^3.1.2"
   }
 }
