@@ -1,6 +1,5 @@
 @import './resume/index.scss';
 @import './blog/index.scss';
-
 body,
 ol,
 ul,
@@ -21,45 +20,51 @@ legend,
 input,
 textarea,
 select {
-  margin: 0;
-  padding: 0
+    margin: 0;
+    padding: 0
 }
 
 body {
-  font-family: 'Lato', "PingFang SC", "Microsoft YaHei", sans-serif;
-  font-size: 13px;
-  background: #fff;
-  -webkit-text-size-adjust: 100%;
+    font-family: 'Lato', "PingFang SC", "Microsoft YaHei", sans-serif;
+    font-size: 13px;
+    background: #fff;
+    -webkit-text-size-adjust: 100%;
 }
 
 a {
-  color: #2d374b;
-  text-decoration: none
+    color: #2d374b;
+    text-decoration: none
 }
 
 a:hover {
-  color: #cd0200;
-  text-decoration: underline
+    color: #cd0200;
+    text-decoration: underline
 }
 
 em {
-  font-style: normal
+    font-style: normal
 }
 
 li {
-  list-style: none
+    list-style: none
 }
 
 img {
-  border: 0;
-  vertical-align: middle
+    border: 0;
+    vertical-align: middle
 }
 
 table {
-  border-collapse: collapse;
-  border-spacing: 0
+    border-collapse: collapse;
+    border-spacing: 0
 }
 
 p {
-  word-wrap: break-word
+    word-wrap: break-word
+}
+
+input {
+    background: none;
+    outline: none;
+    border: 0px;
 }

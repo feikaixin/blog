@@ -2,7 +2,7 @@
  * @Author: FeiKaiXin 
  * @Date: 2018-10-16 13:30:04 
  * @Last Modified by: FeiKaiXin
- * @Last Modified time: 2018-10-16 13:40:53
+ * @Last Modified time: 2018-10-17 13:42:03
  */
 
 
@@ -11,10 +11,6 @@ import Icon from "../Icon";
 
 const Style = () => (
   <style jsx="true">{`
-    body {
-      margin:0;
-      padding:0;
-    }
     .search {
       width: 70%;
       height: 70px;
@@ -27,9 +23,6 @@ const Style = () => (
       width: 90%;
       padding-left: 8px;
       margin-left: 10px;
-      background:none;  
-      outline:none; 
-      border:0px;
       font-size: 16px;
       border-bottom: 1px solid #ccc;
       transition: all .3s;

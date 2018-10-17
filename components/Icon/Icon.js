@@ -6,11 +6,9 @@ export default class Icon extends React.Component {
 		super(props);
 	}
 	render() {
-		const { icon, className } = this.props;
+		const { icon,className } = this.props;
 		return (
-      <>
-        <FontAwesomeIcon icon={icon} className={className}></FontAwesomeIcon>
-      </>
+      <FontAwesomeIcon icon={icon} className={className}></FontAwesomeIcon>
 		);
 	}
 }

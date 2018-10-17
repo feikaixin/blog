@@ -19,36 +19,31 @@ export default class Pageprogress extends React.Component {
       barWidth: (clientWidth * window.scrollY) / totalHeight
     });
     progressBar.style.width = barWidth + "px";
+    console.log(this.state.barWidth)
   };
   componentDidMount() {
     this.reCalcBarW();
-    const _this = this;
+
     const progressBar = this.progressBar.current;
     const { color } = this.props;
-    const START_COLOR = color || "#0099ff", //渐变背景颜色的起始颜色
-      END_COLOR = color || "#0099ff"; //终点颜色
+    const COLOR = color || "#0099ff";
     progressBar.style.cssText +=
-      ";position:fixed;top:0;left:0;height:2px;background:linear-gradient(to right, " +
-      START_COLOR +
-      ", " +
-      END_COLOR +
-      ");z-index:10002;";
+      `;position:fixed;top:0;left:0;height:2px;background:${COLOR};z-index:10002;`;
     /**
      * 滚动时实时显示进度
      */
-    window.addEventListener("scroll", function(e) {
-      _this.reCalcBarW();
-    });
+    window.addEventListener("scroll", this.reCalcBarW);
     /**
      * 页面大小变化重新计算
      */
-    window.addEventListener('resize',function(e){
-      _this.reCalcBarW();
-    })
-    /**
-     * 监听页面刷新重新计算
-     */
+    window.addEventListener('resize',this.reCalcBarW);
   }
+
+  componentWillUnmount() {
+    window.removeEventListener('scroll',this.reCalcBarW);
+    window.removeEventListener('resize',this.reCalcBarW);
+  }
+
   render() {
     return <div ref={this.progressBar} />;
   }
