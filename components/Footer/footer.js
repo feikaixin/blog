@@ -10,6 +10,7 @@ export default () => (
         line-height: 2;
         color: #999;
         font-family: "STXingkai";
+        margin-top: 80px;
       }
     `}</style>
   </div>

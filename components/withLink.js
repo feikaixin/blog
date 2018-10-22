@@ -17,7 +17,7 @@ export default class extends PureComponent {
   };
 
   render() {
-    const { href, children, paramsData } = this.props;
+    const { href, children, paramsData, as } = this.props;
     if (isLink(href)) {
       return (
         <div>
@@ -27,6 +27,7 @@ export default class extends PureComponent {
               pathname: href,
               query: paramsData
             }}
+            as={as}
           >
             {children}
           </Link>

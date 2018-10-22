@@ -9,7 +9,6 @@ module.exports = withSass({
     return config;
   },
   cssModules: true,
-  // sassLoaderOptions: {
-  //   includePaths: ['']
-  // }
+  pagesBufferLength: 2,
+  maxInactiveAge: 25 * 1000,
 });

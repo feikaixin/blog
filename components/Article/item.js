@@ -10,7 +10,6 @@ const Style = () => (
       width: 70%;
       height: 320px;
       margin: 0 auto;
-      margin-bottom: 70px;
       cursor: pointer;
     }
     .left {
@@ -23,6 +22,12 @@ const Style = () => (
       display: flex;
       justify-content: center;
       align-items: center;
+    }
+    .middle_line {
+      width: 1px;
+      height: 70px;
+      background: #ccc;
+      margin: 0 auto;
     }
     .left img {
       width: 100%;
@@ -40,21 +45,19 @@ export default class Artical extends React.Component {
   }
 
   render() {
-    const { isLeft } = this.props;
-    const data = {
-      date: 1539760495845,
-      title: '费凯鑫最帅',
-      content: '最想去的地方怎么能在半路返航'
-    }
+    const { isLeft, data } = this.props;
     return (
-      <WithLink href='/index'>
-        <div className="item">
-          <div className={isLeft ? "left" : "left order"}>
-            <img src="/static/images/blog_img_1.png" alt="/" />
+      <WithLink href='/blog/article' as={`/blog/${data.article_id}`}>
+        <div>
+          <div className="item">
+            <div className={isLeft ? "left" : "left order"}>
+              <img src="/static/images/blog_img_1.png" alt="/" />
+            </div>
+            <div className="right">
+              <Title data={data} />
+            </div>
           </div>
-          <div className="right">
-            <Title data={data}/>
-          </div>
+          <div className="middle_line" />
           <Style />
         </div>
       </WithLink>

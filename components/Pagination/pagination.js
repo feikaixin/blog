@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import WithLink from "../WithLink";
+import WithLink from "../withLink";
 
 /**
  *
@@ -38,7 +38,7 @@ class Pagination extends Component {
     text, // 显示的值
     toValue, // 跳转的值
     isDisabled, // 是否禁止点击
-    name //
+    name
   });
 
   renderLi = () => {
@@ -55,7 +55,6 @@ class Pagination extends Component {
     const page = this.createPage;
 
     let lis = [];
-    // 页面最少5个项目
     if (nextMax < 5) {
       nextMax = 5 > pageSum ? pageSum : 5;
     }

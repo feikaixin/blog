@@ -3,15 +3,12 @@ import WithLink from "../withLink";
 import Icon from "../Icon";
 const Style = () => (
   <style jsx="true">{`
-    body {
-      width: 100%;
-      margin: 0;
-      padding: 0;
-    }
     .nav {
       width: 100%;
       height: 60px;
       position: fixed;
+      left: 0;
+      top: 0;
       display: flex;
       justify-content:center;
       align-items: center;
