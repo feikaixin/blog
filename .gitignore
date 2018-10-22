@@ -1,6 +1,4 @@
 /node_modules
 /.next
 /.vscode
-/server/config
 /out
-/server/node_modules
