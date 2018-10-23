@@ -6,6 +6,7 @@ module.exports = withSass({
       __dirname,
       "./components/"
     );
+    console.log(config.name)
     return config;
   },
   cssModules: true,
