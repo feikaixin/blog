@@ -317,6 +317,10 @@ export default class Resume extends Component {
                   </Descript>
                 </Dividing>
               </section>
+              <section>
+                <Dividing title="个人素质">
+                </Dividing>
+              </section>
             </div>
           </div>
         </div>

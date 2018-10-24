@@ -5,7 +5,6 @@ import Router from "next/router";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { fab } from "@fortawesome/free-brands-svg-icons";
 import 'moment/locale/zh-cn';
-import '../static/style/index';
 import {
   faGhost,
   faHeart,

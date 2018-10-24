@@ -15,10 +15,14 @@ function getCacheKey(ctx) {
 function renderAndCache(ctx, pagePath, queryParams) {
   const key = getCacheKey(ctx);
 
+  if (ssrCache.has(key)) {
+    ctx.body = ssrCache.get(key);
+    return
+  }
   // 合并参数
   const params = {
-    ...ctx.query,
-    ...ctx.params
+    ...ctx.query,      // get请求
+    ...ctx.params      // post请求
   };
 
   return app
@@ -35,8 +39,8 @@ function renderAndCache(ctx, pagePath, queryParams) {
 }
 
 app.prepare().then(() => {
-  router.get('/', ctx => renderAndCache(ctx, '/'))
-  router.get('/blog',ctx => {console.log('aaa'); renderAndCache(ctx,'/blog/article')});
+  router.get('/', ctx => renderAndCache(ctx, '/'));
+  router.get('/blog',ctx => renderAndCache(ctx,'/blog'));
 });
 
 

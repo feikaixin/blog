@@ -15,6 +15,7 @@ export default class MyDocument extends Document {
           <meta name="format-detection" content="telephone=no" />
           <link rel="icon" type="image/png" sizes="16x16" href="/static/images/favicon.png"></link>
           <link rel='stylesheet' type='text/css' href='/static/style/nprogress.css' />
+          <link rel='stylesheet' type='text/css' href='/static/style/common//common.css' />
         </Head>
         <body className="custom_class">
         

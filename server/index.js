@@ -5,24 +5,19 @@ const handle = app.getRequestHandler();
 const config = require("./config/default");
 const port = parseInt(process.env.PORT, 10) || config.port;
 const Koa = require("koa");
-const mysql = require("./db");
 const koaBody = require("koa-body");
 const KoaSession = require("koa-session");
 const routers = require("./router/index");
+const koaLogger = require('./middleware/log.js');
 app.prepare().then(() => {
   const server = new Koa();
   server.keys = ["some sercert hahaha"];
   server.use(koaBody());
-
+  // 挂载logger
+  server.use(koaLogger);
   // 添加相关路由
   routers.map(item => {
     server.use(item.routes());
-  });
-
-  // 挂载数据库对象
-  server.use(async (ctx, next) => {
-    ctx.mysql = mysql;
-    await next();
   });
 
   // 静态资源渲染
