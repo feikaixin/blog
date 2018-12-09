@@ -12,6 +12,8 @@ const Style = () => (
       }
     `}</style>
     <style jsx="true">{`
+      @media print {
+      }
       @media screen and (max-width: 1024px) {
         div.wraper {
           border-radius: 0px;
@@ -133,7 +135,7 @@ export default class Resume extends Component {
             <div className="clear more-info">
               <ul className="left tech">
                 <li>男 / 1998.01</li>
-                <li>绩点：3.53 / 4.00</li>
+                <li>绩点：2.80 / 4.00</li>
                 <li>重庆邮电大学 | 软件工程学院 | 本科 | 2020年毕业</li>
               </ul>
               <ul className="right influence">
@@ -270,7 +272,7 @@ export default class Resume extends Component {
                   <Descript>
                     <span>项目配置</span>、<span>项目负责</span>
                     使用webpack配置项目，使用Ejs、Zeptojs、Sass等实现组件化,并且将整个项目初始配置封装成
-                    <span>genluo-cli</span>
+                    <span>kaixin-cli</span>
                     脚手架工具,方便后续开发H5项目
                   </Descript>
                   <Item time="2018.02" tag="Link">
@@ -315,10 +317,6 @@ export default class Resume extends Component {
                     <span>按需加载</span>、<span>预加载</span>
                     等降低首屏渲染时间，为用户提供快速的响应，和优秀的网站体验，并将项目的项目的几个功能点抽离出来上传到npm进行开源，此站点也是自己尝试新技术提升网站性能的实验站点。
                   </Descript>
-                </Dividing>
-              </section>
-              <section>
-                <Dividing title="个人素质">
                 </Dividing>
               </section>
             </div>

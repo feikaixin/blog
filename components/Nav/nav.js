@@ -78,7 +78,7 @@ export default class Nav extends React.Component {
             <i title='播放/暂停' onClick={this.changeStatus}><Icon icon={isplay?'pause':'play'} /></i>
           </div>
           <div className="title">
-            <span>feikaixin</span>
+            <span>{this.props.title}</span>
           </div>
           <div className="qr_code">
             <i title='获取二维码' onClick={this.getQrcode}><Icon icon='qrcode'/></i>

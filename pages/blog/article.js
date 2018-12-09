@@ -1,17 +1,26 @@
 
 import React, { Component } from 'react'
 import Article from '../../components/Article';
-
-const data = [1,2];
+import request from '../../utils/request';
 export default class Index extends Component {
-  // static async getInitialProps({query}) {
-  //   console.log(query.article_id);
-  // }
+  static async getInitialProps({query}) {
+    let data = null;
+    let id;
+    const res = await request(`/api/article/detail/${query.id}`);
+    data = res.data;
+    return {
+      data
+    };
+  }
+  constructor(props) {
+    super(props);
+  }
   render() {
+    const { data } = this.props;
     return (
       <div>
         {
-          data ? <Article.Detail data={data}></Article.Detail> : ''
+          data ? <Article.Detail title={data.title} content={this.content}></Article.Detail> : ''
         }
       </div>
     )

@@ -8,7 +8,7 @@ export default class Icon extends React.Component {
 	render() {
 		const { icon,className } = this.props;
 		return (
-      <FontAwesomeIcon icon={icon} className={className}></FontAwesomeIcon>
+      <FontAwesomeIcon icon={icon} className={className} style={{width:'18px'}}></FontAwesomeIcon>
 		);
 	}
 }

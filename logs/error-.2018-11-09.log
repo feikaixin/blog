@@ -1,0 +1,148 @@
+[2018-11-09T15:15:35.978][ERROR  13748  default] /api/article/list {} ReferenceError: page is not defined
+    at Object.getArticle (D:\vscode_daima\blog\server\service\pc\index.js:19:7)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+[2018-11-09T15:17:59.375][ERROR  16108  default] /api/article/list {} ReferenceError: page is not defined
+    at Object.getArticle (D:\vscode_daima\blog\server\service\pc\index.js:5:92)
+    at articleList (D:\vscode_daima\blog\server\controller\pc\index.js:10:31)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (D:\vscode_daima\blog\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at D:\vscode_daima\blog\node_modules\koa-router\lib\router.js:346:16
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at D:\vscode_daima\blog\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-router\lib\router.js:351:31)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-compose\index.js:42:32)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-router\lib\router.js:332:32)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-compose\index.js:42:32)
+    at log (D:\vscode_daima\blog\server\middleware\log.js:12:9)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-compose\index.js:42:32)
+    at D:\vscode_daima\blog\node_modules\koa-body\index.js:110:14
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+[2018-11-09T15:18:20.758][ERROR  6368  default] /api/article/list {} { Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'as artical_id FROM artical LIMIT NaN,10' at line 1
+    at Query.Sequence._packetToError (D:\vscode_daima\blog\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\vscode_daima\blog\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+    at Protocol._parsePacket (D:\vscode_daima\blog\node_modules\mysql\lib\protocol\Protocol.js:278:23)
+    at Parser.write (D:\vscode_daima\blog\node_modules\mysql\lib\protocol\Parser.js:76:12)
+    at Protocol.write (D:\vscode_daima\blog\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\vscode_daima\blog\node_modules\mysql\lib\Connection.js:91:28)
+    at Socket.<anonymous> (D:\vscode_daima\blog\node_modules\mysql\lib\Connection.js:502:10)
+    at Socket.emit (events.js:182:13)
+    at addChunk (_stream_readable.js:283:12)
+    at readableAddChunk (_stream_readable.js:264:11)
+    at Socket.Readable.push (_stream_readable.js:219:10)
+    at TCP.onread (net.js:639:20)
+    --------------------
+    at Protocol._enqueue (D:\vscode_daima\blog\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at PoolConnection.query (D:\vscode_daima\blog\node_modules\mysql\lib\Connection.js:200:25)
+    at pool.getConnection (D:\vscode_daima\blog\server\db\index.js:11:20)
+    at Handshake.onConnect (D:\vscode_daima\blog\node_modules\mysql\lib\Pool.js:64:7)
+    at Handshake.<anonymous> (D:\vscode_daima\blog\node_modules\mysql\lib\Connection.js:502:10)
+    at Handshake._callback (D:\vscode_daima\blog\node_modules\mysql\lib\Connection.js:468:16)
+    at Handshake.Sequence.end (D:\vscode_daima\blog\node_modules\mysql\lib\protocol\sequences\Sequence.js:83:24)
+    at Handshake.Sequence.OkPacket (D:\vscode_daima\blog\node_modules\mysql\lib\protocol\sequences\Sequence.js:92:8)
+    at Protocol._parsePacket (D:\vscode_daima\blog\node_modules\mysql\lib\protocol\Protocol.js:278:23)
+    at Parser.write (D:\vscode_daima\blog\node_modules\mysql\lib\protocol\Parser.js:76:12)
+    at Protocol.write (D:\vscode_daima\blog\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\vscode_daima\blog\node_modules\mysql\lib\Connection.js:91:28)
+    at Socket.<anonymous> (D:\vscode_daima\blog\node_modules\mysql\lib\Connection.js:502:10)
+    at Socket.emit (events.js:182:13)
+    at addChunk (_stream_readable.js:283:12)
+    at readableAddChunk (_stream_readable.js:264:11)
+  code: 'ER_PARSE_ERROR',
+  errno: 1064,
+  sqlMessage:
+   'You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near \'as artical_id FROM artical LIMIT NaN,10\' at line 1',
+  sqlState: '42000',
+  index: 0,
+  sql:
+   'SELECT title, update_time, description id as artical_id FROM artical LIMIT NaN,10' }
+[2018-11-09T15:19:11.493][ERROR  12988  default] /api/article/list {} { Error: ER_SP_UNDECLARED_VAR: Undeclared variable: NaN
+    at Query.Sequence._packetToError (D:\vscode_daima\blog\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\vscode_daima\blog\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+    at Protocol._parsePacket (D:\vscode_daima\blog\node_modules\mysql\lib\protocol\Protocol.js:278:23)
+    at Parser.write (D:\vscode_daima\blog\node_modules\mysql\lib\protocol\Parser.js:76:12)
+    at Protocol.write (D:\vscode_daima\blog\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\vscode_daima\blog\node_modules\mysql\lib\Connection.js:91:28)
+    at Socket.<anonymous> (D:\vscode_daima\blog\node_modules\mysql\lib\Connection.js:502:10)
+    at Socket.emit (events.js:182:13)
+    at addChunk (_stream_readable.js:283:12)
+    at readableAddChunk (_stream_readable.js:264:11)
+    at Socket.Readable.push (_stream_readable.js:219:10)
+    at TCP.onread (net.js:639:20)
+    --------------------
+    at Protocol._enqueue (D:\vscode_daima\blog\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at PoolConnection.query (D:\vscode_daima\blog\node_modules\mysql\lib\Connection.js:200:25)
+    at pool.getConnection (D:\vscode_daima\blog\server\db\index.js:11:20)
+    at Handshake.onConnect (D:\vscode_daima\blog\node_modules\mysql\lib\Pool.js:64:7)
+    at Handshake.<anonymous> (D:\vscode_daima\blog\node_modules\mysql\lib\Connection.js:502:10)
+    at Handshake._callback (D:\vscode_daima\blog\node_modules\mysql\lib\Connection.js:468:16)
+    at Handshake.Sequence.end (D:\vscode_daima\blog\node_modules\mysql\lib\protocol\sequences\Sequence.js:83:24)
+    at Handshake.Sequence.OkPacket (D:\vscode_daima\blog\node_modules\mysql\lib\protocol\sequences\Sequence.js:92:8)
+    at Protocol._parsePacket (D:\vscode_daima\blog\node_modules\mysql\lib\protocol\Protocol.js:278:23)
+    at Parser.write (D:\vscode_daima\blog\node_modules\mysql\lib\protocol\Parser.js:76:12)
+    at Protocol.write (D:\vscode_daima\blog\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\vscode_daima\blog\node_modules\mysql\lib\Connection.js:91:28)
+    at Socket.<anonymous> (D:\vscode_daima\blog\node_modules\mysql\lib\Connection.js:502:10)
+    at Socket.emit (events.js:182:13)
+    at addChunk (_stream_readable.js:283:12)
+    at readableAddChunk (_stream_readable.js:264:11)
+  code: 'ER_SP_UNDECLARED_VAR',
+  errno: 1327,
+  sqlMessage: 'Undeclared variable: NaN',
+  sqlState: '42000',
+  index: 0,
+  sql:
+   'SELECT title, update_time, description, id as artical_id FROM artical LIMIT NaN,10' }
+[2018-11-09T15:20:49.354][ERROR  12988  default] /api/article/list { page: '1' } ReferenceError: page is not defined
+    at Object.getArticle (D:\vscode_daima\blog\server\service\pc\index.js:14:9)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+[2018-11-09T15:21:57.856][ERROR  19452  default] /api/article/list { page: '1' } ReferenceError: page is not defined
+    at Object.getArticle (D:\vscode_daima\blog\server\service\pc\index.js:15:9)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+[2018-11-09T15:23:21.508][ERROR  13608  default] /api/article/list { page: '1' } ReferenceError: params is not defined
+    at Object.getArticle (D:\vscode_daima\blog\server\service\pc\index.js:5:15)
+    at articleList (D:\vscode_daima\blog\server\controller\pc\index.js:10:31)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (D:\vscode_daima\blog\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at D:\vscode_daima\blog\node_modules\koa-router\lib\router.js:346:16
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at D:\vscode_daima\blog\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-router\lib\router.js:351:31)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-compose\index.js:42:32)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-router\lib\router.js:332:32)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-compose\index.js:42:32)
+    at log (D:\vscode_daima\blog\server\middleware\log.js:12:9)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-compose\index.js:42:32)
+    at D:\vscode_daima\blog\node_modules\koa-body\index.js:110:14
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+[2018-11-09T15:23:43.699][ERROR  13608  default] /api/article/list { page: 1 } ReferenceError: params is not defined
+    at Object.getArticle (D:\vscode_daima\blog\server\service\pc\index.js:5:15)
+    at articleList (D:\vscode_daima\blog\server\controller\pc\index.js:10:31)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (D:\vscode_daima\blog\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at D:\vscode_daima\blog\node_modules\koa-router\lib\router.js:346:16
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at D:\vscode_daima\blog\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-router\lib\router.js:351:31)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-compose\index.js:42:32)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-router\lib\router.js:332:32)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-compose\index.js:42:32)
+    at log (D:\vscode_daima\blog\server\middleware\log.js:12:9)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-compose\index.js:42:32)
+    at D:\vscode_daima\blog\node_modules\koa-body\index.js:110:14
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+[2018-11-09T15:23:48.947][ERROR  13608  default] /api/article/list { page: 1 } ReferenceError: params is not defined
+    at Object.getArticle (D:\vscode_daima\blog\server\service\pc\index.js:5:15)
+    at articleList (D:\vscode_daima\blog\server\controller\pc\index.js:10:31)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (D:\vscode_daima\blog\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at D:\vscode_daima\blog\node_modules\koa-router\lib\router.js:346:16
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at D:\vscode_daima\blog\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-router\lib\router.js:351:31)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-compose\index.js:42:32)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-router\lib\router.js:332:32)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-compose\index.js:42:32)
+    at log (D:\vscode_daima\blog\server\middleware\log.js:12:9)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-compose\index.js:42:32)
+    at D:\vscode_daima\blog\node_modules\koa-body\index.js:110:14
+    at process._tickCallback (internal/process/next_tick.js:68:7)

@@ -1,9 +1,9 @@
 import moment from "moment";
 export default ({ data }) => (
   <div className="title">
-    <span>{moment(data.create_time).format("MMMM Do,YYYY")}</span>
+    <span>{moment(data.update_time).format("MMMM Do,YYYY")}</span>
     <h2>{data.title}</h2>
-    <p>{data.descript}</p>
+    <p>{data.description}</p>
     <style jsx="true">{`
       .title {
         width: 70%;

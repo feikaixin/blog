@@ -1,0 +1,355 @@
+[2018-12-09T16:30:37.744][ERROR  7232  default] /api/article/list { page: 1 } ReferenceError: id is not defined
+    at Object.getArticle (D:\vscode_daima\blog\server\service\pc\index.js:17:9)
+    at articleList (D:\vscode_daima\blog\server\controller\pc\index.js:11:31)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (D:\vscode_daima\blog\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at D:\vscode_daima\blog\node_modules\koa-router\lib\router.js:346:16
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at D:\vscode_daima\blog\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-router\lib\router.js:351:31)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-compose\index.js:42:32)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-router\lib\router.js:332:32)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-compose\index.js:42:32)
+    at log (D:\vscode_daima\blog\server\middleware\log.js:12:9)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-compose\index.js:42:32)
+    at D:\vscode_daima\blog\node_modules\koa-body\index.js:110:14
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+[2018-12-09T16:31:40.657][ERROR  21360  default] /api/article/list { page: 1 } { Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ' 
+      description, 
+      id as artical_id 
+    FROM 
+      artical
+    WHERE
+' at line 3
+    at Query.Sequence._packetToError (D:\vscode_daima\blog\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\vscode_daima\blog\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+    at Protocol._parsePacket (D:\vscode_daima\blog\node_modules\mysql\lib\protocol\Protocol.js:278:23)
+    at Parser.write (D:\vscode_daima\blog\node_modules\mysql\lib\protocol\Parser.js:76:12)
+    at Protocol.write (D:\vscode_daima\blog\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\vscode_daima\blog\node_modules\mysql\lib\Connection.js:91:28)
+    at Socket.<anonymous> (D:\vscode_daima\blog\node_modules\mysql\lib\Connection.js:502:10)
+    at Socket.emit (events.js:182:13)
+    at addChunk (_stream_readable.js:283:12)
+    at readableAddChunk (_stream_readable.js:264:11)
+    at Socket.Readable.push (_stream_readable.js:219:10)
+    at TCP.onread (net.js:639:20)
+    --------------------
+    at Protocol._enqueue (D:\vscode_daima\blog\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at PoolConnection.query (D:\vscode_daima\blog\node_modules\mysql\lib\Connection.js:200:25)
+    at pool.getConnection (D:\vscode_daima\blog\server\db\index.js:11:20)
+    at Handshake.onConnect (D:\vscode_daima\blog\node_modules\mysql\lib\Pool.js:64:7)
+    at Handshake.<anonymous> (D:\vscode_daima\blog\node_modules\mysql\lib\Connection.js:502:10)
+    at Handshake._callback (D:\vscode_daima\blog\node_modules\mysql\lib\Connection.js:468:16)
+    at Handshake.Sequence.end (D:\vscode_daima\blog\node_modules\mysql\lib\protocol\sequences\Sequence.js:83:24)
+    at Handshake.Sequence.OkPacket (D:\vscode_daima\blog\node_modules\mysql\lib\protocol\sequences\Sequence.js:92:8)
+    at Protocol._parsePacket (D:\vscode_daima\blog\node_modules\mysql\lib\protocol\Protocol.js:278:23)
+    at Parser.write (D:\vscode_daima\blog\node_modules\mysql\lib\protocol\Parser.js:76:12)
+    at Protocol.write (D:\vscode_daima\blog\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\vscode_daima\blog\node_modules\mysql\lib\Connection.js:91:28)
+    at Socket.<anonymous> (D:\vscode_daima\blog\node_modules\mysql\lib\Connection.js:502:10)
+    at Socket.emit (events.js:182:13)
+    at addChunk (_stream_readable.js:283:12)
+    at readableAddChunk (_stream_readable.js:264:11)
+  code: 'ER_PARSE_ERROR',
+  errno: 1064,
+  sqlMessage:
+   'You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near \' \n      description, \n      id as artical_id \n    FROM \n      artical\n    WHERE\n\' at line 3',
+  sqlState: '42000',
+  index: 0,
+  sql:
+   '\n    SELECT \n      title, \n      update_time, \n      , \n      description, \n      id as artical_id \n    FROM \n      artical\n    WHERE\n         \n    LIMIT \n      0,10' }
+[2018-12-09T16:33:27.432][ERROR  23508  default] /api/article/list { page: 1 } { Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ' 
+      description, 
+      id as 'artical_id'
+    FROM 
+      artical
+    WHERE' at line 3
+    at Query.Sequence._packetToError (D:\vscode_daima\blog\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\vscode_daima\blog\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+    at Protocol._parsePacket (D:\vscode_daima\blog\node_modules\mysql\lib\protocol\Protocol.js:278:23)
+    at Parser.write (D:\vscode_daima\blog\node_modules\mysql\lib\protocol\Parser.js:76:12)
+    at Protocol.write (D:\vscode_daima\blog\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\vscode_daima\blog\node_modules\mysql\lib\Connection.js:91:28)
+    at Socket.<anonymous> (D:\vscode_daima\blog\node_modules\mysql\lib\Connection.js:502:10)
+    at Socket.emit (events.js:182:13)
+    at addChunk (_stream_readable.js:283:12)
+    at readableAddChunk (_stream_readable.js:264:11)
+    at Socket.Readable.push (_stream_readable.js:219:10)
+    at TCP.onread (net.js:639:20)
+    --------------------
+    at Protocol._enqueue (D:\vscode_daima\blog\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at PoolConnection.query (D:\vscode_daima\blog\node_modules\mysql\lib\Connection.js:200:25)
+    at pool.getConnection (D:\vscode_daima\blog\server\db\index.js:11:20)
+    at Handshake.onConnect (D:\vscode_daima\blog\node_modules\mysql\lib\Pool.js:64:7)
+    at Handshake.<anonymous> (D:\vscode_daima\blog\node_modules\mysql\lib\Connection.js:502:10)
+    at Handshake._callback (D:\vscode_daima\blog\node_modules\mysql\lib\Connection.js:468:16)
+    at Handshake.Sequence.end (D:\vscode_daima\blog\node_modules\mysql\lib\protocol\sequences\Sequence.js:83:24)
+    at Handshake.Sequence.OkPacket (D:\vscode_daima\blog\node_modules\mysql\lib\protocol\sequences\Sequence.js:92:8)
+    at Protocol._parsePacket (D:\vscode_daima\blog\node_modules\mysql\lib\protocol\Protocol.js:278:23)
+    at Parser.write (D:\vscode_daima\blog\node_modules\mysql\lib\protocol\Parser.js:76:12)
+    at Protocol.write (D:\vscode_daima\blog\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\vscode_daima\blog\node_modules\mysql\lib\Connection.js:91:28)
+    at Socket.<anonymous> (D:\vscode_daima\blog\node_modules\mysql\lib\Connection.js:502:10)
+    at Socket.emit (events.js:182:13)
+    at addChunk (_stream_readable.js:283:12)
+    at readableAddChunk (_stream_readable.js:264:11)
+  code: 'ER_PARSE_ERROR',
+  errno: 1064,
+  sqlMessage:
+   'You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near \' \n      description, \n      id as \'artical_id\'\n    FROM \n      artical\n    WHERE\' at line 3',
+  sqlState: '42000',
+  index: 0,
+  sql:
+   '\n    SELECT \n      title, \n      update_time, \n      , \n      description, \n      id as \'artical_id\'\n    FROM \n      artical\n    WHERE\n         \n    LIMIT \n      0,10' }
+[2018-12-09T16:35:19.503][ERROR  18080  default] /api/article/list { page: 1 } { Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ' description, id as 'artical_id' FROM artical WHERE  LIMIT 0,10' at line 1
+    at Query.Sequence._packetToError (D:\vscode_daima\blog\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\vscode_daima\blog\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+    at Protocol._parsePacket (D:\vscode_daima\blog\node_modules\mysql\lib\protocol\Protocol.js:278:23)
+    at Parser.write (D:\vscode_daima\blog\node_modules\mysql\lib\protocol\Parser.js:76:12)
+    at Protocol.write (D:\vscode_daima\blog\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\vscode_daima\blog\node_modules\mysql\lib\Connection.js:91:28)
+    at Socket.<anonymous> (D:\vscode_daima\blog\node_modules\mysql\lib\Connection.js:502:10)
+    at Socket.emit (events.js:182:13)
+    at addChunk (_stream_readable.js:283:12)
+    at readableAddChunk (_stream_readable.js:264:11)
+    at Socket.Readable.push (_stream_readable.js:219:10)
+    at TCP.onread (net.js:639:20)
+    --------------------
+    at Protocol._enqueue (D:\vscode_daima\blog\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at PoolConnection.query (D:\vscode_daima\blog\node_modules\mysql\lib\Connection.js:200:25)
+    at pool.getConnection (D:\vscode_daima\blog\server\db\index.js:11:20)
+    at Handshake.onConnect (D:\vscode_daima\blog\node_modules\mysql\lib\Pool.js:64:7)
+    at Handshake.<anonymous> (D:\vscode_daima\blog\node_modules\mysql\lib\Connection.js:502:10)
+    at Handshake._callback (D:\vscode_daima\blog\node_modules\mysql\lib\Connection.js:468:16)
+    at Handshake.Sequence.end (D:\vscode_daima\blog\node_modules\mysql\lib\protocol\sequences\Sequence.js:83:24)
+    at Handshake.Sequence.OkPacket (D:\vscode_daima\blog\node_modules\mysql\lib\protocol\sequences\Sequence.js:92:8)
+    at Protocol._parsePacket (D:\vscode_daima\blog\node_modules\mysql\lib\protocol\Protocol.js:278:23)
+    at Parser.write (D:\vscode_daima\blog\node_modules\mysql\lib\protocol\Parser.js:76:12)
+    at Protocol.write (D:\vscode_daima\blog\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\vscode_daima\blog\node_modules\mysql\lib\Connection.js:91:28)
+    at Socket.<anonymous> (D:\vscode_daima\blog\node_modules\mysql\lib\Connection.js:502:10)
+    at Socket.emit (events.js:182:13)
+    at addChunk (_stream_readable.js:283:12)
+    at readableAddChunk (_stream_readable.js:264:11)
+  code: 'ER_PARSE_ERROR',
+  errno: 1064,
+  sqlMessage:
+   'You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near \' description, id as \'artical_id\' FROM artical WHERE  LIMIT 0,10\' at line 1',
+  sqlState: '42000',
+  index: 0,
+  sql:
+   '\n    SELECT title, update_time, , description, id as \'artical_id\' FROM artical WHERE  LIMIT 0,10' }
+[2018-12-09T16:36:29.512][ERROR  10356  default] /api/article/list { page: 1 } { Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 0,10' at line 1
+    at Query.Sequence._packetToError (D:\vscode_daima\blog\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\vscode_daima\blog\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+    at Protocol._parsePacket (D:\vscode_daima\blog\node_modules\mysql\lib\protocol\Protocol.js:278:23)
+    at Parser.write (D:\vscode_daima\blog\node_modules\mysql\lib\protocol\Parser.js:76:12)
+    at Protocol.write (D:\vscode_daima\blog\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\vscode_daima\blog\node_modules\mysql\lib\Connection.js:91:28)
+    at Socket.<anonymous> (D:\vscode_daima\blog\node_modules\mysql\lib\Connection.js:502:10)
+    at Socket.emit (events.js:182:13)
+    at addChunk (_stream_readable.js:283:12)
+    at readableAddChunk (_stream_readable.js:264:11)
+    at Socket.Readable.push (_stream_readable.js:219:10)
+    at TCP.onread (net.js:639:20)
+    --------------------
+    at Protocol._enqueue (D:\vscode_daima\blog\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at PoolConnection.query (D:\vscode_daima\blog\node_modules\mysql\lib\Connection.js:200:25)
+    at pool.getConnection (D:\vscode_daima\blog\server\db\index.js:11:20)
+    at Handshake.onConnect (D:\vscode_daima\blog\node_modules\mysql\lib\Pool.js:64:7)
+    at Handshake.<anonymous> (D:\vscode_daima\blog\node_modules\mysql\lib\Connection.js:502:10)
+    at Handshake._callback (D:\vscode_daima\blog\node_modules\mysql\lib\Connection.js:468:16)
+    at Handshake.Sequence.end (D:\vscode_daima\blog\node_modules\mysql\lib\protocol\sequences\Sequence.js:83:24)
+    at Handshake.Sequence.OkPacket (D:\vscode_daima\blog\node_modules\mysql\lib\protocol\sequences\Sequence.js:92:8)
+    at Protocol._parsePacket (D:\vscode_daima\blog\node_modules\mysql\lib\protocol\Protocol.js:278:23)
+    at Parser.write (D:\vscode_daima\blog\node_modules\mysql\lib\protocol\Parser.js:76:12)
+    at Protocol.write (D:\vscode_daima\blog\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\vscode_daima\blog\node_modules\mysql\lib\Connection.js:91:28)
+    at Socket.<anonymous> (D:\vscode_daima\blog\node_modules\mysql\lib\Connection.js:502:10)
+    at Socket.emit (events.js:182:13)
+    at addChunk (_stream_readable.js:283:12)
+    at readableAddChunk (_stream_readable.js:264:11)
+  code: 'ER_PARSE_ERROR',
+  errno: 1064,
+  sqlMessage:
+   'You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near \'LIMIT 0,10\' at line 1',
+  sqlState: '42000',
+  index: 0,
+  sql:
+   '\n    SELECT title, update_time,  description, id as \'artical_id\' FROM artical WHERE  LIMIT 0,10' }
+[2018-12-09T16:37:21.346][ERROR  22568  default] /api/article/list { page: 1 } { Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 0,10' at line 1
+    at Query.Sequence._packetToError (D:\vscode_daima\blog\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\vscode_daima\blog\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+    at Protocol._parsePacket (D:\vscode_daima\blog\node_modules\mysql\lib\protocol\Protocol.js:278:23)
+    at Parser.write (D:\vscode_daima\blog\node_modules\mysql\lib\protocol\Parser.js:76:12)
+    at Protocol.write (D:\vscode_daima\blog\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\vscode_daima\blog\node_modules\mysql\lib\Connection.js:91:28)
+    at Socket.<anonymous> (D:\vscode_daima\blog\node_modules\mysql\lib\Connection.js:502:10)
+    at Socket.emit (events.js:182:13)
+    at addChunk (_stream_readable.js:283:12)
+    at readableAddChunk (_stream_readable.js:264:11)
+    at Socket.Readable.push (_stream_readable.js:219:10)
+    at TCP.onread (net.js:639:20)
+    --------------------
+    at Protocol._enqueue (D:\vscode_daima\blog\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at PoolConnection.query (D:\vscode_daima\blog\node_modules\mysql\lib\Connection.js:200:25)
+    at pool.getConnection (D:\vscode_daima\blog\server\db\index.js:11:20)
+    at Handshake.onConnect (D:\vscode_daima\blog\node_modules\mysql\lib\Pool.js:64:7)
+    at Handshake.<anonymous> (D:\vscode_daima\blog\node_modules\mysql\lib\Connection.js:502:10)
+    at Handshake._callback (D:\vscode_daima\blog\node_modules\mysql\lib\Connection.js:468:16)
+    at Handshake.Sequence.end (D:\vscode_daima\blog\node_modules\mysql\lib\protocol\sequences\Sequence.js:83:24)
+    at Handshake.Sequence.OkPacket (D:\vscode_daima\blog\node_modules\mysql\lib\protocol\sequences\Sequence.js:92:8)
+    at Protocol._parsePacket (D:\vscode_daima\blog\node_modules\mysql\lib\protocol\Protocol.js:278:23)
+    at Parser.write (D:\vscode_daima\blog\node_modules\mysql\lib\protocol\Parser.js:76:12)
+    at Protocol.write (D:\vscode_daima\blog\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\vscode_daima\blog\node_modules\mysql\lib\Connection.js:91:28)
+    at Socket.<anonymous> (D:\vscode_daima\blog\node_modules\mysql\lib\Connection.js:502:10)
+    at Socket.emit (events.js:182:13)
+    at addChunk (_stream_readable.js:283:12)
+    at readableAddChunk (_stream_readable.js:264:11)
+  code: 'ER_PARSE_ERROR',
+  errno: 1064,
+  sqlMessage:
+   'You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near \'LIMIT 0,10\' at line 1',
+  sqlState: '42000',
+  index: 0,
+  sql:
+   'SELECT title, update_time,  description, id as artical_id FROM artical WHERE  LIMIT 0,10' }
+[2018-12-09T17:04:10.675][ERROR  21284  default] /api/article/list { id: 2 } { Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 0,10' at line 1
+    at Query.Sequence._packetToError (D:\vscode_daima\blog\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\vscode_daima\blog\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+    at Protocol._parsePacket (D:\vscode_daima\blog\node_modules\mysql\lib\protocol\Protocol.js:278:23)
+    at Parser.write (D:\vscode_daima\blog\node_modules\mysql\lib\protocol\Parser.js:76:12)
+    at Protocol.write (D:\vscode_daima\blog\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\vscode_daima\blog\node_modules\mysql\lib\Connection.js:91:28)
+    at Socket.<anonymous> (D:\vscode_daima\blog\node_modules\mysql\lib\Connection.js:502:10)
+    at Socket.emit (events.js:182:13)
+    at addChunk (_stream_readable.js:283:12)
+    at readableAddChunk (_stream_readable.js:264:11)
+    at Socket.Readable.push (_stream_readable.js:219:10)
+    at TCP.onread (net.js:639:20)
+    --------------------
+    at Protocol._enqueue (D:\vscode_daima\blog\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at PoolConnection.query (D:\vscode_daima\blog\node_modules\mysql\lib\Connection.js:200:25)
+    at pool.getConnection (D:\vscode_daima\blog\server\db\index.js:11:20)
+    at Handshake.onConnect (D:\vscode_daima\blog\node_modules\mysql\lib\Pool.js:64:7)
+    at Handshake.<anonymous> (D:\vscode_daima\blog\node_modules\mysql\lib\Connection.js:502:10)
+    at Handshake._callback (D:\vscode_daima\blog\node_modules\mysql\lib\Connection.js:468:16)
+    at Handshake.Sequence.end (D:\vscode_daima\blog\node_modules\mysql\lib\protocol\sequences\Sequence.js:83:24)
+    at Handshake.Sequence.OkPacket (D:\vscode_daima\blog\node_modules\mysql\lib\protocol\sequences\Sequence.js:92:8)
+    at Protocol._parsePacket (D:\vscode_daima\blog\node_modules\mysql\lib\protocol\Protocol.js:278:23)
+    at Parser.write (D:\vscode_daima\blog\node_modules\mysql\lib\protocol\Parser.js:76:12)
+    at Protocol.write (D:\vscode_daima\blog\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\vscode_daima\blog\node_modules\mysql\lib\Connection.js:91:28)
+    at Socket.<anonymous> (D:\vscode_daima\blog\node_modules\mysql\lib\Connection.js:502:10)
+    at Socket.emit (events.js:182:13)
+    at addChunk (_stream_readable.js:283:12)
+    at readableAddChunk (_stream_readable.js:264:11)
+  code: 'ER_PARSE_ERROR',
+  errno: 1064,
+  sqlMessage:
+   'You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near \'LIMIT 0,10\' at line 1',
+  sqlState: '42000',
+  index: 0,
+  sql:
+   'SELECT title, update_time,  description, id as artical_id FROM artical WHERE  LIMIT 0,10' }
+[2018-12-09T18:22:56.176][ERROR  10960  default] /api/article/list { page: 1 } { Error: connect EHOSTUNREACH 106.14.209.107:3306
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1163:14)
+    --------------------
+    at Protocol._enqueue (D:\vscode_daima\blog\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at Protocol.handshake (D:\vscode_daima\blog\node_modules\mysql\lib\protocol\Protocol.js:51:23)
+    at PoolConnection.connect (D:\vscode_daima\blog\node_modules\mysql\lib\Connection.js:118:18)
+    at Pool.getConnection (D:\vscode_daima\blog\node_modules\mysql\lib\Pool.js:48:16)
+    at Promise (D:\vscode_daima\blog\server\db\index.js:7:10)
+    at new Promise (<anonymous>)
+    at Object.query (D:\vscode_daima\blog\server\db\index.js:6:10)
+    at Object.getArticle (D:\vscode_daima\blog\server\service\pc\index.js:12:13)
+    at articleList (D:\vscode_daima\blog\server\controller\pc\index.js:10:31)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (D:\vscode_daima\blog\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at D:\vscode_daima\blog\node_modules\koa-router\lib\router.js:346:16
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at D:\vscode_daima\blog\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-router\lib\router.js:351:31)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-compose\index.js:42:32)
+  errno: 'EHOSTUNREACH',
+  code: 'EHOSTUNREACH',
+  syscall: 'connect',
+  address: '106.14.209.107',
+  port: 3306,
+  fatal: true }
+[2018-12-09T18:22:57.680][ERROR  10960  default] /api/article/list { page: 1 } { Error: connect EHOSTUNREACH 106.14.209.107:3306
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1163:14)
+    --------------------
+    at Protocol._enqueue (D:\vscode_daima\blog\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at Protocol.handshake (D:\vscode_daima\blog\node_modules\mysql\lib\protocol\Protocol.js:51:23)
+    at PoolConnection.connect (D:\vscode_daima\blog\node_modules\mysql\lib\Connection.js:118:18)
+    at Pool.getConnection (D:\vscode_daima\blog\node_modules\mysql\lib\Pool.js:48:16)
+    at Promise (D:\vscode_daima\blog\server\db\index.js:7:10)
+    at new Promise (<anonymous>)
+    at Object.query (D:\vscode_daima\blog\server\db\index.js:6:10)
+    at Object.getArticle (D:\vscode_daima\blog\server\service\pc\index.js:12:13)
+    at articleList (D:\vscode_daima\blog\server\controller\pc\index.js:10:31)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (D:\vscode_daima\blog\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at D:\vscode_daima\blog\node_modules\koa-router\lib\router.js:346:16
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at D:\vscode_daima\blog\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-router\lib\router.js:351:31)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-compose\index.js:42:32)
+  errno: 'EHOSTUNREACH',
+  code: 'EHOSTUNREACH',
+  syscall: 'connect',
+  address: '106.14.209.107',
+  port: 3306,
+  fatal: true }
+[2018-12-09T18:23:00.976][ERROR  10960  default] /api/article/list { page: 1 } { Error: connect EHOSTUNREACH 106.14.209.107:3306
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1163:14)
+    --------------------
+    at Protocol._enqueue (D:\vscode_daima\blog\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at Protocol.handshake (D:\vscode_daima\blog\node_modules\mysql\lib\protocol\Protocol.js:51:23)
+    at PoolConnection.connect (D:\vscode_daima\blog\node_modules\mysql\lib\Connection.js:118:18)
+    at Pool.getConnection (D:\vscode_daima\blog\node_modules\mysql\lib\Pool.js:48:16)
+    at Promise (D:\vscode_daima\blog\server\db\index.js:7:10)
+    at new Promise (<anonymous>)
+    at Object.query (D:\vscode_daima\blog\server\db\index.js:6:10)
+    at Object.getArticle (D:\vscode_daima\blog\server\service\pc\index.js:12:13)
+    at articleList (D:\vscode_daima\blog\server\controller\pc\index.js:10:31)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (D:\vscode_daima\blog\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at D:\vscode_daima\blog\node_modules\koa-router\lib\router.js:346:16
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at D:\vscode_daima\blog\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-router\lib\router.js:351:31)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-compose\index.js:42:32)
+  errno: 'EHOSTUNREACH',
+  code: 'EHOSTUNREACH',
+  syscall: 'connect',
+  address: '106.14.209.107',
+  port: 3306,
+  fatal: true }
+[2018-12-09T18:23:05.654][ERROR  10960  default] /api/article/list { page: 1 } { Error: connect EHOSTUNREACH 106.14.209.107:3306
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1163:14)
+    --------------------
+    at Protocol._enqueue (D:\vscode_daima\blog\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at Protocol.handshake (D:\vscode_daima\blog\node_modules\mysql\lib\protocol\Protocol.js:51:23)
+    at PoolConnection.connect (D:\vscode_daima\blog\node_modules\mysql\lib\Connection.js:118:18)
+    at Pool.getConnection (D:\vscode_daima\blog\node_modules\mysql\lib\Pool.js:48:16)
+    at Promise (D:\vscode_daima\blog\server\db\index.js:7:10)
+    at new Promise (<anonymous>)
+    at Object.query (D:\vscode_daima\blog\server\db\index.js:6:10)
+    at Object.getArticle (D:\vscode_daima\blog\server\service\pc\index.js:12:13)
+    at articleList (D:\vscode_daima\blog\server\controller\pc\index.js:10:31)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (D:\vscode_daima\blog\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at D:\vscode_daima\blog\node_modules\koa-router\lib\router.js:346:16
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at D:\vscode_daima\blog\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-router\lib\router.js:351:31)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-compose\index.js:42:32)
+  errno: 'EHOSTUNREACH',
+  code: 'EHOSTUNREACH',
+  syscall: 'connect',
+  address: '106.14.209.107',
+  port: 3306,
+  fatal: true }

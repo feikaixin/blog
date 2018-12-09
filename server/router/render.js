@@ -30,7 +30,7 @@ function renderAndCache(ctx, pagePath, queryParams) {
     .then(html => {
       // Let's cache this page
       ctx.body = html;
-      ssrCache.set(key, html);
+      // ssrCache.set(key, html);
     })
     .catch(err => {
       console.log("render error");
@@ -41,6 +41,8 @@ function renderAndCache(ctx, pagePath, queryParams) {
 app.prepare().then(() => {
   router.get('/', ctx => renderAndCache(ctx, '/'));
   router.get('/blog',ctx => renderAndCache(ctx,'/blog'));
+  router.get('/resume',ctx => renderAndCache(ctx,'/resume'));
+  router.get('/blog/:id',ctx => renderAndCache(ctx, '/blog/article'))
 });
 
 
