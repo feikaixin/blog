@@ -21,12 +21,12 @@ const Style = () => (
         border-radius: 50%;
         margin-top: -50px;
       }
-      h1 {
+      .index-page h1 {
         letter-spacing: 4px;
         color: #663300;
         font-family: "STXingkai";
       }
-      p {
+      .index-page p {
         color: #ff6633;
         font-family: "STXingkai";
         font-size: 20px;

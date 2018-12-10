@@ -47,7 +47,7 @@ export default class Artical extends React.Component {
   render() {
     const { isLeft, data } = this.props;
     return (
-      <WithLink href='/blog/article' as={`/blog/${data.article_id}`}>
+      <WithLink href='/blog/article' as={`/blog/${data.article_id}`} paramsData={{id: data.article_id}}>
         <div>
           <div className="item">
             <div className={isLeft ? "left" : "left order"}>
