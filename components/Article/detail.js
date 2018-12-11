@@ -16,7 +16,7 @@ const Style = () => (
 )
 export default class Article extends React.Component {
   render() {
-    const { title, content } = this.props;
+    const { title, content, bg_music } = this.props.data;
     return (
       <div>
         <div className="common">
@@ -25,7 +25,7 @@ export default class Article extends React.Component {
           <ToTop />
         </div>
         <div className="header">
-          <Nav title={title}/>
+          <Nav title={title} bg_music={bg_music}/>
         </div>
         <div className='middle'>
           <Content content={content}/>

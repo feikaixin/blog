@@ -12,6 +12,8 @@ const Style = () => (
       display: flex;
       justify-content:center;
       align-items: center;
+      background: white;
+      box-shadow: 0px 0px 15px rgb(208, 208, 208);
     }
     .home{
       flex-grow: 0.5;
@@ -50,19 +52,22 @@ export default class Nav extends React.Component {
     this.state = {
       isplay: false
     }
+    this.media = React.createRef();
   }
 
   changeStatus = () => {
     this.setState(prevState => ({
       isplay: !prevState.isplay
-    }))
+    }));
+    const media = this.media.current;
+    this.state.isplay? media.pause() : media.play(); 
   }
   getQrcode = () => {
     console.log('a')
   }
 
   render() {
-    const { href, paramsData, children } = this.props;
+    const { href, paramsData, children, title, bg_music } = this.props;
     const { isplay } = this.state;
     return (
       <>
@@ -75,10 +80,13 @@ export default class Nav extends React.Component {
             </WithLink>
           </div>
           <div className="music">
+            <video name='media' loop='-1' width='0' ref={this.media}>
+              <source src={bg_music} type="audio/mpeg"></source>
+            </video>
             <i title='播放/暂停' onClick={this.changeStatus}><Icon icon={isplay?'pause':'play'} /></i>
           </div>
           <div className="title">
-            <span>{this.props.title}</span>
+            <span>{title}</span>
           </div>
           <div className="qr_code">
             <i title='获取二维码' onClick={this.getQrcode}><Icon icon='qrcode'/></i>

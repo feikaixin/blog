@@ -20,7 +20,7 @@ export default class Index extends Component {
     return (
       <div>
         {
-          data ? <Article.Detail title={data.title} content={data.content}></Article.Detail> : ''
+          data ? <Article.Detail data={data}></Article.Detail> : ''
         }
       </div>
     )
