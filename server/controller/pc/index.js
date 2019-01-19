@@ -1,13 +1,16 @@
 const service = require("../../service");
 const Tips = require("../../utils/Tips");
+const { apiCache } = require('../../config/default');
 const Cache = require('../../utils/Cache');
-
+const cache = Cache.createCache(apiCache);
+const getArticleCache = cache(service.pc.getArticle);
+const getArticalDetail = cache(service.pc.getDetail);
 module.exports = {
   async articleList(ctx, next) {
     const { page } = ctx.request.body;
     let data = null;
     try {
-      data = await service.pc.getArticle({ page });
+      data = await getArticleCache({ page });
       ctx.body = {
         ...Tips.ok,
         data
@@ -21,7 +24,7 @@ module.exports = {
     const { id } = ctx.params;
     let data = null;
     try {
-      data = await service.pc.getDetail({id});
+      data = await getArticalDetail({id});
       ctx.body = {
         ...Tips.ok,
         data

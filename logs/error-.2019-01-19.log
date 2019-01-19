@@ -1,0 +1,928 @@
+[2019-01-19T20:50:20.539][ERROR  4276  default] /api/article/list { page: 1 } TypeError: apiFun(...).then(...).cache is not a function
+    at invokeFun (D:\vscode_daima\blog\server\utils\Cache.js:24:12)
+    at articleList (D:\vscode_daima\blog\server\controller\pc\index.js:13:20)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (D:\vscode_daima\blog\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at D:\vscode_daima\blog\node_modules\koa-router\lib\router.js:346:16
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at D:\vscode_daima\blog\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-router\lib\router.js:351:31)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-compose\index.js:42:32)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-router\lib\router.js:332:32)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-compose\index.js:42:32)
+    at log (D:\vscode_daima\blog\server\middleware\log.js:12:9)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-compose\index.js:42:32)
+    at D:\vscode_daima\blog\node_modules\koa-body\index.js:110:14
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+[2019-01-19T20:50:27.165][ERROR  4276  default] /api/article/list { page: 1 } TypeError: apiFun(...).then(...).cache is not a function
+    at invokeFun (D:\vscode_daima\blog\server\utils\Cache.js:24:12)
+    at articleList (D:\vscode_daima\blog\server\controller\pc\index.js:13:20)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (D:\vscode_daima\blog\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at D:\vscode_daima\blog\node_modules\koa-router\lib\router.js:346:16
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at D:\vscode_daima\blog\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-router\lib\router.js:351:31)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-compose\index.js:42:32)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-router\lib\router.js:332:32)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-compose\index.js:42:32)
+    at log (D:\vscode_daima\blog\server\middleware\log.js:12:9)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-compose\index.js:42:32)
+    at D:\vscode_daima\blog\node_modules\koa-body\index.js:110:14
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+[2019-01-19T20:50:37.495][ERROR  4276  default] /api/article/list { page: 1 } TypeError: apiFun(...).then(...).cache is not a function
+    at invokeFun (D:\vscode_daima\blog\server\utils\Cache.js:24:12)
+    at articleList (D:\vscode_daima\blog\server\controller\pc\index.js:13:20)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (D:\vscode_daima\blog\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at D:\vscode_daima\blog\node_modules\koa-router\lib\router.js:346:16
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at D:\vscode_daima\blog\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-router\lib\router.js:351:31)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-compose\index.js:42:32)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-router\lib\router.js:332:32)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-compose\index.js:42:32)
+    at log (D:\vscode_daima\blog\server\middleware\log.js:12:9)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-compose\index.js:42:32)
+    at D:\vscode_daima\blog\node_modules\koa-body\index.js:110:14
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+[2019-01-19T20:50:37.514][ERROR  4276  default] /api/article/list { page: 1 } TypeError: apiFun(...).then(...).cache is not a function
+    at invokeFun (D:\vscode_daima\blog\server\utils\Cache.js:24:12)
+    at articleList (D:\vscode_daima\blog\server\controller\pc\index.js:13:20)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (D:\vscode_daima\blog\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at D:\vscode_daima\blog\node_modules\koa-router\lib\router.js:346:16
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at D:\vscode_daima\blog\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-router\lib\router.js:351:31)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-compose\index.js:42:32)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-router\lib\router.js:332:32)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-compose\index.js:42:32)
+    at log (D:\vscode_daima\blog\server\middleware\log.js:12:9)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-compose\index.js:42:32)
+    at D:\vscode_daima\blog\node_modules\koa-body\index.js:110:14
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+[2019-01-19T20:50:46.268][ERROR  4276  default] /api/article/list { page: 1 } TypeError: apiFun(...).then(...).cache is not a function
+    at invokeFun (D:\vscode_daima\blog\server\utils\Cache.js:24:12)
+    at articleList (D:\vscode_daima\blog\server\controller\pc\index.js:13:20)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (D:\vscode_daima\blog\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at D:\vscode_daima\blog\node_modules\koa-router\lib\router.js:346:16
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at D:\vscode_daima\blog\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-router\lib\router.js:351:31)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-compose\index.js:42:32)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-router\lib\router.js:332:32)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-compose\index.js:42:32)
+    at log (D:\vscode_daima\blog\server\middleware\log.js:12:9)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-compose\index.js:42:32)
+    at D:\vscode_daima\blog\node_modules\koa-body\index.js:110:14
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+[2019-01-19T20:52:24.872][ERROR  4276  default] /api/article/list { page: 1 } TypeError: apiFun(...).then(...).cache is not a function
+    at invokeFun (D:\vscode_daima\blog\server\utils\Cache.js:24:12)
+    at articleList (D:\vscode_daima\blog\server\controller\pc\index.js:13:20)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (D:\vscode_daima\blog\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at D:\vscode_daima\blog\node_modules\koa-router\lib\router.js:346:16
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at D:\vscode_daima\blog\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-router\lib\router.js:351:31)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-compose\index.js:42:32)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-router\lib\router.js:332:32)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-compose\index.js:42:32)
+    at log (D:\vscode_daima\blog\server\middleware\log.js:12:9)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-compose\index.js:42:32)
+    at D:\vscode_daima\blog\node_modules\koa-body\index.js:110:14
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+[2019-01-19T20:53:27.687][ERROR  4276  default] /api/article/list { page: 1 } TypeError: apiFun(...).then(...).cache is not a function
+    at invokeFun (D:\vscode_daima\blog\server\utils\Cache.js:24:12)
+    at articleList (D:\vscode_daima\blog\server\controller\pc\index.js:13:20)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (D:\vscode_daima\blog\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at D:\vscode_daima\blog\node_modules\koa-router\lib\router.js:346:16
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at D:\vscode_daima\blog\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-router\lib\router.js:351:31)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-compose\index.js:42:32)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-router\lib\router.js:332:32)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-compose\index.js:42:32)
+    at log (D:\vscode_daima\blog\server\middleware\log.js:12:9)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-compose\index.js:42:32)
+    at D:\vscode_daima\blog\node_modules\koa-body\index.js:110:14
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+[2019-01-19T20:53:38.172][ERROR  4276  default] /api/article/list { page: 1 } TypeError: apiFun(...).then(...).cache is not a function
+    at invokeFun (D:\vscode_daima\blog\server\utils\Cache.js:24:12)
+    at articleList (D:\vscode_daima\blog\server\controller\pc\index.js:13:20)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (D:\vscode_daima\blog\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at D:\vscode_daima\blog\node_modules\koa-router\lib\router.js:346:16
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at D:\vscode_daima\blog\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-router\lib\router.js:351:31)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-compose\index.js:42:32)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-router\lib\router.js:332:32)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-compose\index.js:42:32)
+    at log (D:\vscode_daima\blog\server\middleware\log.js:12:9)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-compose\index.js:42:32)
+    at D:\vscode_daima\blog\node_modules\koa-body\index.js:110:14
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+[2019-01-19T20:53:38.193][ERROR  4276  default] /api/article/list { page: 1 } TypeError: apiFun(...).then(...).cache is not a function
+    at invokeFun (D:\vscode_daima\blog\server\utils\Cache.js:24:12)
+    at articleList (D:\vscode_daima\blog\server\controller\pc\index.js:13:20)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (D:\vscode_daima\blog\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at D:\vscode_daima\blog\node_modules\koa-router\lib\router.js:346:16
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at D:\vscode_daima\blog\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-router\lib\router.js:351:31)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-compose\index.js:42:32)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-router\lib\router.js:332:32)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-compose\index.js:42:32)
+    at log (D:\vscode_daima\blog\server\middleware\log.js:12:9)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-compose\index.js:42:32)
+    at D:\vscode_daima\blog\node_modules\koa-body\index.js:110:14
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+[2019-01-19T20:53:48.584][ERROR  4276  default] /api/article/list { page: 1 } TypeError: apiFun(...).then(...).cache is not a function
+    at invokeFun (D:\vscode_daima\blog\server\utils\Cache.js:24:12)
+    at articleList (D:\vscode_daima\blog\server\controller\pc\index.js:13:20)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (D:\vscode_daima\blog\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at D:\vscode_daima\blog\node_modules\koa-router\lib\router.js:346:16
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at D:\vscode_daima\blog\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-router\lib\router.js:351:31)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-compose\index.js:42:32)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-router\lib\router.js:332:32)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-compose\index.js:42:32)
+    at log (D:\vscode_daima\blog\server\middleware\log.js:12:9)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-compose\index.js:42:32)
+    at D:\vscode_daima\blog\node_modules\koa-body\index.js:110:14
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+[2019-01-19T20:53:48.614][ERROR  4276  default] /api/article/list { page: 1 } TypeError: apiFun(...).then(...).cache is not a function
+    at invokeFun (D:\vscode_daima\blog\server\utils\Cache.js:24:12)
+    at articleList (D:\vscode_daima\blog\server\controller\pc\index.js:13:20)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (D:\vscode_daima\blog\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at D:\vscode_daima\blog\node_modules\koa-router\lib\router.js:346:16
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at D:\vscode_daima\blog\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-router\lib\router.js:351:31)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-compose\index.js:42:32)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-router\lib\router.js:332:32)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-compose\index.js:42:32)
+    at log (D:\vscode_daima\blog\server\middleware\log.js:12:9)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-compose\index.js:42:32)
+    at D:\vscode_daima\blog\node_modules\koa-body\index.js:110:14
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+[2019-01-19T20:53:58.927][ERROR  4276  default] /api/article/list { page: 1 } TypeError: apiFun(...).then(...).cache is not a function
+    at invokeFun (D:\vscode_daima\blog\server\utils\Cache.js:24:12)
+    at articleList (D:\vscode_daima\blog\server\controller\pc\index.js:13:20)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (D:\vscode_daima\blog\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at D:\vscode_daima\blog\node_modules\koa-router\lib\router.js:346:16
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at D:\vscode_daima\blog\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-router\lib\router.js:351:31)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-compose\index.js:42:32)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-router\lib\router.js:332:32)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-compose\index.js:42:32)
+    at log (D:\vscode_daima\blog\server\middleware\log.js:12:9)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-compose\index.js:42:32)
+    at D:\vscode_daima\blog\node_modules\koa-body\index.js:110:14
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+[2019-01-19T20:53:58.976][ERROR  4276  default] /api/article/list { page: 1 } TypeError: apiFun(...).then(...).cache is not a function
+    at invokeFun (D:\vscode_daima\blog\server\utils\Cache.js:24:12)
+    at articleList (D:\vscode_daima\blog\server\controller\pc\index.js:13:20)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (D:\vscode_daima\blog\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at D:\vscode_daima\blog\node_modules\koa-router\lib\router.js:346:16
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at D:\vscode_daima\blog\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-router\lib\router.js:351:31)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-compose\index.js:42:32)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-router\lib\router.js:332:32)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-compose\index.js:42:32)
+    at log (D:\vscode_daima\blog\server\middleware\log.js:12:9)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-compose\index.js:42:32)
+    at D:\vscode_daima\blog\node_modules\koa-body\index.js:110:14
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+[2019-01-19T20:54:09.266][ERROR  4276  default] /api/article/list { page: 1 } TypeError: apiFun(...).then(...).cache is not a function
+    at invokeFun (D:\vscode_daima\blog\server\utils\Cache.js:24:12)
+    at articleList (D:\vscode_daima\blog\server\controller\pc\index.js:13:20)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (D:\vscode_daima\blog\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at D:\vscode_daima\blog\node_modules\koa-router\lib\router.js:346:16
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at D:\vscode_daima\blog\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-router\lib\router.js:351:31)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-compose\index.js:42:32)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-router\lib\router.js:332:32)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-compose\index.js:42:32)
+    at log (D:\vscode_daima\blog\server\middleware\log.js:12:9)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-compose\index.js:42:32)
+    at D:\vscode_daima\blog\node_modules\koa-body\index.js:110:14
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+[2019-01-19T20:54:09.289][ERROR  4276  default] /api/article/list { page: 1 } TypeError: apiFun(...).then(...).cache is not a function
+    at invokeFun (D:\vscode_daima\blog\server\utils\Cache.js:24:12)
+    at articleList (D:\vscode_daima\blog\server\controller\pc\index.js:13:20)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (D:\vscode_daima\blog\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at D:\vscode_daima\blog\node_modules\koa-router\lib\router.js:346:16
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at D:\vscode_daima\blog\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-router\lib\router.js:351:31)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-compose\index.js:42:32)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-router\lib\router.js:332:32)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-compose\index.js:42:32)
+    at log (D:\vscode_daima\blog\server\middleware\log.js:12:9)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-compose\index.js:42:32)
+    at D:\vscode_daima\blog\node_modules\koa-body\index.js:110:14
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+[2019-01-19T20:54:19.561][ERROR  4276  default] /api/article/list { page: 1 } TypeError: apiFun(...).then(...).cache is not a function
+    at invokeFun (D:\vscode_daima\blog\server\utils\Cache.js:24:12)
+    at articleList (D:\vscode_daima\blog\server\controller\pc\index.js:13:20)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (D:\vscode_daima\blog\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at D:\vscode_daima\blog\node_modules\koa-router\lib\router.js:346:16
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at D:\vscode_daima\blog\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-router\lib\router.js:351:31)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-compose\index.js:42:32)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-router\lib\router.js:332:32)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-compose\index.js:42:32)
+    at log (D:\vscode_daima\blog\server\middleware\log.js:12:9)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-compose\index.js:42:32)
+    at D:\vscode_daima\blog\node_modules\koa-body\index.js:110:14
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+[2019-01-19T20:54:19.584][ERROR  4276  default] /api/article/list { page: 1 } TypeError: apiFun(...).then(...).cache is not a function
+    at invokeFun (D:\vscode_daima\blog\server\utils\Cache.js:24:12)
+    at articleList (D:\vscode_daima\blog\server\controller\pc\index.js:13:20)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (D:\vscode_daima\blog\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at D:\vscode_daima\blog\node_modules\koa-router\lib\router.js:346:16
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at D:\vscode_daima\blog\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-router\lib\router.js:351:31)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-compose\index.js:42:32)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-router\lib\router.js:332:32)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-compose\index.js:42:32)
+    at log (D:\vscode_daima\blog\server\middleware\log.js:12:9)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-compose\index.js:42:32)
+    at D:\vscode_daima\blog\node_modules\koa-body\index.js:110:14
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+[2019-01-19T20:54:29.867][ERROR  4276  default] /api/article/list { page: 1 } TypeError: apiFun(...).then(...).cache is not a function
+    at invokeFun (D:\vscode_daima\blog\server\utils\Cache.js:24:12)
+    at articleList (D:\vscode_daima\blog\server\controller\pc\index.js:13:20)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (D:\vscode_daima\blog\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at D:\vscode_daima\blog\node_modules\koa-router\lib\router.js:346:16
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at D:\vscode_daima\blog\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-router\lib\router.js:351:31)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-compose\index.js:42:32)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-router\lib\router.js:332:32)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-compose\index.js:42:32)
+    at log (D:\vscode_daima\blog\server\middleware\log.js:12:9)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-compose\index.js:42:32)
+    at D:\vscode_daima\blog\node_modules\koa-body\index.js:110:14
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+[2019-01-19T20:54:29.888][ERROR  4276  default] /api/article/list { page: 1 } TypeError: apiFun(...).then(...).cache is not a function
+    at invokeFun (D:\vscode_daima\blog\server\utils\Cache.js:24:12)
+    at articleList (D:\vscode_daima\blog\server\controller\pc\index.js:13:20)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (D:\vscode_daima\blog\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at D:\vscode_daima\blog\node_modules\koa-router\lib\router.js:346:16
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at D:\vscode_daima\blog\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-router\lib\router.js:351:31)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-compose\index.js:42:32)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-router\lib\router.js:332:32)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-compose\index.js:42:32)
+    at log (D:\vscode_daima\blog\server\middleware\log.js:12:9)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-compose\index.js:42:32)
+    at D:\vscode_daima\blog\node_modules\koa-body\index.js:110:14
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+[2019-01-19T20:54:41.209][ERROR  4276  default] /api/article/list { page: 1 } TypeError: apiFun(...).then(...).cache is not a function
+    at invokeFun (D:\vscode_daima\blog\server\utils\Cache.js:24:12)
+    at articleList (D:\vscode_daima\blog\server\controller\pc\index.js:13:20)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (D:\vscode_daima\blog\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at D:\vscode_daima\blog\node_modules\koa-router\lib\router.js:346:16
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at D:\vscode_daima\blog\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-router\lib\router.js:351:31)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-compose\index.js:42:32)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-router\lib\router.js:332:32)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-compose\index.js:42:32)
+    at log (D:\vscode_daima\blog\server\middleware\log.js:12:9)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-compose\index.js:42:32)
+    at D:\vscode_daima\blog\node_modules\koa-body\index.js:110:14
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+[2019-01-19T20:54:41.230][ERROR  4276  default] /api/article/list { page: 1 } TypeError: apiFun(...).then(...).cache is not a function
+    at invokeFun (D:\vscode_daima\blog\server\utils\Cache.js:24:12)
+    at articleList (D:\vscode_daima\blog\server\controller\pc\index.js:13:20)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (D:\vscode_daima\blog\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at D:\vscode_daima\blog\node_modules\koa-router\lib\router.js:346:16
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at D:\vscode_daima\blog\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-router\lib\router.js:351:31)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-compose\index.js:42:32)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-router\lib\router.js:332:32)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-compose\index.js:42:32)
+    at log (D:\vscode_daima\blog\server\middleware\log.js:12:9)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-compose\index.js:42:32)
+    at D:\vscode_daima\blog\node_modules\koa-body\index.js:110:14
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+[2019-01-19T20:54:51.491][ERROR  4276  default] /api/article/list { page: 1 } TypeError: apiFun(...).then(...).cache is not a function
+    at invokeFun (D:\vscode_daima\blog\server\utils\Cache.js:24:12)
+    at articleList (D:\vscode_daima\blog\server\controller\pc\index.js:13:20)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (D:\vscode_daima\blog\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at D:\vscode_daima\blog\node_modules\koa-router\lib\router.js:346:16
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at D:\vscode_daima\blog\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-router\lib\router.js:351:31)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-compose\index.js:42:32)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-router\lib\router.js:332:32)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-compose\index.js:42:32)
+    at log (D:\vscode_daima\blog\server\middleware\log.js:12:9)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-compose\index.js:42:32)
+    at D:\vscode_daima\blog\node_modules\koa-body\index.js:110:14
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+[2019-01-19T20:54:51.513][ERROR  4276  default] /api/article/list { page: 1 } TypeError: apiFun(...).then(...).cache is not a function
+    at invokeFun (D:\vscode_daima\blog\server\utils\Cache.js:24:12)
+    at articleList (D:\vscode_daima\blog\server\controller\pc\index.js:13:20)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (D:\vscode_daima\blog\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at D:\vscode_daima\blog\node_modules\koa-router\lib\router.js:346:16
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at D:\vscode_daima\blog\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-router\lib\router.js:351:31)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-compose\index.js:42:32)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-router\lib\router.js:332:32)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-compose\index.js:42:32)
+    at log (D:\vscode_daima\blog\server\middleware\log.js:12:9)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-compose\index.js:42:32)
+    at D:\vscode_daima\blog\node_modules\koa-body\index.js:110:14
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+[2019-01-19T20:55:01.907][ERROR  4276  default] /api/article/list { page: 1 } TypeError: apiFun(...).then(...).cache is not a function
+    at invokeFun (D:\vscode_daima\blog\server\utils\Cache.js:24:12)
+    at articleList (D:\vscode_daima\blog\server\controller\pc\index.js:13:20)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (D:\vscode_daima\blog\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at D:\vscode_daima\blog\node_modules\koa-router\lib\router.js:346:16
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at D:\vscode_daima\blog\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-router\lib\router.js:351:31)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-compose\index.js:42:32)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-router\lib\router.js:332:32)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-compose\index.js:42:32)
+    at log (D:\vscode_daima\blog\server\middleware\log.js:12:9)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-compose\index.js:42:32)
+    at D:\vscode_daima\blog\node_modules\koa-body\index.js:110:14
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+[2019-01-19T20:55:01.949][ERROR  4276  default] /api/article/list { page: 1 } TypeError: apiFun(...).then(...).cache is not a function
+    at invokeFun (D:\vscode_daima\blog\server\utils\Cache.js:24:12)
+    at articleList (D:\vscode_daima\blog\server\controller\pc\index.js:13:20)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (D:\vscode_daima\blog\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at D:\vscode_daima\blog\node_modules\koa-router\lib\router.js:346:16
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at D:\vscode_daima\blog\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-router\lib\router.js:351:31)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-compose\index.js:42:32)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-router\lib\router.js:332:32)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-compose\index.js:42:32)
+    at log (D:\vscode_daima\blog\server\middleware\log.js:12:9)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-compose\index.js:42:32)
+    at D:\vscode_daima\blog\node_modules\koa-body\index.js:110:14
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+[2019-01-19T20:55:12.220][ERROR  4276  default] /api/article/list { page: 1 } TypeError: apiFun(...).then(...).cache is not a function
+    at invokeFun (D:\vscode_daima\blog\server\utils\Cache.js:24:12)
+    at articleList (D:\vscode_daima\blog\server\controller\pc\index.js:13:20)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (D:\vscode_daima\blog\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at D:\vscode_daima\blog\node_modules\koa-router\lib\router.js:346:16
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at D:\vscode_daima\blog\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-router\lib\router.js:351:31)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-compose\index.js:42:32)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-router\lib\router.js:332:32)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-compose\index.js:42:32)
+    at log (D:\vscode_daima\blog\server\middleware\log.js:12:9)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-compose\index.js:42:32)
+    at D:\vscode_daima\blog\node_modules\koa-body\index.js:110:14
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+[2019-01-19T20:55:12.245][ERROR  4276  default] /api/article/list { page: 1 } TypeError: apiFun(...).then(...).cache is not a function
+    at invokeFun (D:\vscode_daima\blog\server\utils\Cache.js:24:12)
+    at articleList (D:\vscode_daima\blog\server\controller\pc\index.js:13:20)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (D:\vscode_daima\blog\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at D:\vscode_daima\blog\node_modules\koa-router\lib\router.js:346:16
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at D:\vscode_daima\blog\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-router\lib\router.js:351:31)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-compose\index.js:42:32)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-router\lib\router.js:332:32)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-compose\index.js:42:32)
+    at log (D:\vscode_daima\blog\server\middleware\log.js:12:9)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-compose\index.js:42:32)
+    at D:\vscode_daima\blog\node_modules\koa-body\index.js:110:14
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+[2019-01-19T20:55:22.558][ERROR  4276  default] /api/article/list { page: 1 } TypeError: apiFun(...).then(...).cache is not a function
+    at invokeFun (D:\vscode_daima\blog\server\utils\Cache.js:24:12)
+    at articleList (D:\vscode_daima\blog\server\controller\pc\index.js:13:20)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (D:\vscode_daima\blog\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at D:\vscode_daima\blog\node_modules\koa-router\lib\router.js:346:16
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at D:\vscode_daima\blog\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-router\lib\router.js:351:31)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-compose\index.js:42:32)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-router\lib\router.js:332:32)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-compose\index.js:42:32)
+    at log (D:\vscode_daima\blog\server\middleware\log.js:12:9)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-compose\index.js:42:32)
+    at D:\vscode_daima\blog\node_modules\koa-body\index.js:110:14
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+[2019-01-19T20:55:22.579][ERROR  4276  default] /api/article/list { page: 1 } TypeError: apiFun(...).then(...).cache is not a function
+    at invokeFun (D:\vscode_daima\blog\server\utils\Cache.js:24:12)
+    at articleList (D:\vscode_daima\blog\server\controller\pc\index.js:13:20)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (D:\vscode_daima\blog\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at D:\vscode_daima\blog\node_modules\koa-router\lib\router.js:346:16
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at D:\vscode_daima\blog\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-router\lib\router.js:351:31)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-compose\index.js:42:32)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-router\lib\router.js:332:32)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-compose\index.js:42:32)
+    at log (D:\vscode_daima\blog\server\middleware\log.js:12:9)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-compose\index.js:42:32)
+    at D:\vscode_daima\blog\node_modules\koa-body\index.js:110:14
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+[2019-01-19T20:55:32.899][ERROR  4276  default] /api/article/list { page: 1 } TypeError: apiFun(...).then(...).cache is not a function
+    at invokeFun (D:\vscode_daima\blog\server\utils\Cache.js:24:12)
+    at articleList (D:\vscode_daima\blog\server\controller\pc\index.js:13:20)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (D:\vscode_daima\blog\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at D:\vscode_daima\blog\node_modules\koa-router\lib\router.js:346:16
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at D:\vscode_daima\blog\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-router\lib\router.js:351:31)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-compose\index.js:42:32)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-router\lib\router.js:332:32)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-compose\index.js:42:32)
+    at log (D:\vscode_daima\blog\server\middleware\log.js:12:9)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-compose\index.js:42:32)
+    at D:\vscode_daima\blog\node_modules\koa-body\index.js:110:14
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+[2019-01-19T20:55:32.953][ERROR  4276  default] /api/article/list { page: 1 } TypeError: apiFun(...).then(...).cache is not a function
+    at invokeFun (D:\vscode_daima\blog\server\utils\Cache.js:24:12)
+    at articleList (D:\vscode_daima\blog\server\controller\pc\index.js:13:20)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (D:\vscode_daima\blog\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at D:\vscode_daima\blog\node_modules\koa-router\lib\router.js:346:16
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at D:\vscode_daima\blog\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-router\lib\router.js:351:31)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-compose\index.js:42:32)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-router\lib\router.js:332:32)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-compose\index.js:42:32)
+    at log (D:\vscode_daima\blog\server\middleware\log.js:12:9)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-compose\index.js:42:32)
+    at D:\vscode_daima\blog\node_modules\koa-body\index.js:110:14
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+[2019-01-19T20:55:44.142][ERROR  4276  default] /api/article/list { page: 1 } TypeError: apiFun(...).then(...).cache is not a function
+    at invokeFun (D:\vscode_daima\blog\server\utils\Cache.js:24:12)
+    at articleList (D:\vscode_daima\blog\server\controller\pc\index.js:13:20)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (D:\vscode_daima\blog\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at D:\vscode_daima\blog\node_modules\koa-router\lib\router.js:346:16
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at D:\vscode_daima\blog\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-router\lib\router.js:351:31)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-compose\index.js:42:32)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-router\lib\router.js:332:32)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-compose\index.js:42:32)
+    at log (D:\vscode_daima\blog\server\middleware\log.js:12:9)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-compose\index.js:42:32)
+    at D:\vscode_daima\blog\node_modules\koa-body\index.js:110:14
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+[2019-01-19T20:55:44.163][ERROR  4276  default] /api/article/list { page: 1 } TypeError: apiFun(...).then(...).cache is not a function
+    at invokeFun (D:\vscode_daima\blog\server\utils\Cache.js:24:12)
+    at articleList (D:\vscode_daima\blog\server\controller\pc\index.js:13:20)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (D:\vscode_daima\blog\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at D:\vscode_daima\blog\node_modules\koa-router\lib\router.js:346:16
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at D:\vscode_daima\blog\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-router\lib\router.js:351:31)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-compose\index.js:42:32)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-router\lib\router.js:332:32)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-compose\index.js:42:32)
+    at log (D:\vscode_daima\blog\server\middleware\log.js:12:9)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-compose\index.js:42:32)
+    at D:\vscode_daima\blog\node_modules\koa-body\index.js:110:14
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+[2019-01-19T20:55:54.470][ERROR  4276  default] /api/article/list { page: 1 } TypeError: apiFun(...).then(...).cache is not a function
+    at invokeFun (D:\vscode_daima\blog\server\utils\Cache.js:24:12)
+    at articleList (D:\vscode_daima\blog\server\controller\pc\index.js:13:20)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (D:\vscode_daima\blog\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at D:\vscode_daima\blog\node_modules\koa-router\lib\router.js:346:16
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at D:\vscode_daima\blog\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-router\lib\router.js:351:31)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-compose\index.js:42:32)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-router\lib\router.js:332:32)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-compose\index.js:42:32)
+    at log (D:\vscode_daima\blog\server\middleware\log.js:12:9)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-compose\index.js:42:32)
+    at D:\vscode_daima\blog\node_modules\koa-body\index.js:110:14
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+[2019-01-19T20:55:54.521][ERROR  4276  default] /api/article/list { page: 1 } TypeError: apiFun(...).then(...).cache is not a function
+    at invokeFun (D:\vscode_daima\blog\server\utils\Cache.js:24:12)
+    at articleList (D:\vscode_daima\blog\server\controller\pc\index.js:13:20)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (D:\vscode_daima\blog\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at D:\vscode_daima\blog\node_modules\koa-router\lib\router.js:346:16
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at D:\vscode_daima\blog\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-router\lib\router.js:351:31)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-compose\index.js:42:32)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-router\lib\router.js:332:32)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-compose\index.js:42:32)
+    at log (D:\vscode_daima\blog\server\middleware\log.js:12:9)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-compose\index.js:42:32)
+    at D:\vscode_daima\blog\node_modules\koa-body\index.js:110:14
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+[2019-01-19T20:56:04.871][ERROR  4276  default] /api/article/list { page: 1 } TypeError: apiFun(...).then(...).cache is not a function
+    at invokeFun (D:\vscode_daima\blog\server\utils\Cache.js:24:12)
+    at articleList (D:\vscode_daima\blog\server\controller\pc\index.js:13:20)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (D:\vscode_daima\blog\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at D:\vscode_daima\blog\node_modules\koa-router\lib\router.js:346:16
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at D:\vscode_daima\blog\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-router\lib\router.js:351:31)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-compose\index.js:42:32)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-router\lib\router.js:332:32)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-compose\index.js:42:32)
+    at log (D:\vscode_daima\blog\server\middleware\log.js:12:9)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-compose\index.js:42:32)
+    at D:\vscode_daima\blog\node_modules\koa-body\index.js:110:14
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+[2019-01-19T20:56:04.903][ERROR  4276  default] /api/article/list { page: 1 } TypeError: apiFun(...).then(...).cache is not a function
+    at invokeFun (D:\vscode_daima\blog\server\utils\Cache.js:24:12)
+    at articleList (D:\vscode_daima\blog\server\controller\pc\index.js:13:20)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (D:\vscode_daima\blog\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at D:\vscode_daima\blog\node_modules\koa-router\lib\router.js:346:16
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at D:\vscode_daima\blog\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-router\lib\router.js:351:31)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-compose\index.js:42:32)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-router\lib\router.js:332:32)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-compose\index.js:42:32)
+    at log (D:\vscode_daima\blog\server\middleware\log.js:12:9)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-compose\index.js:42:32)
+    at D:\vscode_daima\blog\node_modules\koa-body\index.js:110:14
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+[2019-01-19T20:56:15.146][ERROR  4276  default] /api/article/list { page: 1 } TypeError: apiFun(...).then(...).cache is not a function
+    at invokeFun (D:\vscode_daima\blog\server\utils\Cache.js:24:12)
+    at articleList (D:\vscode_daima\blog\server\controller\pc\index.js:13:20)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (D:\vscode_daima\blog\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at D:\vscode_daima\blog\node_modules\koa-router\lib\router.js:346:16
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at D:\vscode_daima\blog\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-router\lib\router.js:351:31)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-compose\index.js:42:32)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-router\lib\router.js:332:32)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-compose\index.js:42:32)
+    at log (D:\vscode_daima\blog\server\middleware\log.js:12:9)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-compose\index.js:42:32)
+    at D:\vscode_daima\blog\node_modules\koa-body\index.js:110:14
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+[2019-01-19T20:56:15.191][ERROR  4276  default] /api/article/list { page: 1 } TypeError: apiFun(...).then(...).cache is not a function
+    at invokeFun (D:\vscode_daima\blog\server\utils\Cache.js:24:12)
+    at articleList (D:\vscode_daima\blog\server\controller\pc\index.js:13:20)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (D:\vscode_daima\blog\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at D:\vscode_daima\blog\node_modules\koa-router\lib\router.js:346:16
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at D:\vscode_daima\blog\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-router\lib\router.js:351:31)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-compose\index.js:42:32)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-router\lib\router.js:332:32)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-compose\index.js:42:32)
+    at log (D:\vscode_daima\blog\server\middleware\log.js:12:9)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-compose\index.js:42:32)
+    at D:\vscode_daima\blog\node_modules\koa-body\index.js:110:14
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+[2019-01-19T20:56:25.466][ERROR  4276  default] /api/article/list { page: 1 } TypeError: apiFun(...).then(...).cache is not a function
+    at invokeFun (D:\vscode_daima\blog\server\utils\Cache.js:24:12)
+    at articleList (D:\vscode_daima\blog\server\controller\pc\index.js:13:20)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (D:\vscode_daima\blog\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at D:\vscode_daima\blog\node_modules\koa-router\lib\router.js:346:16
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at D:\vscode_daima\blog\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-router\lib\router.js:351:31)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-compose\index.js:42:32)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-router\lib\router.js:332:32)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-compose\index.js:42:32)
+    at log (D:\vscode_daima\blog\server\middleware\log.js:12:9)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-compose\index.js:42:32)
+    at D:\vscode_daima\blog\node_modules\koa-body\index.js:110:14
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+[2019-01-19T20:56:25.498][ERROR  4276  default] /api/article/list { page: 1 } TypeError: apiFun(...).then(...).cache is not a function
+    at invokeFun (D:\vscode_daima\blog\server\utils\Cache.js:24:12)
+    at articleList (D:\vscode_daima\blog\server\controller\pc\index.js:13:20)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (D:\vscode_daima\blog\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at D:\vscode_daima\blog\node_modules\koa-router\lib\router.js:346:16
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at D:\vscode_daima\blog\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-router\lib\router.js:351:31)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-compose\index.js:42:32)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-router\lib\router.js:332:32)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-compose\index.js:42:32)
+    at log (D:\vscode_daima\blog\server\middleware\log.js:12:9)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-compose\index.js:42:32)
+    at D:\vscode_daima\blog\node_modules\koa-body\index.js:110:14
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+[2019-01-19T20:56:35.790][ERROR  4276  default] /api/article/list { page: 1 } TypeError: apiFun(...).then(...).cache is not a function
+    at invokeFun (D:\vscode_daima\blog\server\utils\Cache.js:24:12)
+    at articleList (D:\vscode_daima\blog\server\controller\pc\index.js:13:20)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (D:\vscode_daima\blog\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at D:\vscode_daima\blog\node_modules\koa-router\lib\router.js:346:16
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at D:\vscode_daima\blog\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-router\lib\router.js:351:31)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-compose\index.js:42:32)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-router\lib\router.js:332:32)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-compose\index.js:42:32)
+    at log (D:\vscode_daima\blog\server\middleware\log.js:12:9)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-compose\index.js:42:32)
+    at D:\vscode_daima\blog\node_modules\koa-body\index.js:110:14
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+[2019-01-19T20:56:35.811][ERROR  4276  default] /api/article/list { page: 1 } TypeError: apiFun(...).then(...).cache is not a function
+    at invokeFun (D:\vscode_daima\blog\server\utils\Cache.js:24:12)
+    at articleList (D:\vscode_daima\blog\server\controller\pc\index.js:13:20)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (D:\vscode_daima\blog\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at D:\vscode_daima\blog\node_modules\koa-router\lib\router.js:346:16
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at D:\vscode_daima\blog\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-router\lib\router.js:351:31)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-compose\index.js:42:32)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-router\lib\router.js:332:32)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-compose\index.js:42:32)
+    at log (D:\vscode_daima\blog\server\middleware\log.js:12:9)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-compose\index.js:42:32)
+    at D:\vscode_daima\blog\node_modules\koa-body\index.js:110:14
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+[2019-01-19T20:56:46.102][ERROR  4276  default] /api/article/list { page: 1 } TypeError: apiFun(...).then(...).cache is not a function
+    at invokeFun (D:\vscode_daima\blog\server\utils\Cache.js:24:12)
+    at articleList (D:\vscode_daima\blog\server\controller\pc\index.js:13:20)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (D:\vscode_daima\blog\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at D:\vscode_daima\blog\node_modules\koa-router\lib\router.js:346:16
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at D:\vscode_daima\blog\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-router\lib\router.js:351:31)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-compose\index.js:42:32)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-router\lib\router.js:332:32)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-compose\index.js:42:32)
+    at log (D:\vscode_daima\blog\server\middleware\log.js:12:9)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-compose\index.js:42:32)
+    at D:\vscode_daima\blog\node_modules\koa-body\index.js:110:14
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+[2019-01-19T20:56:46.127][ERROR  4276  default] /api/article/list { page: 1 } TypeError: apiFun(...).then(...).cache is not a function
+    at invokeFun (D:\vscode_daima\blog\server\utils\Cache.js:24:12)
+    at articleList (D:\vscode_daima\blog\server\controller\pc\index.js:13:20)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (D:\vscode_daima\blog\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at D:\vscode_daima\blog\node_modules\koa-router\lib\router.js:346:16
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at D:\vscode_daima\blog\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-router\lib\router.js:351:31)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-compose\index.js:42:32)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-router\lib\router.js:332:32)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-compose\index.js:42:32)
+    at log (D:\vscode_daima\blog\server\middleware\log.js:12:9)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-compose\index.js:42:32)
+    at D:\vscode_daima\blog\node_modules\koa-body\index.js:110:14
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+[2019-01-19T20:56:57.455][ERROR  4276  default] /api/article/list { page: 1 } TypeError: apiFun(...).then(...).cache is not a function
+    at invokeFun (D:\vscode_daima\blog\server\utils\Cache.js:24:12)
+    at articleList (D:\vscode_daima\blog\server\controller\pc\index.js:13:20)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (D:\vscode_daima\blog\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at D:\vscode_daima\blog\node_modules\koa-router\lib\router.js:346:16
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at D:\vscode_daima\blog\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-router\lib\router.js:351:31)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-compose\index.js:42:32)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-router\lib\router.js:332:32)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-compose\index.js:42:32)
+    at log (D:\vscode_daima\blog\server\middleware\log.js:12:9)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-compose\index.js:42:32)
+    at D:\vscode_daima\blog\node_modules\koa-body\index.js:110:14
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+[2019-01-19T20:56:57.475][ERROR  4276  default] /api/article/list { page: 1 } TypeError: apiFun(...).then(...).cache is not a function
+    at invokeFun (D:\vscode_daima\blog\server\utils\Cache.js:24:12)
+    at articleList (D:\vscode_daima\blog\server\controller\pc\index.js:13:20)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (D:\vscode_daima\blog\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at D:\vscode_daima\blog\node_modules\koa-router\lib\router.js:346:16
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at D:\vscode_daima\blog\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-router\lib\router.js:351:31)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-compose\index.js:42:32)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-router\lib\router.js:332:32)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-compose\index.js:42:32)
+    at log (D:\vscode_daima\blog\server\middleware\log.js:12:9)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-compose\index.js:42:32)
+    at D:\vscode_daima\blog\node_modules\koa-body\index.js:110:14
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+[2019-01-19T20:57:07.791][ERROR  4276  default] /api/article/list { page: 1 } TypeError: apiFun(...).then(...).cache is not a function
+    at invokeFun (D:\vscode_daima\blog\server\utils\Cache.js:24:12)
+    at articleList (D:\vscode_daima\blog\server\controller\pc\index.js:13:20)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (D:\vscode_daima\blog\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at D:\vscode_daima\blog\node_modules\koa-router\lib\router.js:346:16
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at D:\vscode_daima\blog\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-router\lib\router.js:351:31)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-compose\index.js:42:32)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-router\lib\router.js:332:32)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-compose\index.js:42:32)
+    at log (D:\vscode_daima\blog\server\middleware\log.js:12:9)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-compose\index.js:42:32)
+    at D:\vscode_daima\blog\node_modules\koa-body\index.js:110:14
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+[2019-01-19T20:57:07.846][ERROR  4276  default] /api/article/list { page: 1 } TypeError: apiFun(...).then(...).cache is not a function
+    at invokeFun (D:\vscode_daima\blog\server\utils\Cache.js:24:12)
+    at articleList (D:\vscode_daima\blog\server\controller\pc\index.js:13:20)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (D:\vscode_daima\blog\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at D:\vscode_daima\blog\node_modules\koa-router\lib\router.js:346:16
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at D:\vscode_daima\blog\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-router\lib\router.js:351:31)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-compose\index.js:42:32)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-router\lib\router.js:332:32)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-compose\index.js:42:32)
+    at log (D:\vscode_daima\blog\server\middleware\log.js:12:9)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-compose\index.js:42:32)
+    at D:\vscode_daima\blog\node_modules\koa-body\index.js:110:14
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+[2019-01-19T20:57:47.864][ERROR  10732  default] /api/article/list { page: 1 } TypeError: apiFun(...).then(...).cache is not a function
+    at invokeFun (D:\vscode_daima\blog\server\utils\Cache.js:24:12)
+    at articleList (D:\vscode_daima\blog\server\controller\pc\index.js:13:20)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (D:\vscode_daima\blog\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at D:\vscode_daima\blog\node_modules\koa-router\lib\router.js:346:16
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at D:\vscode_daima\blog\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-router\lib\router.js:351:31)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-compose\index.js:42:32)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-router\lib\router.js:332:32)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-compose\index.js:42:32)
+    at log (D:\vscode_daima\blog\server\middleware\log.js:12:9)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-compose\index.js:42:32)
+    at D:\vscode_daima\blog\node_modules\koa-body\index.js:110:14
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+[2019-01-19T20:57:57.090][ERROR  10732  default] /api/article/list { page: 1 } TypeError: apiFun(...).then(...).cache is not a function
+    at invokeFun (D:\vscode_daima\blog\server\utils\Cache.js:24:12)
+    at articleList (D:\vscode_daima\blog\server\controller\pc\index.js:13:20)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (D:\vscode_daima\blog\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at D:\vscode_daima\blog\node_modules\koa-router\lib\router.js:346:16
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at D:\vscode_daima\blog\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-router\lib\router.js:351:31)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-compose\index.js:42:32)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-router\lib\router.js:332:32)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-compose\index.js:42:32)
+    at log (D:\vscode_daima\blog\server\middleware\log.js:12:9)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-compose\index.js:42:32)
+    at D:\vscode_daima\blog\node_modules\koa-body\index.js:110:14
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+[2019-01-19T20:57:59.243][ERROR  10732  default] /api/article/list { page: 1 } TypeError: apiFun(...).then(...).cache is not a function
+    at invokeFun (D:\vscode_daima\blog\server\utils\Cache.js:24:12)
+    at articleList (D:\vscode_daima\blog\server\controller\pc\index.js:13:20)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (D:\vscode_daima\blog\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at D:\vscode_daima\blog\node_modules\koa-router\lib\router.js:346:16
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at D:\vscode_daima\blog\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-router\lib\router.js:351:31)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-compose\index.js:42:32)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-router\lib\router.js:332:32)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-compose\index.js:42:32)
+    at log (D:\vscode_daima\blog\server\middleware\log.js:12:9)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-compose\index.js:42:32)
+    at D:\vscode_daima\blog\node_modules\koa-body\index.js:110:14
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+[2019-01-19T20:58:09.530][ERROR  10732  default] /api/article/list { page: 1 } TypeError: apiFun(...).then(...).cache is not a function
+    at invokeFun (D:\vscode_daima\blog\server\utils\Cache.js:24:12)
+    at articleList (D:\vscode_daima\blog\server\controller\pc\index.js:13:20)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (D:\vscode_daima\blog\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at D:\vscode_daima\blog\node_modules\koa-router\lib\router.js:346:16
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at D:\vscode_daima\blog\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-router\lib\router.js:351:31)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-compose\index.js:42:32)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-router\lib\router.js:332:32)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-compose\index.js:42:32)
+    at log (D:\vscode_daima\blog\server\middleware\log.js:12:9)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-compose\index.js:42:32)
+    at D:\vscode_daima\blog\node_modules\koa-body\index.js:110:14
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+[2019-01-19T20:58:09.564][ERROR  10732  default] /api/article/list { page: 1 } TypeError: apiFun(...).then(...).cache is not a function
+    at invokeFun (D:\vscode_daima\blog\server\utils\Cache.js:24:12)
+    at articleList (D:\vscode_daima\blog\server\controller\pc\index.js:13:20)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (D:\vscode_daima\blog\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at D:\vscode_daima\blog\node_modules\koa-router\lib\router.js:346:16
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at D:\vscode_daima\blog\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-router\lib\router.js:351:31)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-compose\index.js:42:32)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-router\lib\router.js:332:32)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-compose\index.js:42:32)
+    at log (D:\vscode_daima\blog\server\middleware\log.js:12:9)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-compose\index.js:42:32)
+    at D:\vscode_daima\blog\node_modules\koa-body\index.js:110:14
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+[2019-01-19T20:58:19.820][ERROR  10732  default] /api/article/list { page: 1 } TypeError: apiFun(...).then(...).cache is not a function
+    at invokeFun (D:\vscode_daima\blog\server\utils\Cache.js:24:12)
+    at articleList (D:\vscode_daima\blog\server\controller\pc\index.js:13:20)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (D:\vscode_daima\blog\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at D:\vscode_daima\blog\node_modules\koa-router\lib\router.js:346:16
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at D:\vscode_daima\blog\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-router\lib\router.js:351:31)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-compose\index.js:42:32)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-router\lib\router.js:332:32)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-compose\index.js:42:32)
+    at log (D:\vscode_daima\blog\server\middleware\log.js:12:9)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-compose\index.js:42:32)
+    at D:\vscode_daima\blog\node_modules\koa-body\index.js:110:14
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+[2019-01-19T20:58:19.838][ERROR  10732  default] /api/article/list { page: 1 } TypeError: apiFun(...).then(...).cache is not a function
+    at invokeFun (D:\vscode_daima\blog\server\utils\Cache.js:24:12)
+    at articleList (D:\vscode_daima\blog\server\controller\pc\index.js:13:20)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (D:\vscode_daima\blog\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at D:\vscode_daima\blog\node_modules\koa-router\lib\router.js:346:16
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at D:\vscode_daima\blog\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-router\lib\router.js:351:31)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-compose\index.js:42:32)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-router\lib\router.js:332:32)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-compose\index.js:42:32)
+    at log (D:\vscode_daima\blog\server\middleware\log.js:12:9)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-compose\index.js:42:32)
+    at D:\vscode_daima\blog\node_modules\koa-body\index.js:110:14
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+[2019-01-19T20:58:34.550][ERROR  10732  default] /api/article/list { page: 1 } TypeError: apiFun(...).then(...).cache is not a function
+    at invokeFun (D:\vscode_daima\blog\server\utils\Cache.js:24:12)
+    at articleList (D:\vscode_daima\blog\server\controller\pc\index.js:13:20)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (D:\vscode_daima\blog\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at D:\vscode_daima\blog\node_modules\koa-router\lib\router.js:346:16
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at D:\vscode_daima\blog\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-router\lib\router.js:351:31)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-compose\index.js:42:32)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-router\lib\router.js:332:32)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-compose\index.js:42:32)
+    at log (D:\vscode_daima\blog\server\middleware\log.js:12:9)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-compose\index.js:42:32)
+    at D:\vscode_daima\blog\node_modules\koa-body\index.js:110:14
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+[2019-01-19T20:58:34.569][ERROR  10732  default] /api/article/list { page: 1 } TypeError: apiFun(...).then(...).cache is not a function
+    at invokeFun (D:\vscode_daima\blog\server\utils\Cache.js:24:12)
+    at articleList (D:\vscode_daima\blog\server\controller\pc\index.js:13:20)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (D:\vscode_daima\blog\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at D:\vscode_daima\blog\node_modules\koa-router\lib\router.js:346:16
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at D:\vscode_daima\blog\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-router\lib\router.js:351:31)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-compose\index.js:42:32)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-router\lib\router.js:332:32)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-compose\index.js:42:32)
+    at log (D:\vscode_daima\blog\server\middleware\log.js:12:9)
+    at dispatch (D:\vscode_daima\blog\node_modules\koa-compose\index.js:42:32)
+    at D:\vscode_daima\blog\node_modules\koa-body\index.js:110:14
+    at process._tickCallback (internal/process/next_tick.js:68:7)

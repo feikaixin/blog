@@ -14,6 +14,10 @@ const config = {
     max: 100,    //  ???
     maxAge: 1000 * 60 * 60 // 1hour
   },
+  apiCache: {
+    maxAge: 1000*3,
+    isOpen: true
+  },
   // 日志文件配置
   // http://www.wangweilin.net/static/pages/log4js-node.html
   // https://juejin.im/post/57b962af7db2a200542a0fb3
