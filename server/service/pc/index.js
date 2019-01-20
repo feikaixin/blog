@@ -3,7 +3,7 @@
 const mysql = require("../../db");
 const { unescapeHtml } = require('../../utils/escapeHtml');
 async function getArticle({ page = 1,id }, hasContent = false) {
-  let sql = `SELECT title, update_time, ${hasContent?'content, bg_music,':''} description, id as article_id FROM artical ${id?`WHERE id = ${id}`:''} LIMIT ${(page - 1) * 10},10`;
+  let sql = `SELECT title, update_time, ${hasContent?'content, bg_music,':''} description, bg_img, id as article_id FROM artical ${id?`WHERE id = ${id}`:''} LIMIT ${(page - 1) * 10},10`;
   // 统计总数的sql语句
   let count = `SELECT COUNT(*) FROM artical`;
   let result = {};

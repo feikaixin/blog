@@ -46,12 +46,13 @@ export default class Artical extends React.Component {
 
   render() {
     const { isLeft, data } = this.props;
+    console.log(data);
     return (
       <WithLink href='/blog/article' as={`/blog/${data.article_id}`} paramsData={{id: data.article_id}}>
         <div>
           <div className="item">
             <div className={isLeft ? "left" : "left order"}>
-              <img src="/static/images/blog_img_1.png" alt="/" />
+              <img src={data.bg_img} alt="/" />
             </div>
             <div className="right">
               <Title data={data} />
