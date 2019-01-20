@@ -43,6 +43,7 @@ const Style = () => (
       }
       h1 small {
         font-size: 23px;
+        color: #fff;
       }
       header {
         background-color: rgb(0, 179, 138);
@@ -59,6 +60,9 @@ const Style = () => (
       .clear {
         overflow: hidden;
       }
+      .influence {
+        margin-right: 8px;
+      }
       .job {
         font-size: 22px;
         position: absolute;
@@ -74,7 +78,7 @@ const Style = () => (
         padding-top: 15px;
       }
       .body {
-        padding: 70px 20px 60px;
+        padding: 40px 20px 60px;
       }
       .body .item {
         display: inline-block;
@@ -135,7 +139,7 @@ export default class Resume extends Component {
             <div className="clear more-info">
               <ul className="left tech">
                 <li>男 / 1998.01</li>
-                <li>绩点：2.80 / 4.00</li>
+                <li>专业排名：26 / 270 / 前10%</li>
                 <li>重庆邮电大学 | 软件工程学院 | 本科 | 2020年毕业</li>
               </ul>
               <ul className="right influence">
@@ -202,25 +206,21 @@ export default class Resume extends Component {
                 <Dividing title="专业技能">
                   <Descript isItem>
                     掌握web开发基本技能，熟悉
-                    <span>W3c标准</span>、<span>页面架构布局</span>、
+                    <span>W3c标准</span>、<span>掌握基本的布局手段</span>、
                     <span>前端语义化</span>
-                    ，懂些
-                    <span>审美</span>
-                    、重视
-                    <span>用户体验</span>及<span>代码可维护性</span>
+                    <span>了解HTML5、CSS3、flex布局</span>及<span>了解移动端适配方案</span>
                     ，有近两年的前端开发经验
                   </Descript>
                   <Descript isItem>
                     对现代的框架
                     <span>React及其相关技术栈</span>、<span>Next</span>、
                     <span>Ant Desgin</span>
-                    等有着较熟的实践和较深的感悟
+                    等有着丰富的实践经历和较深的感悟
                   </Descript>
                   <Descript isItem>
                     有<span>全栈开发</span>
-                    项目经验，熟练使用使用
-                    <span>Koa</span>、<span>Egg</span>
-                    开发web项目，了解常见的后端逻辑，能够和后端高效的定位问题、进行合作开发。
+                    项目经验，使用
+                    <span>Koa</span>、<span>Next</span>、<span></span>开发个人站点。
                   </Descript>
                   <Descript isItem>
                     对<span>数据库</span>、<span>数据结构</span>、
@@ -231,67 +231,53 @@ export default class Resume extends Component {
                   <Descript isItem>
                     熟练使用Git进行
                     <span>版本控制</span>、<span>团队合作</span>
-                    ，了解
+                    ，用markdown进行文档开发，了解
                     <span>Linux</span>、<span>Nginx</span>
                     等环境部署，了解项目开发流程及其开发调试工具的使用。
                   </Descript>
                 </Dividing>
               </section>
               <section>
-                <Dividing title="奖项证书">
-                  <Item time="2016.09" tag="校级">
-                    优秀新生奖学金
-                  </Item>
-                  <Item time="2017.09" tag="校级">
-                    二等奖学金
-                  </Item>
-                  <Item time="2018.09" tag="校级">
-                    三等奖学金
-                  </Item>
+                <Dividing title="个人素质">
+                  <Descript isItem>
+                    工作态度认真，有责任心，具有强烈的团队合作意识
+                  </Descript>
+                  <Descript isItem>
+                    性格沉稳，乐观幽默，喜欢旅游。
+                  </Descript>
+                  <Descript isItem>
+                    喜欢接触新事物，钻研折腾，学习能力强，敢于尝试，乐于实践
+                  </Descript>
                 </Dividing>
               </section>
             </div>
             <div className="right item">
               <section>
                 <Dividing title="项目经验">
+                  <Item time="2017.09" tag="Link">
+                    ABO微信 · 微信H5
+                  </Item>
+                  <Descript>
+                    项目简介：为艾博公司构建了一套基于微信H5的线上销售系统，包含登录注册，购买艾博会员卡，积分转账等页面
+                  </Descript>
+                  <Descript>
+                    技术栈：<span>webpack</span> <span>handlebars</span> <span>sass</span> <span>jQuery</span>。
+                    主要负责：<span>项目配置</span>
+                    使用webpack配置项目，使用Ejs、Zeptojs、Sass等实现组件化,
+                    <span>用户登录</span>、<span>会员信息</span>等页面。
+                    最后将整个项目初始配置封装成
+                    <span>kaixin-cli</span>
+                    脚手架工具,方便后续开发H5项目，这个项目是自己第一次参与的<span>团队合作</span> <span></span>的项目，
+                  </Descript>
                   <Item time="2018.08" tag="Link">
                     水上团建项目 · 小程序
                   </Item>
                   <Descript>
-                    <span>一期开发</span>
-                    <span>页面重构</span>
-                    采用原生语法对小程序进行一期开发
-                    <span>逻辑层</span>
-                    采用组件化开发。此外,用
-                    <span>ant-design-pro</span>
-                    相关技术对管理端进行一期开发。 主要负责前后端登录和用户管理
+                    项目简介：该小程序用于线上支持预约服务。消费者可以通过该小程序预约华仁启智公司的团建活动，购买会员服务服务和获取最近活动动态等信息。
                   </Descript>
-                  <Item time="2017.12" tag="Link">
-                    ABO微信 · 微信H5
-                  </Item>
                   <Descript>
-                    <span>项目配置</span>、<span>项目负责</span>
-                    使用webpack配置项目，使用Ejs、Zeptojs、Sass等实现组件化,并且将整个项目初始配置封装成
-                    <span>kaixin-cli</span>
-                    脚手架工具,方便后续开发H5项目
-                  </Descript>
-                  <Item time="2018.02" tag="Link">
-                    搭建系统 · 搭建生态
-                  </Item>
-                  <Descript>
-                    <span>成长系统</span>、<span>后端支持</span>
-                    大四学长带着做的一套
-                    <span>模块化搭建平台</span>
-                    系统，实现活动页的
-                    <span>可视化</span>
-                    操作、预览、发布、修改页面的功能，前期主要使用
-                    <span>Egg</span>
-                    负责搭建系统核心生态后端的构建和
-                    <span>管理端</span>
-                    的开发，弄懂整套系统的设计，后期作为系统的
-                    <span>负责人</span>
-                    ，提出想法，并牵头进行开发，搭建并且维护线上
-                    <span>Linux服务器环境</span>
+                  技术栈：<span>ant-design-pro</span> <span>react</span> <span>egg</span> <span>原生微信小程序</span> <span>mysql</span>。
+                    主要负责: 商品相关的所有页面、后期重构代码、前后端登录、管理端用户管理页面
                   </Descript>
                 </Dividing>
               </section>
@@ -311,12 +297,19 @@ export default class Resume extends Component {
                     <span>同构处理</span>
                     ，后端使用
                     <span>Koa</span>和<span>mysql</span>
-                    技术栈提供后台服务，管理端使用antd-desgin进行搭建，并进行部署上线，使用
+                    技术栈提供后台服务，并进行部署上线，使用
                     <span>nginx</span>和<span>node</span>
                     部署，
                     <span>按需加载</span>、<span>预加载</span>
-                    等降低首屏渲染时间，为用户提供快速的响应，和优秀的网站体验，并将项目的项目的几个功能点抽离出来上传到npm进行开源，此站点也是自己尝试新技术提升网站性能的实验站点。
+                    等降低首屏渲染时间，为用户提供快速的响应，和优秀的网站体验，此站点用来分享自己平常所学。另外，也是自己尝试新技术提升网站性能的实验站点。
                   </Descript>
+                </Dividing>
+              </section>
+              <section>
+                <Dividing title="荣誉奖项">
+                  <Item time="2016.09 ~ 2018.09" tag="校级">
+                    学业奖学金(两次)
+                  </Item>
                 </Dividing>
               </section>
             </div>
