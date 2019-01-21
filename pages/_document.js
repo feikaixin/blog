@@ -16,7 +16,7 @@ export default class MyDocument extends Document {
           <link rel="icon" type="image/png" sizes="16x16" href="/static/images/favicon.png"></link>
           <link rel='stylesheet' type='text/css' href='/static/style/nprogress.css' />
           <link rel='stylesheet' type='text/css' href='/static/style/common/common.css' />
-          <link rel='stylesheet' type='text/css' href='https://cdn.jsdelivr.net/bootstrap/3.2.0/css/bootstrap.css' />
+          {/* <link rel='stylesheet' type='text/css' href='https://cdn.jsdelivr.net/bootstrap/3.2.0/css/bootstrap.css' /> */}
         </Head>
         <body className="custom_class">
         
