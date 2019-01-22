@@ -30,7 +30,7 @@ export default class Content extends React.Component {
               background:maroon; 
               color:#fff;
           }
-          p img {
+          img:nth-of-type(1) {
             width: 90%;
             height: 440px;
             margin-top: 30px;
