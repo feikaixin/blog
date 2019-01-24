@@ -4,7 +4,6 @@ import ToTop from "../components/ToTop";
 import Article from "../components/Article";
 import Search from "../components/Search";
 import Footer from "../components/Footer";
-import PageProgress from "../components/PageProgress";
 import Pagination from "../components/Pagination";
 export default class BasicLayout extends React.Component {
   constructor(props) {
@@ -18,10 +17,11 @@ export default class BasicLayout extends React.Component {
     const { title, data:{ pagination, list } } = this.props;
     return (
       <div className="wrapper">
-        <PageProgress />
         <Head title={title || "博客"} />
         <div className="head_search">
-          <Search onChange={this.handleChange} />
+          <Search 
+            onChange={this.handleChange} 
+          />
         </div>
         <div className="artical">
           {list.map((item, index) => (

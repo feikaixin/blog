@@ -31,6 +31,7 @@
     "log4js": "^3.0.6",
     "lru-cache": "^4.1.3",
     "markdown-it": "^8.4.2",
+    "markdown-it-emoji": "^1.4.0",
     "marked": "^0.5.2",
     "moment": "^2.22.2",
     "mysql": "^2.16.0",

@@ -5,6 +5,7 @@ const Cache = require('../../utils/Cache');
 const cache = Cache.createCache(apiCache);
 const getArticleCache = cache(service.pc.getArticle);
 const getArticalDetail = cache(service.pc.getDetail);
+const getArticleSearch = cache(service.pc.getSearch);
 module.exports = {
   async articleList(ctx, next) {
     const { page } = ctx.request.body;
@@ -31,7 +32,21 @@ module.exports = {
       }
     } catch (error) {
       ctx.logger.error(ctx.url, ctx.request.body, e);
-      ctx.body = Tip.datebaseError;
+      ctx.body = Tips.datebaseError;
+    }
+  },
+  async articleSearch(ctx, next) {
+    const { search } = ctx.request.body;
+    let data = null;
+    try {
+      data = await getArticleSearch({search});
+      ctx.body = {
+        ...Tips.ok,
+        data
+      }
+    } catch (e) {
+      ctx.logger.error(ctx.url, ctx.request.body, e);
+      ctx.body = Tips.datebaseError;
     }
   }
 };

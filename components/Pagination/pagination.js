@@ -108,7 +108,7 @@ class Pagination extends Component {
       if (item.isDisabled) className.push("disabled");
       const { domain, paramName, isAs, asDomain } = this.props;
       return (
-        <li className={className.join(" ")} onClick={item.func}>
+        <li className={className.join(" ")} onClick={item.func} key={index}>
           {!(
             className.includes("disabled") || className.includes("nowIndex")
           ) ? (

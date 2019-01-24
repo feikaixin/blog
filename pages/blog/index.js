@@ -17,6 +17,9 @@ export default class BlogPage extends React.Component {
     return { pagination, list };
   }
   componentDidMount() {
+    this.layLoad();
+  }
+  layLoad() {
     let imageArr = Array.prototype.slice.call(
       document.querySelectorAll(".bg_img")
     );
@@ -84,6 +87,12 @@ export default class BlogPage extends React.Component {
         }
       }
     }
+  }
+  componentDidUpdate() {
+    this.layLoad();
+  }
+  componentWillUnmount() {
+    document.removeEventListener("scroll", this._throttleFn);
   }
   render() {
     const data = this.props;

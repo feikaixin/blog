@@ -1,0 +1,76 @@
+[2019-01-24T16:52:25.270][ERROR  10632  default] /api/article/search { search: 'p' } { Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%p% or description like %p%' at line 1
+    at Query.Sequence._packetToError (D:\vscode_daima\blog\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\vscode_daima\blog\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+    at Protocol._parsePacket (D:\vscode_daima\blog\node_modules\mysql\lib\protocol\Protocol.js:278:23)
+    at Parser.write (D:\vscode_daima\blog\node_modules\mysql\lib\protocol\Parser.js:76:12)
+    at Protocol.write (D:\vscode_daima\blog\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\vscode_daima\blog\node_modules\mysql\lib\Connection.js:91:28)
+    at Socket.<anonymous> (D:\vscode_daima\blog\node_modules\mysql\lib\Connection.js:502:10)
+    at Socket.emit (events.js:182:13)
+    at addChunk (_stream_readable.js:283:12)
+    at readableAddChunk (_stream_readable.js:264:11)
+    at Socket.Readable.push (_stream_readable.js:219:10)
+    at TCP.onread (net.js:639:20)
+    --------------------
+    at Protocol._enqueue (D:\vscode_daima\blog\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at PoolConnection.query (D:\vscode_daima\blog\node_modules\mysql\lib\Connection.js:200:25)
+    at pool.getConnection (D:\vscode_daima\blog\server\db\index.js:11:20)
+    at Handshake.onConnect (D:\vscode_daima\blog\node_modules\mysql\lib\Pool.js:64:7)
+    at Handshake.<anonymous> (D:\vscode_daima\blog\node_modules\mysql\lib\Connection.js:502:10)
+    at Handshake._callback (D:\vscode_daima\blog\node_modules\mysql\lib\Connection.js:468:16)
+    at Handshake.Sequence.end (D:\vscode_daima\blog\node_modules\mysql\lib\protocol\sequences\Sequence.js:83:24)
+    at Handshake.Sequence.OkPacket (D:\vscode_daima\blog\node_modules\mysql\lib\protocol\sequences\Sequence.js:92:8)
+    at Protocol._parsePacket (D:\vscode_daima\blog\node_modules\mysql\lib\protocol\Protocol.js:278:23)
+    at Parser.write (D:\vscode_daima\blog\node_modules\mysql\lib\protocol\Parser.js:76:12)
+    at Protocol.write (D:\vscode_daima\blog\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\vscode_daima\blog\node_modules\mysql\lib\Connection.js:91:28)
+    at Socket.<anonymous> (D:\vscode_daima\blog\node_modules\mysql\lib\Connection.js:502:10)
+    at Socket.emit (events.js:182:13)
+    at addChunk (_stream_readable.js:283:12)
+    at readableAddChunk (_stream_readable.js:264:11)
+  code: 'ER_PARSE_ERROR',
+  errno: 1064,
+  sqlMessage:
+   'You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near \'%p% or description like %p%\' at line 1',
+  sqlState: '42000',
+  index: 0,
+  sql:
+   'SELECT title, update_time, description, bg_img, id as article_id FROM artical WHERE title LIKE %p% or description like %p%' }
+[2019-01-24T16:54:13.851][ERROR  6340  default] /api/article/search { search: 'p' } { Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%p% or description like %p%' at line 1
+    at Query.Sequence._packetToError (D:\vscode_daima\blog\node_modules\mysql\lib\protocol\sequences\Sequence.js:47:14)
+    at Query.ErrorPacket (D:\vscode_daima\blog\node_modules\mysql\lib\protocol\sequences\Query.js:77:18)
+    at Protocol._parsePacket (D:\vscode_daima\blog\node_modules\mysql\lib\protocol\Protocol.js:278:23)
+    at Parser.write (D:\vscode_daima\blog\node_modules\mysql\lib\protocol\Parser.js:76:12)
+    at Protocol.write (D:\vscode_daima\blog\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\vscode_daima\blog\node_modules\mysql\lib\Connection.js:91:28)
+    at Socket.<anonymous> (D:\vscode_daima\blog\node_modules\mysql\lib\Connection.js:502:10)
+    at Socket.emit (events.js:182:13)
+    at addChunk (_stream_readable.js:283:12)
+    at readableAddChunk (_stream_readable.js:264:11)
+    at Socket.Readable.push (_stream_readable.js:219:10)
+    at TCP.onread (net.js:639:20)
+    --------------------
+    at Protocol._enqueue (D:\vscode_daima\blog\node_modules\mysql\lib\protocol\Protocol.js:144:48)
+    at PoolConnection.query (D:\vscode_daima\blog\node_modules\mysql\lib\Connection.js:200:25)
+    at pool.getConnection (D:\vscode_daima\blog\server\db\index.js:11:20)
+    at Handshake.onConnect (D:\vscode_daima\blog\node_modules\mysql\lib\Pool.js:64:7)
+    at Handshake.<anonymous> (D:\vscode_daima\blog\node_modules\mysql\lib\Connection.js:502:10)
+    at Handshake._callback (D:\vscode_daima\blog\node_modules\mysql\lib\Connection.js:468:16)
+    at Handshake.Sequence.end (D:\vscode_daima\blog\node_modules\mysql\lib\protocol\sequences\Sequence.js:83:24)
+    at Handshake.Sequence.OkPacket (D:\vscode_daima\blog\node_modules\mysql\lib\protocol\sequences\Sequence.js:92:8)
+    at Protocol._parsePacket (D:\vscode_daima\blog\node_modules\mysql\lib\protocol\Protocol.js:278:23)
+    at Parser.write (D:\vscode_daima\blog\node_modules\mysql\lib\protocol\Parser.js:76:12)
+    at Protocol.write (D:\vscode_daima\blog\node_modules\mysql\lib\protocol\Protocol.js:38:16)
+    at Socket.<anonymous> (D:\vscode_daima\blog\node_modules\mysql\lib\Connection.js:91:28)
+    at Socket.<anonymous> (D:\vscode_daima\blog\node_modules\mysql\lib\Connection.js:502:10)
+    at Socket.emit (events.js:182:13)
+    at addChunk (_stream_readable.js:283:12)
+    at readableAddChunk (_stream_readable.js:264:11)
+  code: 'ER_PARSE_ERROR',
+  errno: 1064,
+  sqlMessage:
+   'You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near \'%p% or description like %p%\' at line 1',
+  sqlState: '42000',
+  index: 0,
+  sql:
+   'SELECT title, update_time, description, bg_img, id as article_id FROM artical WHERE title LIKE %p% or description like %p%' }

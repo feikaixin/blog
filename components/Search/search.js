@@ -1,14 +1,12 @@
 /*
- * @Author: FeiKaiXin 
- * @Date: 2018-10-16 13:30:04 
+ * @Author: FeiKaiXin
+ * @Date: 2018-10-16 13:30:04
  * @Last Modified by: FeiKaiXin
- * @Last Modified time: 2018-11-09 14:49:34
+ * @Last Modified time: 2019-01-24 19:45:18
  */
-
 
 import React from "react";
 import Icon from "../Icon";
-
 const Style = () => (
   <style jsx="true">{`
     .search {
@@ -19,41 +17,47 @@ const Style = () => (
       text-align: center;
       font-size: 16px;
     }
-    .search input{
+    .search input {
       width: 90%;
       padding-left: 8px;
       margin-left: 10px;
       font-size: 16px;
       border-bottom: 1px solid #ccc;
-      transition: all .3s;
+      transition: all 0.3s;
     }
-    .search input:focus{
+    .search input:focus {
       border-bottom: 1px solid #666;
     }
   `}</style>
 );
 export default class Search extends React.PureComponent {
-  constructor(props){
+  constructor(props) {
     super(props);
     this.state = {
-      value: ''
-    }
+      value: ""
+    };
   }
   // 防抖还没做
-  handleChange = (e) => {
+  handleChange = e => {
     const { onChange } = this.props;
     const value = e.target.value;
     this.setState({
-      value,
+      value
     });
     onChange && onChange(value);
-  }
+  };
   render() {
     const { value } = this.state;
     return (
       <div className="search">
         <Icon icon="search" />
-        <input type="text" name="search" placeholder='搜索...' value={value} onChange={this.handleChange}/>
+        <input
+          type="text"
+          name="search"
+          placeholder="搜索..."
+          value={value}
+          onChange={this.handleChange}
+        />
         <Style />
       </div>
     );
