@@ -224,7 +224,7 @@ export default class Resume extends Component {
                   <Descript isItem>
                     有<span>全栈开发</span>
                     项目经验，使用
-                    <span>Koa</span>、<span>Next</span>、<span></span>开发个人站点。
+                    <span>Koa</span>、<span>Next</span>、开发个人站点。
                   </Descript>
                   <Descript isItem>
                     对<span>数据库</span>、
@@ -268,7 +268,7 @@ export default class Resume extends Component {
             <div className="right item">
               <section>
                 <Dividing title="项目经验">
-                  <Item time="2017.09" tag="Link">
+                  <Item time="2017.09">
                     ABO微信 · 微信H5
                   </Item>
                   <Descript>
@@ -285,7 +285,7 @@ export default class Resume extends Component {
                     <span>kaixin-cli</span>
                     脚手架工具,方便后续开发H5项目，这个项目是自己第一次参与的<span>团队合作</span>的项目，
                   </Descript>
-                  <Item time="2018.08" tag="Link">
+                  <Item time="2018.08">
                     水上团建项目 · 小程序
                   </Item>
                   <Descript>
@@ -302,7 +302,7 @@ export default class Resume extends Component {
               </section>
               <section>
                 <Dividing title="个人作品">
-                  <Item time="2018.09 ~ 至今" tag="Link">
+                  <Item time="2018.09 ~ 至今">
                     个人站点建设
                   </Item>
                   <Descript>
