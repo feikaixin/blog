@@ -48,7 +48,7 @@ async function getSearch({ search }) {
   try {
     let data = await Promise.all([mysql.query(sql)]);
     result = {
-      list: data
+      list: data[0]
     }
   } catch (e) {
     throw e;

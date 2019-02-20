@@ -6,7 +6,7 @@ const router = new Router();
 // 文章列表
 router.post('/api/article/list',controller.pc.articleList);
 router.post('/api/article/detail/:id',controller.pc.articleDetail);
-router.get('/api/article/search',controller.pc.articleSearch);
+router.post('/api/article/search',controller.pc.articleSearch);
 
 
 

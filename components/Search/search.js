@@ -1,8 +1,8 @@
 /*
  * @Author: FeiKaiXin
  * @Date: 2018-10-16 13:30:04
- * @Last Modified by: FeiKaiXin
- * @Last Modified time: 2019-01-24 19:45:18
+ * @Last Modified by: 费凯鑫
+ * @Last Modified time: 2019-02-20 11:00:42
  */
 
 import React from "react";
@@ -45,7 +45,13 @@ export default class Search extends React.PureComponent {
       value
     });
     onChange && onChange(value);
-  };
+  }
+
+  handleKeydown = e => {
+    const { onKeyDown } = this.props;
+    const { value } = this.state;
+    onKeyDown && onKeyDown(value, e);
+  }
   render() {
     const { value } = this.state;
     return (
@@ -57,6 +63,7 @@ export default class Search extends React.PureComponent {
           placeholder="搜索..."
           value={value}
           onChange={this.handleChange}
+          onKeyDown={this.handleKeydown}
         />
         <Style />
       </div>

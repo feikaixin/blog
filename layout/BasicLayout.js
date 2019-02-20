@@ -1,4 +1,5 @@
 import React from "react";
+import Router from 'next/router';
 import Head from "../components/Head";
 import ToTop from "../components/ToTop";
 import Article from "../components/Article";
@@ -9,8 +10,12 @@ export default class BasicLayout extends React.Component {
   constructor(props) {
     super(props);
   }
-  handleChange = () => {
-    console.log("a");
+  handleKeydown = (value, e) => {
+    if(e.keyCode !== 13) return;
+    Router.push({
+      pathname: '/blog/search',
+      query: {q: value}
+    })
   };
 
   render() {
@@ -20,7 +25,7 @@ export default class BasicLayout extends React.Component {
         <Head title={title || "博客"} />
         <div className="head_search">
           <Search 
-            onChange={this.handleChange} 
+            onKeyDown={this.handleKeydown} 
           />
         </div>
         <div className="artical">
