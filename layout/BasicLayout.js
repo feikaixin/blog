@@ -11,10 +11,11 @@ export default class BasicLayout extends React.Component {
     super(props);
   }
   handleKeydown = (value, e) => {
+    let q = value.replace(/\s+/g,'');
     if(e.keyCode !== 13) return;
     Router.push({
       pathname: '/blog/search',
-      query: {q: value}
+      query: {q}
     })
   };
 
