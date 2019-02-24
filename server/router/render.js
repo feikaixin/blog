@@ -30,7 +30,7 @@ function renderAndCache(ctx, pagePath, queryParams) {
     .then(html => {
       // Let's cache this page
       ctx.body = html;
-      // ssrCache.set(key, html);
+      ssrCache.set(key, html);
     })
     .catch(err => {
       console.log("render error");

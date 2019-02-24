@@ -14,7 +14,7 @@ const Style = () => (
       }
       .blog_bg {
         width: 100vw;
-        height: 50vh;
+        height: 400px;
         vertical-align: middle;
       }
       .avator {

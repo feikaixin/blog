@@ -19,10 +19,10 @@ class Search extends Component {
     return (
       <div className='wrap'>
         <Head title='博客' />
-        <div className="artical" style={{marginTop: '30px',textAlign:'center'}}>
+        <div className="artical" style={{marginTop: '30px'}}>
           {list.length !== 0 ? list.map((item, index) => (
             <Article key={index} isLeft={index % 2 === 0 ? true : false} data={item}/>
-          )) : <img src='/static/images/blank.png' style={{width:'960px'}}/>}
+          )) : <img src='/static/images/blank.png' style={{width:'960px',display:'block',margin:'0 auto'}}/>}
         </div>
         <Footer />
       </div>
