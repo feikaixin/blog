@@ -167,7 +167,7 @@ export default class Resume extends Component {
                   <a href="https://github.com/feikaixin">
                     github.com/feikaixin
                     <span>
-                      <Icon icon={["fab", "github"]} />
+                      <Icon icon="github" />
                     </span>
                   </a>
                 </li>

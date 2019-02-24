@@ -46,9 +46,6 @@ const Style = () => (
       a {
         text-decoration: none;
       }
-      .icon{
-        margin-right: 4px;
-      }
     `}</style>
     <style global jsx>{`
       * {
@@ -84,7 +81,7 @@ const ButtonData = [
   },
   {
     name: "GITHUB",
-    icon: ["fab", "github"],
+    icon: "github",
     href: "https://github.com/feikaixin"
   }
 ];
@@ -110,7 +107,7 @@ export default class IndexPage extends React.Component {
             {ButtonData.map((item, index) => (
               <li key={index}>
                 <Button href={item.href}>
-                  <Icon icon={item.icon} className='icon'/>
+                  <Icon icon={item.icon}/>
                   {item.name}
                 </Button>
               </li>

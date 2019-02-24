@@ -16,6 +16,9 @@ export default class MyDocument extends Document {
           <link rel="icon" type="image/png" sizes="16x16" href="/static/images/favicon.png"></link>
           <link rel='stylesheet' type='text/css' href='/static/style/nprogress.css' />
           <link rel='stylesheet' type='text/css' href='/static/style/common/common.css' />
+          <link rel="stylesheet" href="/static/fontawesome-free-5.3.1-web/css/solid.min.css" />
+          <link rel="stylesheet" href="/static/fontawesome-free-5.3.1-web/css/brands.min.css" />
+          <link rel="stylesheet" href="/static/fontawesome-free-5.3.1-web/css/fontawesome.min.css" />
         </Head>
         <body className="custom_class">
         

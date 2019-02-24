@@ -1,14 +1,14 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import React from "react";
+import React from 'react';
+import PropTypes from 'prop-types';
 
-export default class Icon extends React.Component {
-	constructor(props){
-		super(props);
-	}
-	render() {
-		const { icon,className } = this.props;
-		return (
-      <FontAwesomeIcon icon={icon} className={className} style={{width:'18px'}}></FontAwesomeIcon>
-		);
-	}
-}
+const Icon = ({ icon }) => (
+  <span>
+    <i className={`fa${icon==='github'?'b':'s'} fa-${icon}`} style={{marginRight:'4px'}}/>
+  </span>
+);
+
+Icon.propTypes = {
+  icon: PropTypes.string.isRequired,
+};
+
+export default Icon;
