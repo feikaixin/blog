@@ -9,12 +9,15 @@ const koaBody = require("koa-body");
 const KoaSession = require("koa-session");
 const routers = require("./router/index");
 const koaLogger = require('./middleware/log.js');
+const koaHeader = require('./middleware/addHeader');
 app.prepare().then(() => {
   const server = new Koa();
   server.keys = ["some sercert hahaha"];
   server.use(koaBody());
   // 挂载logger
   server.use(koaLogger);
+  // 添加header
+  server.use(koaHeader);
   // 添加相关路由
   routers.map(item => {
     server.use(item.routes());
