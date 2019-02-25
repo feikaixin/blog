@@ -12,7 +12,7 @@
     "build": "next build",
     "start": "cross-env NODE_ENV=production node server/index.js",
     "lint": "eslint --ext .js pages",
-    "deploy": "npm run build && pm2 stop index &&cross-env NODE_ENV=production pm2 start server/index.js"
+    "deploy": "npm run build && cross-env NODE_ENV=production pm2 start server/index.js"
   },
   "author": "feikaixin",
   "license": "ISC",
