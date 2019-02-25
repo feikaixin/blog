@@ -5,8 +5,11 @@ import request from '../../utils/request';
 export default class Index extends Component {
   static async getInitialProps({query}) {
     let data = null;
-    let id;
-    const res = await request(`/api/article/detail/${query.id}`);
+    const res = await request(`/api/article/detail`,{
+      body: JSON.stringify({
+        id: query.id
+      })
+    });
     data = res.data;
     return {
       data

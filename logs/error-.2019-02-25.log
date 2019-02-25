@@ -1,0 +1,407 @@
+[2019-02-25T12:23:47.508][ERROR  2760  default] /api/article/detail/search {} { Error: ER_BAD_FIELD_ERROR: Unknown column 'search' in 'where clause'
+    at Query.Sequence._packetToError (/Users/feikaixin/work/2019/vscode/blog/node_modules/mysql/lib/protocol/sequences/Sequence.js:47:14)
+    at Query.ErrorPacket (/Users/feikaixin/work/2019/vscode/blog/node_modules/mysql/lib/protocol/sequences/Query.js:77:18)
+    at Protocol._parsePacket (/Users/feikaixin/work/2019/vscode/blog/node_modules/mysql/lib/protocol/Protocol.js:278:23)
+    at Parser.write (/Users/feikaixin/work/2019/vscode/blog/node_modules/mysql/lib/protocol/Parser.js:76:12)
+    at Protocol.write (/Users/feikaixin/work/2019/vscode/blog/node_modules/mysql/lib/protocol/Protocol.js:38:16)
+    at Socket.<anonymous> (/Users/feikaixin/work/2019/vscode/blog/node_modules/mysql/lib/Connection.js:91:28)
+    at Socket.<anonymous> (/Users/feikaixin/work/2019/vscode/blog/node_modules/mysql/lib/Connection.js:502:10)
+    at Socket.emit (events.js:189:13)
+    at addChunk (_stream_readable.js:284:12)
+    at readableAddChunk (_stream_readable.js:265:11)
+    at Socket.Readable.push (_stream_readable.js:220:10)
+    at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+    --------------------
+    at Protocol._enqueue (/Users/feikaixin/work/2019/vscode/blog/node_modules/mysql/lib/protocol/Protocol.js:144:48)
+    at PoolConnection.query (/Users/feikaixin/work/2019/vscode/blog/node_modules/mysql/lib/Connection.js:200:25)
+    at pool.getConnection (/Users/feikaixin/work/2019/vscode/blog/server/db/index.js:11:20)
+    at Ping.onOperationComplete (/Users/feikaixin/work/2019/vscode/blog/node_modules/mysql/lib/Pool.js:110:5)
+    at Ping.<anonymous> (/Users/feikaixin/work/2019/vscode/blog/node_modules/mysql/lib/Connection.js:502:10)
+    at Ping._callback (/Users/feikaixin/work/2019/vscode/blog/node_modules/mysql/lib/Connection.js:468:16)
+    at Ping.Sequence.end (/Users/feikaixin/work/2019/vscode/blog/node_modules/mysql/lib/protocol/sequences/Sequence.js:83:24)
+    at Ping.Sequence.OkPacket (/Users/feikaixin/work/2019/vscode/blog/node_modules/mysql/lib/protocol/sequences/Sequence.js:92:8)
+    at Protocol._parsePacket (/Users/feikaixin/work/2019/vscode/blog/node_modules/mysql/lib/protocol/Protocol.js:278:23)
+    at Parser.write (/Users/feikaixin/work/2019/vscode/blog/node_modules/mysql/lib/protocol/Parser.js:76:12)
+    at Protocol.write (/Users/feikaixin/work/2019/vscode/blog/node_modules/mysql/lib/protocol/Protocol.js:38:16)
+    at Socket.<anonymous> (/Users/feikaixin/work/2019/vscode/blog/node_modules/mysql/lib/Connection.js:91:28)
+    at Socket.<anonymous> (/Users/feikaixin/work/2019/vscode/blog/node_modules/mysql/lib/Connection.js:502:10)
+    at Socket.emit (events.js:189:13)
+    at addChunk (_stream_readable.js:284:12)
+    at readableAddChunk (_stream_readable.js:265:11)
+  code: 'ER_BAD_FIELD_ERROR',
+  errno: 1054,
+  sqlMessage: 'Unknown column \'search\' in \'where clause\'',
+  sqlState: '42S22',
+  index: 0,
+  sql:
+   'SELECT title, update_time, content, bg_music, description, bg_img, id as article_id FROM artical WHERE id = search LIMIT 0,10' }
+[2019-02-25T12:23:51.218][ERROR  2760  default] /api/article/detail/search {} { Error: ER_BAD_FIELD_ERROR: Unknown column 'search' in 'where clause'
+    at Query.Sequence._packetToError (/Users/feikaixin/work/2019/vscode/blog/node_modules/mysql/lib/protocol/sequences/Sequence.js:47:14)
+    at Query.ErrorPacket (/Users/feikaixin/work/2019/vscode/blog/node_modules/mysql/lib/protocol/sequences/Query.js:77:18)
+    at Protocol._parsePacket (/Users/feikaixin/work/2019/vscode/blog/node_modules/mysql/lib/protocol/Protocol.js:278:23)
+    at Parser.write (/Users/feikaixin/work/2019/vscode/blog/node_modules/mysql/lib/protocol/Parser.js:76:12)
+    at Protocol.write (/Users/feikaixin/work/2019/vscode/blog/node_modules/mysql/lib/protocol/Protocol.js:38:16)
+    at Socket.<anonymous> (/Users/feikaixin/work/2019/vscode/blog/node_modules/mysql/lib/Connection.js:91:28)
+    at Socket.<anonymous> (/Users/feikaixin/work/2019/vscode/blog/node_modules/mysql/lib/Connection.js:502:10)
+    at Socket.emit (events.js:189:13)
+    at addChunk (_stream_readable.js:284:12)
+    at readableAddChunk (_stream_readable.js:265:11)
+    at Socket.Readable.push (_stream_readable.js:220:10)
+    at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+    --------------------
+    at Protocol._enqueue (/Users/feikaixin/work/2019/vscode/blog/node_modules/mysql/lib/protocol/Protocol.js:144:48)
+    at PoolConnection.query (/Users/feikaixin/work/2019/vscode/blog/node_modules/mysql/lib/Connection.js:200:25)
+    at pool.getConnection (/Users/feikaixin/work/2019/vscode/blog/server/db/index.js:11:20)
+    at Ping.onOperationComplete (/Users/feikaixin/work/2019/vscode/blog/node_modules/mysql/lib/Pool.js:110:5)
+    at Ping.<anonymous> (/Users/feikaixin/work/2019/vscode/blog/node_modules/mysql/lib/Connection.js:502:10)
+    at Ping._callback (/Users/feikaixin/work/2019/vscode/blog/node_modules/mysql/lib/Connection.js:468:16)
+    at Ping.Sequence.end (/Users/feikaixin/work/2019/vscode/blog/node_modules/mysql/lib/protocol/sequences/Sequence.js:83:24)
+    at Ping.Sequence.OkPacket (/Users/feikaixin/work/2019/vscode/blog/node_modules/mysql/lib/protocol/sequences/Sequence.js:92:8)
+    at Protocol._parsePacket (/Users/feikaixin/work/2019/vscode/blog/node_modules/mysql/lib/protocol/Protocol.js:278:23)
+    at Parser.write (/Users/feikaixin/work/2019/vscode/blog/node_modules/mysql/lib/protocol/Parser.js:76:12)
+    at Protocol.write (/Users/feikaixin/work/2019/vscode/blog/node_modules/mysql/lib/protocol/Protocol.js:38:16)
+    at Socket.<anonymous> (/Users/feikaixin/work/2019/vscode/blog/node_modules/mysql/lib/Connection.js:91:28)
+    at Socket.<anonymous> (/Users/feikaixin/work/2019/vscode/blog/node_modules/mysql/lib/Connection.js:502:10)
+    at Socket.emit (events.js:189:13)
+    at addChunk (_stream_readable.js:284:12)
+    at readableAddChunk (_stream_readable.js:265:11)
+  code: 'ER_BAD_FIELD_ERROR',
+  errno: 1054,
+  sqlMessage: 'Unknown column \'search\' in \'where clause\'',
+  sqlState: '42S22',
+  index: 0,
+  sql:
+   'SELECT title, update_time, content, bg_music, description, bg_img, id as article_id FROM artical WHERE id = search LIMIT 0,10' }
+[2019-02-25T12:23:55.442][ERROR  2760  default] /api/article/detail/search {} { Error: ER_BAD_FIELD_ERROR: Unknown column 'search' in 'where clause'
+    at Query.Sequence._packetToError (/Users/feikaixin/work/2019/vscode/blog/node_modules/mysql/lib/protocol/sequences/Sequence.js:47:14)
+    at Query.ErrorPacket (/Users/feikaixin/work/2019/vscode/blog/node_modules/mysql/lib/protocol/sequences/Query.js:77:18)
+    at Protocol._parsePacket (/Users/feikaixin/work/2019/vscode/blog/node_modules/mysql/lib/protocol/Protocol.js:278:23)
+    at Parser.write (/Users/feikaixin/work/2019/vscode/blog/node_modules/mysql/lib/protocol/Parser.js:76:12)
+    at Protocol.write (/Users/feikaixin/work/2019/vscode/blog/node_modules/mysql/lib/protocol/Protocol.js:38:16)
+    at Socket.<anonymous> (/Users/feikaixin/work/2019/vscode/blog/node_modules/mysql/lib/Connection.js:91:28)
+    at Socket.<anonymous> (/Users/feikaixin/work/2019/vscode/blog/node_modules/mysql/lib/Connection.js:502:10)
+    at Socket.emit (events.js:189:13)
+    at addChunk (_stream_readable.js:284:12)
+    at readableAddChunk (_stream_readable.js:265:11)
+    at Socket.Readable.push (_stream_readable.js:220:10)
+    at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+    --------------------
+    at Protocol._enqueue (/Users/feikaixin/work/2019/vscode/blog/node_modules/mysql/lib/protocol/Protocol.js:144:48)
+    at PoolConnection.query (/Users/feikaixin/work/2019/vscode/blog/node_modules/mysql/lib/Connection.js:200:25)
+    at pool.getConnection (/Users/feikaixin/work/2019/vscode/blog/server/db/index.js:11:20)
+    at Ping.onOperationComplete (/Users/feikaixin/work/2019/vscode/blog/node_modules/mysql/lib/Pool.js:110:5)
+    at Ping.<anonymous> (/Users/feikaixin/work/2019/vscode/blog/node_modules/mysql/lib/Connection.js:502:10)
+    at Ping._callback (/Users/feikaixin/work/2019/vscode/blog/node_modules/mysql/lib/Connection.js:468:16)
+    at Ping.Sequence.end (/Users/feikaixin/work/2019/vscode/blog/node_modules/mysql/lib/protocol/sequences/Sequence.js:83:24)
+    at Ping.Sequence.OkPacket (/Users/feikaixin/work/2019/vscode/blog/node_modules/mysql/lib/protocol/sequences/Sequence.js:92:8)
+    at Protocol._parsePacket (/Users/feikaixin/work/2019/vscode/blog/node_modules/mysql/lib/protocol/Protocol.js:278:23)
+    at Parser.write (/Users/feikaixin/work/2019/vscode/blog/node_modules/mysql/lib/protocol/Parser.js:76:12)
+    at Protocol.write (/Users/feikaixin/work/2019/vscode/blog/node_modules/mysql/lib/protocol/Protocol.js:38:16)
+    at Socket.<anonymous> (/Users/feikaixin/work/2019/vscode/blog/node_modules/mysql/lib/Connection.js:91:28)
+    at Socket.<anonymous> (/Users/feikaixin/work/2019/vscode/blog/node_modules/mysql/lib/Connection.js:502:10)
+    at Socket.emit (events.js:189:13)
+    at addChunk (_stream_readable.js:284:12)
+    at readableAddChunk (_stream_readable.js:265:11)
+  code: 'ER_BAD_FIELD_ERROR',
+  errno: 1054,
+  sqlMessage: 'Unknown column \'search\' in \'where clause\'',
+  sqlState: '42S22',
+  index: 0,
+  sql:
+   'SELECT title, update_time, content, bg_music, description, bg_img, id as article_id FROM artical WHERE id = search LIMIT 0,10' }
+[2019-02-25T12:27:10.184][ERROR  2760  default] /api/article/detail/search {} { Error: ER_BAD_FIELD_ERROR: Unknown column 'search' in 'where clause'
+    at Query.Sequence._packetToError (/Users/feikaixin/work/2019/vscode/blog/node_modules/mysql/lib/protocol/sequences/Sequence.js:47:14)
+    at Query.ErrorPacket (/Users/feikaixin/work/2019/vscode/blog/node_modules/mysql/lib/protocol/sequences/Query.js:77:18)
+    at Protocol._parsePacket (/Users/feikaixin/work/2019/vscode/blog/node_modules/mysql/lib/protocol/Protocol.js:278:23)
+    at Parser.write (/Users/feikaixin/work/2019/vscode/blog/node_modules/mysql/lib/protocol/Parser.js:76:12)
+    at Protocol.write (/Users/feikaixin/work/2019/vscode/blog/node_modules/mysql/lib/protocol/Protocol.js:38:16)
+    at Socket.<anonymous> (/Users/feikaixin/work/2019/vscode/blog/node_modules/mysql/lib/Connection.js:91:28)
+    at Socket.<anonymous> (/Users/feikaixin/work/2019/vscode/blog/node_modules/mysql/lib/Connection.js:502:10)
+    at Socket.emit (events.js:189:13)
+    at addChunk (_stream_readable.js:284:12)
+    at readableAddChunk (_stream_readable.js:265:11)
+    at Socket.Readable.push (_stream_readable.js:220:10)
+    at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+    --------------------
+    at Protocol._enqueue (/Users/feikaixin/work/2019/vscode/blog/node_modules/mysql/lib/protocol/Protocol.js:144:48)
+    at PoolConnection.query (/Users/feikaixin/work/2019/vscode/blog/node_modules/mysql/lib/Connection.js:200:25)
+    at pool.getConnection (/Users/feikaixin/work/2019/vscode/blog/server/db/index.js:11:20)
+    at Ping.onOperationComplete (/Users/feikaixin/work/2019/vscode/blog/node_modules/mysql/lib/Pool.js:110:5)
+    at Ping.<anonymous> (/Users/feikaixin/work/2019/vscode/blog/node_modules/mysql/lib/Connection.js:502:10)
+    at Ping._callback (/Users/feikaixin/work/2019/vscode/blog/node_modules/mysql/lib/Connection.js:468:16)
+    at Ping.Sequence.end (/Users/feikaixin/work/2019/vscode/blog/node_modules/mysql/lib/protocol/sequences/Sequence.js:83:24)
+    at Ping.Sequence.OkPacket (/Users/feikaixin/work/2019/vscode/blog/node_modules/mysql/lib/protocol/sequences/Sequence.js:92:8)
+    at Protocol._parsePacket (/Users/feikaixin/work/2019/vscode/blog/node_modules/mysql/lib/protocol/Protocol.js:278:23)
+    at Parser.write (/Users/feikaixin/work/2019/vscode/blog/node_modules/mysql/lib/protocol/Parser.js:76:12)
+    at Protocol.write (/Users/feikaixin/work/2019/vscode/blog/node_modules/mysql/lib/protocol/Protocol.js:38:16)
+    at Socket.<anonymous> (/Users/feikaixin/work/2019/vscode/blog/node_modules/mysql/lib/Connection.js:91:28)
+    at Socket.<anonymous> (/Users/feikaixin/work/2019/vscode/blog/node_modules/mysql/lib/Connection.js:502:10)
+    at Socket.emit (events.js:189:13)
+    at addChunk (_stream_readable.js:284:12)
+    at readableAddChunk (_stream_readable.js:265:11)
+  code: 'ER_BAD_FIELD_ERROR',
+  errno: 1054,
+  sqlMessage: 'Unknown column \'search\' in \'where clause\'',
+  sqlState: '42S22',
+  index: 0,
+  sql:
+   'SELECT title, update_time, content, bg_music, description, bg_img, id as article_id FROM artical WHERE id = search LIMIT 0,10' }
+[2019-02-25T12:27:10.646][ERROR  2760  default] /api/article/detail/search {} { Error: ER_BAD_FIELD_ERROR: Unknown column 'search' in 'where clause'
+    at Query.Sequence._packetToError (/Users/feikaixin/work/2019/vscode/blog/node_modules/mysql/lib/protocol/sequences/Sequence.js:47:14)
+    at Query.ErrorPacket (/Users/feikaixin/work/2019/vscode/blog/node_modules/mysql/lib/protocol/sequences/Query.js:77:18)
+    at Protocol._parsePacket (/Users/feikaixin/work/2019/vscode/blog/node_modules/mysql/lib/protocol/Protocol.js:278:23)
+    at Parser.write (/Users/feikaixin/work/2019/vscode/blog/node_modules/mysql/lib/protocol/Parser.js:76:12)
+    at Protocol.write (/Users/feikaixin/work/2019/vscode/blog/node_modules/mysql/lib/protocol/Protocol.js:38:16)
+    at Socket.<anonymous> (/Users/feikaixin/work/2019/vscode/blog/node_modules/mysql/lib/Connection.js:91:28)
+    at Socket.<anonymous> (/Users/feikaixin/work/2019/vscode/blog/node_modules/mysql/lib/Connection.js:502:10)
+    at Socket.emit (events.js:189:13)
+    at addChunk (_stream_readable.js:284:12)
+    at readableAddChunk (_stream_readable.js:265:11)
+    at Socket.Readable.push (_stream_readable.js:220:10)
+    at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+    --------------------
+    at Protocol._enqueue (/Users/feikaixin/work/2019/vscode/blog/node_modules/mysql/lib/protocol/Protocol.js:144:48)
+    at PoolConnection.query (/Users/feikaixin/work/2019/vscode/blog/node_modules/mysql/lib/Connection.js:200:25)
+    at pool.getConnection (/Users/feikaixin/work/2019/vscode/blog/server/db/index.js:11:20)
+    at Ping.onOperationComplete (/Users/feikaixin/work/2019/vscode/blog/node_modules/mysql/lib/Pool.js:110:5)
+    at Ping.<anonymous> (/Users/feikaixin/work/2019/vscode/blog/node_modules/mysql/lib/Connection.js:502:10)
+    at Ping._callback (/Users/feikaixin/work/2019/vscode/blog/node_modules/mysql/lib/Connection.js:468:16)
+    at Ping.Sequence.end (/Users/feikaixin/work/2019/vscode/blog/node_modules/mysql/lib/protocol/sequences/Sequence.js:83:24)
+    at Ping.Sequence.OkPacket (/Users/feikaixin/work/2019/vscode/blog/node_modules/mysql/lib/protocol/sequences/Sequence.js:92:8)
+    at Protocol._parsePacket (/Users/feikaixin/work/2019/vscode/blog/node_modules/mysql/lib/protocol/Protocol.js:278:23)
+    at Parser.write (/Users/feikaixin/work/2019/vscode/blog/node_modules/mysql/lib/protocol/Parser.js:76:12)
+    at Protocol.write (/Users/feikaixin/work/2019/vscode/blog/node_modules/mysql/lib/protocol/Protocol.js:38:16)
+    at Socket.<anonymous> (/Users/feikaixin/work/2019/vscode/blog/node_modules/mysql/lib/Connection.js:91:28)
+    at Socket.<anonymous> (/Users/feikaixin/work/2019/vscode/blog/node_modules/mysql/lib/Connection.js:502:10)
+    at Socket.emit (events.js:189:13)
+    at addChunk (_stream_readable.js:284:12)
+    at readableAddChunk (_stream_readable.js:265:11)
+  code: 'ER_BAD_FIELD_ERROR',
+  errno: 1054,
+  sqlMessage: 'Unknown column \'search\' in \'where clause\'',
+  sqlState: '42S22',
+  index: 0,
+  sql:
+   'SELECT title, update_time, content, bg_music, description, bg_img, id as article_id FROM artical WHERE id = search LIMIT 0,10' }
+[2019-02-25T12:31:32.484][ERROR  2939  default] /api/article/detail { id: 'search' } { Error: ER_BAD_FIELD_ERROR: Unknown column 'search' in 'where clause'
+    at Query.Sequence._packetToError (/Users/feikaixin/work/2019/vscode/blog/node_modules/mysql/lib/protocol/sequences/Sequence.js:47:14)
+    at Query.ErrorPacket (/Users/feikaixin/work/2019/vscode/blog/node_modules/mysql/lib/protocol/sequences/Query.js:77:18)
+    at Protocol._parsePacket (/Users/feikaixin/work/2019/vscode/blog/node_modules/mysql/lib/protocol/Protocol.js:278:23)
+    at Parser.write (/Users/feikaixin/work/2019/vscode/blog/node_modules/mysql/lib/protocol/Parser.js:76:12)
+    at Protocol.write (/Users/feikaixin/work/2019/vscode/blog/node_modules/mysql/lib/protocol/Protocol.js:38:16)
+    at Socket.<anonymous> (/Users/feikaixin/work/2019/vscode/blog/node_modules/mysql/lib/Connection.js:91:28)
+    at Socket.<anonymous> (/Users/feikaixin/work/2019/vscode/blog/node_modules/mysql/lib/Connection.js:502:10)
+    at Socket.emit (events.js:189:13)
+    at addChunk (_stream_readable.js:284:12)
+    at readableAddChunk (_stream_readable.js:265:11)
+    at Socket.Readable.push (_stream_readable.js:220:10)
+    at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+    --------------------
+    at Protocol._enqueue (/Users/feikaixin/work/2019/vscode/blog/node_modules/mysql/lib/protocol/Protocol.js:144:48)
+    at PoolConnection.query (/Users/feikaixin/work/2019/vscode/blog/node_modules/mysql/lib/Connection.js:200:25)
+    at pool.getConnection (/Users/feikaixin/work/2019/vscode/blog/server/db/index.js:11:20)
+    at Handshake.onConnect (/Users/feikaixin/work/2019/vscode/blog/node_modules/mysql/lib/Pool.js:64:7)
+    at Handshake.<anonymous> (/Users/feikaixin/work/2019/vscode/blog/node_modules/mysql/lib/Connection.js:502:10)
+    at Handshake._callback (/Users/feikaixin/work/2019/vscode/blog/node_modules/mysql/lib/Connection.js:468:16)
+    at Handshake.Sequence.end (/Users/feikaixin/work/2019/vscode/blog/node_modules/mysql/lib/protocol/sequences/Sequence.js:83:24)
+    at Handshake.Sequence.OkPacket (/Users/feikaixin/work/2019/vscode/blog/node_modules/mysql/lib/protocol/sequences/Sequence.js:92:8)
+    at Protocol._parsePacket (/Users/feikaixin/work/2019/vscode/blog/node_modules/mysql/lib/protocol/Protocol.js:278:23)
+    at Parser.write (/Users/feikaixin/work/2019/vscode/blog/node_modules/mysql/lib/protocol/Parser.js:76:12)
+    at Protocol.write (/Users/feikaixin/work/2019/vscode/blog/node_modules/mysql/lib/protocol/Protocol.js:38:16)
+    at Socket.<anonymous> (/Users/feikaixin/work/2019/vscode/blog/node_modules/mysql/lib/Connection.js:91:28)
+    at Socket.<anonymous> (/Users/feikaixin/work/2019/vscode/blog/node_modules/mysql/lib/Connection.js:502:10)
+    at Socket.emit (events.js:189:13)
+    at addChunk (_stream_readable.js:284:12)
+    at readableAddChunk (_stream_readable.js:265:11)
+  code: 'ER_BAD_FIELD_ERROR',
+  errno: 1054,
+  sqlMessage: 'Unknown column \'search\' in \'where clause\'',
+  sqlState: '42S22',
+  index: 0,
+  sql:
+   'SELECT title, update_time, content, bg_music, description, bg_img, id as article_id FROM artical WHERE id = search LIMIT 0,10' }
+[2019-02-25T12:31:32.489][ERROR  2939  default] /api/article/detail { id: 'search' } { Error: ER_BAD_FIELD_ERROR: Unknown column 'search' in 'where clause'
+    at Query.Sequence._packetToError (/Users/feikaixin/work/2019/vscode/blog/node_modules/mysql/lib/protocol/sequences/Sequence.js:47:14)
+    at Query.ErrorPacket (/Users/feikaixin/work/2019/vscode/blog/node_modules/mysql/lib/protocol/sequences/Query.js:77:18)
+    at Protocol._parsePacket (/Users/feikaixin/work/2019/vscode/blog/node_modules/mysql/lib/protocol/Protocol.js:278:23)
+    at Parser.write (/Users/feikaixin/work/2019/vscode/blog/node_modules/mysql/lib/protocol/Parser.js:76:12)
+    at Protocol.write (/Users/feikaixin/work/2019/vscode/blog/node_modules/mysql/lib/protocol/Protocol.js:38:16)
+    at Socket.<anonymous> (/Users/feikaixin/work/2019/vscode/blog/node_modules/mysql/lib/Connection.js:91:28)
+    at Socket.<anonymous> (/Users/feikaixin/work/2019/vscode/blog/node_modules/mysql/lib/Connection.js:502:10)
+    at Socket.emit (events.js:189:13)
+    at addChunk (_stream_readable.js:284:12)
+    at readableAddChunk (_stream_readable.js:265:11)
+    at Socket.Readable.push (_stream_readable.js:220:10)
+    at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+    --------------------
+    at Protocol._enqueue (/Users/feikaixin/work/2019/vscode/blog/node_modules/mysql/lib/protocol/Protocol.js:144:48)
+    at PoolConnection.query (/Users/feikaixin/work/2019/vscode/blog/node_modules/mysql/lib/Connection.js:200:25)
+    at pool.getConnection (/Users/feikaixin/work/2019/vscode/blog/server/db/index.js:11:20)
+    at Handshake.onConnect (/Users/feikaixin/work/2019/vscode/blog/node_modules/mysql/lib/Pool.js:64:7)
+    at Handshake.<anonymous> (/Users/feikaixin/work/2019/vscode/blog/node_modules/mysql/lib/Connection.js:502:10)
+    at Handshake._callback (/Users/feikaixin/work/2019/vscode/blog/node_modules/mysql/lib/Connection.js:468:16)
+    at Handshake.Sequence.end (/Users/feikaixin/work/2019/vscode/blog/node_modules/mysql/lib/protocol/sequences/Sequence.js:83:24)
+    at Handshake.Sequence.OkPacket (/Users/feikaixin/work/2019/vscode/blog/node_modules/mysql/lib/protocol/sequences/Sequence.js:92:8)
+    at Protocol._parsePacket (/Users/feikaixin/work/2019/vscode/blog/node_modules/mysql/lib/protocol/Protocol.js:278:23)
+    at Parser.write (/Users/feikaixin/work/2019/vscode/blog/node_modules/mysql/lib/protocol/Parser.js:76:12)
+    at Protocol.write (/Users/feikaixin/work/2019/vscode/blog/node_modules/mysql/lib/protocol/Protocol.js:38:16)
+    at Socket.<anonymous> (/Users/feikaixin/work/2019/vscode/blog/node_modules/mysql/lib/Connection.js:91:28)
+    at Socket.<anonymous> (/Users/feikaixin/work/2019/vscode/blog/node_modules/mysql/lib/Connection.js:502:10)
+    at Socket.emit (events.js:189:13)
+    at addChunk (_stream_readable.js:284:12)
+    at readableAddChunk (_stream_readable.js:265:11)
+  code: 'ER_BAD_FIELD_ERROR',
+  errno: 1054,
+  sqlMessage: 'Unknown column \'search\' in \'where clause\'',
+  sqlState: '42S22',
+  index: 0,
+  sql:
+   'SELECT title, update_time, content, bg_music, description, bg_img, id as article_id FROM artical WHERE id = search LIMIT 0,10' }
+[2019-02-25T12:31:32.490][ERROR  2939  default] /api/article/detail { id: 'search' } { Error: ER_BAD_FIELD_ERROR: Unknown column 'search' in 'where clause'
+    at Query.Sequence._packetToError (/Users/feikaixin/work/2019/vscode/blog/node_modules/mysql/lib/protocol/sequences/Sequence.js:47:14)
+    at Query.ErrorPacket (/Users/feikaixin/work/2019/vscode/blog/node_modules/mysql/lib/protocol/sequences/Query.js:77:18)
+    at Protocol._parsePacket (/Users/feikaixin/work/2019/vscode/blog/node_modules/mysql/lib/protocol/Protocol.js:278:23)
+    at Parser.write (/Users/feikaixin/work/2019/vscode/blog/node_modules/mysql/lib/protocol/Parser.js:76:12)
+    at Protocol.write (/Users/feikaixin/work/2019/vscode/blog/node_modules/mysql/lib/protocol/Protocol.js:38:16)
+    at Socket.<anonymous> (/Users/feikaixin/work/2019/vscode/blog/node_modules/mysql/lib/Connection.js:91:28)
+    at Socket.<anonymous> (/Users/feikaixin/work/2019/vscode/blog/node_modules/mysql/lib/Connection.js:502:10)
+    at Socket.emit (events.js:189:13)
+    at addChunk (_stream_readable.js:284:12)
+    at readableAddChunk (_stream_readable.js:265:11)
+    at Socket.Readable.push (_stream_readable.js:220:10)
+    at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+    --------------------
+    at Protocol._enqueue (/Users/feikaixin/work/2019/vscode/blog/node_modules/mysql/lib/protocol/Protocol.js:144:48)
+    at PoolConnection.query (/Users/feikaixin/work/2019/vscode/blog/node_modules/mysql/lib/Connection.js:200:25)
+    at pool.getConnection (/Users/feikaixin/work/2019/vscode/blog/server/db/index.js:11:20)
+    at Handshake.onConnect (/Users/feikaixin/work/2019/vscode/blog/node_modules/mysql/lib/Pool.js:64:7)
+    at Handshake.<anonymous> (/Users/feikaixin/work/2019/vscode/blog/node_modules/mysql/lib/Connection.js:502:10)
+    at Handshake._callback (/Users/feikaixin/work/2019/vscode/blog/node_modules/mysql/lib/Connection.js:468:16)
+    at Handshake.Sequence.end (/Users/feikaixin/work/2019/vscode/blog/node_modules/mysql/lib/protocol/sequences/Sequence.js:83:24)
+    at Handshake.Sequence.OkPacket (/Users/feikaixin/work/2019/vscode/blog/node_modules/mysql/lib/protocol/sequences/Sequence.js:92:8)
+    at Protocol._parsePacket (/Users/feikaixin/work/2019/vscode/blog/node_modules/mysql/lib/protocol/Protocol.js:278:23)
+    at Parser.write (/Users/feikaixin/work/2019/vscode/blog/node_modules/mysql/lib/protocol/Parser.js:76:12)
+    at Protocol.write (/Users/feikaixin/work/2019/vscode/blog/node_modules/mysql/lib/protocol/Protocol.js:38:16)
+    at Socket.<anonymous> (/Users/feikaixin/work/2019/vscode/blog/node_modules/mysql/lib/Connection.js:91:28)
+    at Socket.<anonymous> (/Users/feikaixin/work/2019/vscode/blog/node_modules/mysql/lib/Connection.js:502:10)
+    at Socket.emit (events.js:189:13)
+    at addChunk (_stream_readable.js:284:12)
+    at readableAddChunk (_stream_readable.js:265:11)
+  code: 'ER_BAD_FIELD_ERROR',
+  errno: 1054,
+  sqlMessage: 'Unknown column \'search\' in \'where clause\'',
+  sqlState: '42S22',
+  index: 0,
+  sql:
+   'SELECT title, update_time, content, bg_music, description, bg_img, id as article_id FROM artical WHERE id = search LIMIT 0,10' }
+[2019-02-25T12:31:37.060][ERROR  2939  default] /api/article/detail { id: 'search' } { Error: ER_BAD_FIELD_ERROR: Unknown column 'search' in 'where clause'
+    at Query.Sequence._packetToError (/Users/feikaixin/work/2019/vscode/blog/node_modules/mysql/lib/protocol/sequences/Sequence.js:47:14)
+    at Query.ErrorPacket (/Users/feikaixin/work/2019/vscode/blog/node_modules/mysql/lib/protocol/sequences/Query.js:77:18)
+    at Protocol._parsePacket (/Users/feikaixin/work/2019/vscode/blog/node_modules/mysql/lib/protocol/Protocol.js:278:23)
+    at Parser.write (/Users/feikaixin/work/2019/vscode/blog/node_modules/mysql/lib/protocol/Parser.js:76:12)
+    at Protocol.write (/Users/feikaixin/work/2019/vscode/blog/node_modules/mysql/lib/protocol/Protocol.js:38:16)
+    at Socket.<anonymous> (/Users/feikaixin/work/2019/vscode/blog/node_modules/mysql/lib/Connection.js:91:28)
+    at Socket.<anonymous> (/Users/feikaixin/work/2019/vscode/blog/node_modules/mysql/lib/Connection.js:502:10)
+    at Socket.emit (events.js:189:13)
+    at addChunk (_stream_readable.js:284:12)
+    at readableAddChunk (_stream_readable.js:265:11)
+    at Socket.Readable.push (_stream_readable.js:220:10)
+    at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+    --------------------
+    at Protocol._enqueue (/Users/feikaixin/work/2019/vscode/blog/node_modules/mysql/lib/protocol/Protocol.js:144:48)
+    at PoolConnection.query (/Users/feikaixin/work/2019/vscode/blog/node_modules/mysql/lib/Connection.js:200:25)
+    at pool.getConnection (/Users/feikaixin/work/2019/vscode/blog/server/db/index.js:11:20)
+    at Ping.onOperationComplete (/Users/feikaixin/work/2019/vscode/blog/node_modules/mysql/lib/Pool.js:110:5)
+    at Ping.<anonymous> (/Users/feikaixin/work/2019/vscode/blog/node_modules/mysql/lib/Connection.js:502:10)
+    at Ping._callback (/Users/feikaixin/work/2019/vscode/blog/node_modules/mysql/lib/Connection.js:468:16)
+    at Ping.Sequence.end (/Users/feikaixin/work/2019/vscode/blog/node_modules/mysql/lib/protocol/sequences/Sequence.js:83:24)
+    at Ping.Sequence.OkPacket (/Users/feikaixin/work/2019/vscode/blog/node_modules/mysql/lib/protocol/sequences/Sequence.js:92:8)
+    at Protocol._parsePacket (/Users/feikaixin/work/2019/vscode/blog/node_modules/mysql/lib/protocol/Protocol.js:278:23)
+    at Parser.write (/Users/feikaixin/work/2019/vscode/blog/node_modules/mysql/lib/protocol/Parser.js:76:12)
+    at Protocol.write (/Users/feikaixin/work/2019/vscode/blog/node_modules/mysql/lib/protocol/Protocol.js:38:16)
+    at Socket.<anonymous> (/Users/feikaixin/work/2019/vscode/blog/node_modules/mysql/lib/Connection.js:91:28)
+    at Socket.<anonymous> (/Users/feikaixin/work/2019/vscode/blog/node_modules/mysql/lib/Connection.js:502:10)
+    at Socket.emit (events.js:189:13)
+    at addChunk (_stream_readable.js:284:12)
+    at readableAddChunk (_stream_readable.js:265:11)
+  code: 'ER_BAD_FIELD_ERROR',
+  errno: 1054,
+  sqlMessage: 'Unknown column \'search\' in \'where clause\'',
+  sqlState: '42S22',
+  index: 0,
+  sql:
+   'SELECT title, update_time, content, bg_music, description, bg_img, id as article_id FROM artical WHERE id = search LIMIT 0,10' }
+[2019-02-25T12:31:56.649][ERROR  2939  default] /api/article/detail { id: 'search' } { Error: ER_BAD_FIELD_ERROR: Unknown column 'search' in 'where clause'
+    at Query.Sequence._packetToError (/Users/feikaixin/work/2019/vscode/blog/node_modules/mysql/lib/protocol/sequences/Sequence.js:47:14)
+    at Query.ErrorPacket (/Users/feikaixin/work/2019/vscode/blog/node_modules/mysql/lib/protocol/sequences/Query.js:77:18)
+    at Protocol._parsePacket (/Users/feikaixin/work/2019/vscode/blog/node_modules/mysql/lib/protocol/Protocol.js:278:23)
+    at Parser.write (/Users/feikaixin/work/2019/vscode/blog/node_modules/mysql/lib/protocol/Parser.js:76:12)
+    at Protocol.write (/Users/feikaixin/work/2019/vscode/blog/node_modules/mysql/lib/protocol/Protocol.js:38:16)
+    at Socket.<anonymous> (/Users/feikaixin/work/2019/vscode/blog/node_modules/mysql/lib/Connection.js:91:28)
+    at Socket.<anonymous> (/Users/feikaixin/work/2019/vscode/blog/node_modules/mysql/lib/Connection.js:502:10)
+    at Socket.emit (events.js:189:13)
+    at addChunk (_stream_readable.js:284:12)
+    at readableAddChunk (_stream_readable.js:265:11)
+    at Socket.Readable.push (_stream_readable.js:220:10)
+    at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+    --------------------
+    at Protocol._enqueue (/Users/feikaixin/work/2019/vscode/blog/node_modules/mysql/lib/protocol/Protocol.js:144:48)
+    at PoolConnection.query (/Users/feikaixin/work/2019/vscode/blog/node_modules/mysql/lib/Connection.js:200:25)
+    at pool.getConnection (/Users/feikaixin/work/2019/vscode/blog/server/db/index.js:11:20)
+    at Ping.onOperationComplete (/Users/feikaixin/work/2019/vscode/blog/node_modules/mysql/lib/Pool.js:110:5)
+    at Ping.<anonymous> (/Users/feikaixin/work/2019/vscode/blog/node_modules/mysql/lib/Connection.js:502:10)
+    at Ping._callback (/Users/feikaixin/work/2019/vscode/blog/node_modules/mysql/lib/Connection.js:468:16)
+    at Ping.Sequence.end (/Users/feikaixin/work/2019/vscode/blog/node_modules/mysql/lib/protocol/sequences/Sequence.js:83:24)
+    at Ping.Sequence.OkPacket (/Users/feikaixin/work/2019/vscode/blog/node_modules/mysql/lib/protocol/sequences/Sequence.js:92:8)
+    at Protocol._parsePacket (/Users/feikaixin/work/2019/vscode/blog/node_modules/mysql/lib/protocol/Protocol.js:278:23)
+    at Parser.write (/Users/feikaixin/work/2019/vscode/blog/node_modules/mysql/lib/protocol/Parser.js:76:12)
+    at Protocol.write (/Users/feikaixin/work/2019/vscode/blog/node_modules/mysql/lib/protocol/Protocol.js:38:16)
+    at Socket.<anonymous> (/Users/feikaixin/work/2019/vscode/blog/node_modules/mysql/lib/Connection.js:91:28)
+    at Socket.<anonymous> (/Users/feikaixin/work/2019/vscode/blog/node_modules/mysql/lib/Connection.js:502:10)
+    at Socket.emit (events.js:189:13)
+    at addChunk (_stream_readable.js:284:12)
+    at readableAddChunk (_stream_readable.js:265:11)
+  code: 'ER_BAD_FIELD_ERROR',
+  errno: 1054,
+  sqlMessage: 'Unknown column \'search\' in \'where clause\'',
+  sqlState: '42S22',
+  index: 0,
+  sql:
+   'SELECT title, update_time, content, bg_music, description, bg_img, id as article_id FROM artical WHERE id = search LIMIT 0,10' }
+[2019-02-25T12:33:26.077][ERROR  2939  default] /api/article/detail { id: 'search' } { Error: ER_BAD_FIELD_ERROR: Unknown column 'search' in 'where clause'
+    at Query.Sequence._packetToError (/Users/feikaixin/work/2019/vscode/blog/node_modules/mysql/lib/protocol/sequences/Sequence.js:47:14)
+    at Query.ErrorPacket (/Users/feikaixin/work/2019/vscode/blog/node_modules/mysql/lib/protocol/sequences/Query.js:77:18)
+    at Protocol._parsePacket (/Users/feikaixin/work/2019/vscode/blog/node_modules/mysql/lib/protocol/Protocol.js:278:23)
+    at Parser.write (/Users/feikaixin/work/2019/vscode/blog/node_modules/mysql/lib/protocol/Parser.js:76:12)
+    at Protocol.write (/Users/feikaixin/work/2019/vscode/blog/node_modules/mysql/lib/protocol/Protocol.js:38:16)
+    at Socket.<anonymous> (/Users/feikaixin/work/2019/vscode/blog/node_modules/mysql/lib/Connection.js:91:28)
+    at Socket.<anonymous> (/Users/feikaixin/work/2019/vscode/blog/node_modules/mysql/lib/Connection.js:502:10)
+    at Socket.emit (events.js:189:13)
+    at addChunk (_stream_readable.js:284:12)
+    at readableAddChunk (_stream_readable.js:265:11)
+    at Socket.Readable.push (_stream_readable.js:220:10)
+    at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+    --------------------
+    at Protocol._enqueue (/Users/feikaixin/work/2019/vscode/blog/node_modules/mysql/lib/protocol/Protocol.js:144:48)
+    at PoolConnection.query (/Users/feikaixin/work/2019/vscode/blog/node_modules/mysql/lib/Connection.js:200:25)
+    at pool.getConnection (/Users/feikaixin/work/2019/vscode/blog/server/db/index.js:11:20)
+    at Ping.onOperationComplete (/Users/feikaixin/work/2019/vscode/blog/node_modules/mysql/lib/Pool.js:110:5)
+    at Ping.<anonymous> (/Users/feikaixin/work/2019/vscode/blog/node_modules/mysql/lib/Connection.js:502:10)
+    at Ping._callback (/Users/feikaixin/work/2019/vscode/blog/node_modules/mysql/lib/Connection.js:468:16)
+    at Ping.Sequence.end (/Users/feikaixin/work/2019/vscode/blog/node_modules/mysql/lib/protocol/sequences/Sequence.js:83:24)
+    at Ping.Sequence.OkPacket (/Users/feikaixin/work/2019/vscode/blog/node_modules/mysql/lib/protocol/sequences/Sequence.js:92:8)
+    at Protocol._parsePacket (/Users/feikaixin/work/2019/vscode/blog/node_modules/mysql/lib/protocol/Protocol.js:278:23)
+    at Parser.write (/Users/feikaixin/work/2019/vscode/blog/node_modules/mysql/lib/protocol/Parser.js:76:12)
+    at Protocol.write (/Users/feikaixin/work/2019/vscode/blog/node_modules/mysql/lib/protocol/Protocol.js:38:16)
+    at Socket.<anonymous> (/Users/feikaixin/work/2019/vscode/blog/node_modules/mysql/lib/Connection.js:91:28)
+    at Socket.<anonymous> (/Users/feikaixin/work/2019/vscode/blog/node_modules/mysql/lib/Connection.js:502:10)
+    at Socket.emit (events.js:189:13)
+    at addChunk (_stream_readable.js:284:12)
+    at readableAddChunk (_stream_readable.js:265:11)
+  code: 'ER_BAD_FIELD_ERROR',
+  errno: 1054,
+  sqlMessage: 'Unknown column \'search\' in \'where clause\'',
+  sqlState: '42S22',
+  index: 0,
+  sql:
+   'SELECT title, update_time, content, bg_music, description, bg_img, id as article_id FROM artical WHERE id = search LIMIT 0,10' }

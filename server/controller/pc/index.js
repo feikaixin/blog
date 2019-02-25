@@ -22,7 +22,7 @@ module.exports = {
     }
   },
   async articleDetail(ctx, next) {
-    const { id } = ctx.params;
+    const { id } = ctx.request.body;
     let data = null;
     try {
       data = await getArticalDetail({id});
@@ -31,7 +31,7 @@ module.exports = {
         data
       }
     } catch (error) {
-      ctx.logger.error(ctx.url, ctx.request.body, e);
+      ctx.logger.error(ctx.url, ctx.request.body, error);
       ctx.body = Tips.datebaseError;
     }
   },
@@ -44,8 +44,8 @@ module.exports = {
         ...Tips.ok,
         data
       }
-    } catch (e) {
-      ctx.logger.error(ctx.url, ctx.request.body, e);
+    } catch (error) {
+      ctx.logger.error(ctx.url, ctx.request.body, error);
       ctx.body = Tips.datebaseError;
     }
   }

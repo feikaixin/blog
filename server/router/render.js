@@ -7,43 +7,37 @@ const LRUCache = require("lru-cache");
 const config = require("../config/default");
 const ssrCache = new LRUCache(config.urlCache);
 
-function getCacheKey(ctx) {
-  return `${ctx.req.url}`;
-}
-
-// 进行渲染缓存
+const getCacheKey = ctx => `${ctx.req.url}`;
 function renderAndCache(ctx, pagePath, queryParams) {
   const key = getCacheKey(ctx);
-
-  if (ssrCache.has(key)) {
+  // 命中缓存(存在优化点)
+  if (ssrCache.has(key) && config.openUrlCache) {
     ctx.body = ssrCache.get(key);
-    return
+    return;
   }
   // 合并参数
   const params = {
-    ...ctx.query,      // get请求
-    ...ctx.params      // post请求
+    ...ctx.query,
+    ...ctx.params,
   };
 
-  return app
-    .renderToHTML(ctx.req, ctx.res, pagePath, params)
-    .then(html => {
+  // eslint-disable-next-line consistent-return
+  return app.renderToHTML(ctx.req, ctx.res, pagePath, params)
+    .then((html) => {
       // Let's cache this page
       ctx.body = html;
       ssrCache.set(key, html);
+      return 1;
     })
-    .catch(err => {
-      console.log("render error");
-      return app.renderError(err, ctx.req, ctx.res, pagePath, params);
-    });
+    .catch(err => app.renderError(err, ctx.req, ctx.res, pagePath, queryParams));
 }
 
 app.prepare().then(() => {
   router.get('/', ctx => renderAndCache(ctx, '/'));
   router.get('/blog',ctx => renderAndCache(ctx,'/blog'));
   router.get('/resume',ctx => renderAndCache(ctx,'/resume'));
+  router.get('/blog/search',ctx => renderAndCache(ctx, '/blog/search'));
   router.get('/blog/:id',ctx => renderAndCache(ctx, '/blog/article'));
-  router.get('/blog/search:q',ctx => renderAndCache(ctx, '/blog/search'));
 });
 
 

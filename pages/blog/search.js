@@ -6,7 +6,7 @@ import Footer from "../../components/Footer";
 class Search extends Component {
   static async getInitialProps({ query }) {
     const { q = '' } = query;
-    const articleList = request("/api/article/search", {
+    const articleList = await request(`/api/article/search`, {
       body: JSON.stringify({
         search: q
       })

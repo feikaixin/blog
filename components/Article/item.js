@@ -118,6 +118,9 @@ export default class Artical extends React.Component {
   componentDidUpdate() {
     this.layLoad();
   }
+  componentWillUnmount() {
+    document.removeEventListener("scroll", this._throttleFn);
+  }
   render() {
     const { isLeft, data } = this.props;
     return (

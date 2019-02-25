@@ -16,9 +16,6 @@ export default class BlogPage extends React.Component {
     ] = await Promise.all([articleList]);
     return { pagination, list };
   }
-  componentWillUnmount() {
-    document.removeEventListener("scroll", this._throttleFn);
-  }
   render() {
     const data = this.props;
     return (
