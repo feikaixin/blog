@@ -97,7 +97,7 @@ export default class IndexPage extends React.Component {
         <div className="index-page">
           <img
             className="blog_bg"
-            src="/static/images/blog_background.png"
+            src="http://feikaixin.oss-cn-beijing.aliyuncs.com/blog_background.png"
             alt="/"
           />
           <img className="avator" src="/static/images/avator.png" alt="/" />
