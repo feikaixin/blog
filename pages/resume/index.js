@@ -142,7 +142,7 @@ export default class Resume extends Component {
             <div className="clear more-info">
               <ul className="left tech">
                 <li>男 / 1998.01</li>
-                <li>专业排名：26 / 270 / 前10%</li>
+                <li>专业排名： 前10%</li>
                 <li>重庆邮电大学 | 软件工程学院 | 本科 | 2020年毕业</li>
               </ul>
               <ul className="right influence">
@@ -156,7 +156,7 @@ export default class Resume extends Component {
                 </li>
                 <li>
                   <a href="https://feikaixin.xin/">
-                    feikaixin.xin
+                    feikaixin.xin:3000
                     <span>
                       <Icon icon="home" />{" "}
                     </span>
@@ -228,7 +228,6 @@ export default class Resume extends Component {
                   </Descript>
                   <Descript isItem>
                     对<span>数据库</span>、
-                    <span>数据结构</span>、
                     <span>计算机网络</span>、
                     <span>前端性能优化</span>、
                     <span>前端工程化</span>、
@@ -275,11 +274,11 @@ export default class Resume extends Component {
                     <strong>项目简介</strong>：为艾博公司构建了一套基于微信H5的线上销售系统，包含登录注册，购买艾博会员卡，积分转账等页面
                   </Descript>
                   <Descript>
-                    <strong>技术栈</strong>：<span>webpack</span> <span>handlebars</span> <span>sass</span> <span>jQuery</span>。
+                    <strong>技术栈</strong>：<span>webpack</span> <span>handlebars</span> <span>less</span> <span>jQuery</span>。
                   </Descript>
                   <Descript>
                     <strong>主要负责</strong>：<span>项目配置</span>
-                    使用webpack配置项目，使用Ejs、Zeptojs、Sass等实现组件化,
+                    使用webpack配置项目，使用Ejs、Zeptojs、less等实现组件化,
                     <span>用户登录</span>、<span>会员信息</span>等页面。
                     最后将整个项目初始配置封装成
                     <span>kaixin-cli</span>
@@ -292,10 +291,10 @@ export default class Resume extends Component {
                     <strong>项目简介</strong>：该小程序用于线上支持预约服务。消费者可以通过该小程序预约华仁启智公司的团建活动，购买会员服务服务和获取最近活动动态等信息。
                   </Descript>
                   <Descript>
-                    <strong>技术栈</strong>：<span>ant-design-pro</span> <span>react</span> <span>egg</span> <span>原生微信小程序</span> <span>mysql</span>。
+                    <strong>技术栈</strong>：<span>react</span> <span>egg</span> <span>原生微信小程序</span> <span>mysql</span>。
                   </Descript>
                   <Descript>
-                    <strong>主要负责</strong>: 前端主要负责：商品相关的所有页面、登录、后期重构代码、管理端用户管理页面。后端主要负责：登录接口，商品相关的所有接口。
+                    <strong>主要负责</strong>: 前端主要负责：商品相关的所有页面、登录、后期重构代码；管理端主要用ant-design-pro来做用户管理页面和登录。后端主要负责：登录接口，商品相关的所有接口。
                     这个项目是自己参与的比较完整的全栈项目。
                   </Descript>
                 </Dividing>
