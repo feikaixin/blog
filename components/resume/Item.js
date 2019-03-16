@@ -26,11 +26,11 @@ export default class Item extends Component {
             display: inline-block;
           }
           .time {
-            width: 30%;
+            width: 22%;
             font-size: 14px;
           }
           .content {
-            width: 40%;
+            width: 56%;
             margin-left: -28px;
             text-align: center;
           }

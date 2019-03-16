@@ -19,11 +19,13 @@ export default class Content extends React.Component {
             padding: 10px 20px;
             margin: 20px 0;
             font-size: 17.5px;
-            border-left: 10px solid #eee;
+            border-left: 4px solid #009A61;
+            background: #F6F6F6;
           }
 
           p{
             margin: 6px 0;
+            line-height: 20px;
           }
           pre {
             display: block;
@@ -53,6 +55,9 @@ export default class Content extends React.Component {
             color: #c7254e;
             background-color: #f9f2f4;
             border-radius: 4px;
+          }
+          h2 {
+            margin-bottom: 10px;
           }
           a {
             color: blue;

@@ -155,8 +155,8 @@ export default class Resume extends Component {
                   </a>
                 </li>
                 <li>
-                  <a href="https://feikaixin.xin/">
-                    feikaixin.xin:3000
+                  <a href="http://feikaixin.xin:3000">
+                    feikaixin.xin
                     <span>
                       <Icon icon="home" />{" "}
                     </span>
@@ -271,18 +271,18 @@ export default class Resume extends Component {
                     ABO微信 · 微信H5
                   </Item>
                   <Descript>
-                    <strong>项目简介</strong>：为艾博公司构建了一套基于微信H5的线上销售系统，包含登录注册，购买艾博会员卡，积分转账等页面
+                    <strong>项目简介</strong>：为艾博公司构建了一套基于微信H5的线上销售系统，包含登录注册，购买艾博会员卡，积分转账等页面。
                   </Descript>
                   <Descript>
                     <strong>技术栈</strong>：<span>webpack</span> <span>handlebars</span> <span>less</span> <span>jQuery</span>。
                   </Descript>
                   <Descript>
                     <strong>主要负责</strong>：<span>项目配置</span>
-                    使用webpack配置项目，使用Ejs、Zeptojs、less等实现组件化,
-                    <span>用户登录</span>、<span>会员信息</span>等页面。
+                    使用webpack配置项目脚手架，使用<span>Flexible</span>实现移动端适配,
+                    另外负责<span>用户登录</span>、<span>会员信息</span>等页面。
                     最后将整个项目初始配置封装成
                     <span>kaixin-cli</span>
-                    脚手架工具,方便后续开发H5项目，这个项目是自己第一次参与的<span>团队合作</span>的项目，
+                    脚手架工具,采用<span>Happypack</span>、<span>动态链接库</span>、<span>代码压缩</span>等对脚手架进行优化，方便后续开发H5项目。
                   </Descript>
                   <Item time="2018.08">
                     水上团建项目 · 小程序
@@ -294,8 +294,8 @@ export default class Resume extends Component {
                     <strong>技术栈</strong>：<span>react</span> <span>egg</span> <span>原生微信小程序</span> <span>mysql</span>。
                   </Descript>
                   <Descript>
-                    <strong>主要负责</strong>: 前端主要负责：商品相关的所有页面、登录、后期重构代码；管理端主要用ant-design-pro来做用户管理页面和登录。后端主要负责：登录接口，商品相关的所有接口。
-                    这个项目是自己参与的比较完整的全栈项目。
+                    <strong>主要负责</strong>: 基于WXML/WXSS/JS为基础语言进行开发，负责封装<span>request</span>添加用户<span>sessionId</span>判断用户是否登录,完成商品相关所有页面和用户登录。
+                    管理端使用<span>ant-design-pro</span>开发，完成用户管理和用户登录。后端负责请求中间件对所有请求进行集中处理，完成用户登录和商品相关的所有接口。
                   </Descript>
                 </Dividing>
               </section>
@@ -306,9 +306,8 @@ export default class Resume extends Component {
                   </Item>
                   <Descript>
                     <span>全栈开发</span>、<span>个人站点</span>、
-                    <span>开源作品</span>
-                    个人站点的建设，主要包括
-                    <span>博客</span>、<span>简历</span>、<span>介绍</span>
+                    <span>开源作品</span>主要包括
+                    <span>博客</span>、<span>简历</span>
                     等几个主要模块，前端使用
                     <span>Nextjs</span>
                     进行
@@ -318,18 +317,18 @@ export default class Resume extends Component {
                     技术栈提供后台服务，并进行部署上线，使用
                     <span>nginx</span>和<span>node</span>
                     部署，
-                    <span>按需加载</span>、<span>预加载</span>
-                    等降低首屏渲染时间，为用户提供快速的响应，和优秀的网站体验，此站点用来分享自己平常所学。另外，也是自己尝试新技术提升网站性能的实验站点。
+                    <span>按需加载</span>、<span>预加载</span>、<span>懒加载</span>
+                    等降低渲染时间，后台使用<span>lru-cache</span>对页面进行缓存处理，为用户提供快速的响应，和优秀的网站体验，此站点用来分享自己平常所学。另外，也是自己尝试新技术提升网站性能的实验站点。
                   </Descript>
                 </Dividing>
               </section>
               <section>
                 <Dividing title="荣誉奖项">
-                  <Item time="2016.09 ~ 2018.09" tag="校级">
-                    学业奖学金(两次)
-                  </Item>
-                  <Item time="2016.09 ~ 2017.09" tag="院级">
+                  <Item time="2017.09" tag="院级">
                     优秀学生干部
+                  </Item>
+                  <Item time="2018.09" tag="校级">
+                    学业奖学金(两次)
                   </Item>
                 </Dividing>
               </section>

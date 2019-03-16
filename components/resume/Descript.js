@@ -26,7 +26,7 @@ export default class Descript extends Component {
             border: 1px solid #000;
             border-radius: 50%;
             position: absolute;
-            top: 50%;
+            top: 19px;
             left: 10px;
           }
         `}</style>

@@ -38,6 +38,7 @@ app.prepare().then(() => {
   router.get('/resume',ctx => renderAndCache(ctx,'/resume'));
   router.get('/blog/search',ctx => renderAndCache(ctx, '/blog/search'));
   router.get('/blog/:id',ctx => renderAndCache(ctx, '/blog/article'));
+  router.get('/photo',ctx => renderAndCache(ctx, '/photo'));
 });
 
 
