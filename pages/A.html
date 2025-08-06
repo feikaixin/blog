@@ -1,515 +1,666 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>平均数教学 - 移多补少法</title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>平均数教学 - 矿泉水瓶收集</title>
     <style>
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        font-family: 'Arial Rounded MT Bold', 'Microsoft YaHei', sans-serif;
-      }
-
-      body {
-        background: linear-gradient(135deg, #e0f7fa, #bbdefb);
-        min-height: 100vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 20px;
-      }
-
-      .container {
-        width: 100%;
-        max-width: 1000px;
-        background-color: white;
-        border-radius: 20px;
-        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
-        overflow: hidden;
-      }
-
-      header {
-        background: linear-gradient(90deg, #2196f3, #21cbf3);
-        color: white;
-        padding: 20px;
-        text-align: center;
-      }
-
-      h1 {
-        font-size: 2.2rem;
-        margin-bottom: 10px;
-        text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-      }
-
-      .subtitle {
-        font-size: 1.2rem;
-        opacity: 0.9;
-      }
-
-      .content {
-        display: flex;
-        padding: 20px;
-        gap: 20px;
-      }
-
-      .instructions {
-        flex: 1;
-        background-color: #f9f9f9;
-        border-radius: 15px;
-        padding: 20px;
-        box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.05);
-      }
-
-      .instructions h2 {
-        color: #2196f3;
-        margin-bottom: 15px;
-        font-size: 1.6rem;
-      }
-
-      .instructions ol {
-        padding-left: 25px;
-        margin-bottom: 20px;
-      }
-
-      .instructions li {
-        margin-bottom: 10px;
-        line-height: 1.5;
-        font-size: 1.1rem;
-      }
-
-      .formula-box {
-        background: #e3f2fd;
-        border-left: 4px solid #2196f3;
-        padding: 15px;
-        border-radius: 0 8px 8px 0;
-        margin: 20px 0;
-        font-size: 1.3rem;
-        text-align: center;
-        font-weight: bold;
-      }
-
-      .animation-area {
-        flex: 2;
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-      }
-
-      .groups-container {
-        background-color: #f5f5f5;
-        border-radius: 15px;
-        padding: 20px;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        gap: 20px;
-        min-height: 300px;
-        box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.1);
-      }
-
-      .group {
-        background-color: white;
-        border-radius: 12px;
-        padding: 15px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        width: 180px;
-        text-align: center;
-      }
-
-      .group-title {
-        font-weight: bold;
-        margin-bottom: 15px;
-        color: #2196f3;
-        font-size: 1.2rem;
-      }
-
-      .bottles-container {
-        min-height: 180px;
-        display: flex;
-        flex-wrap: wrap;
-        gap: 8px;
-        justify-content: center;
-        align-items: flex-end;
-        padding: 10px;
-        background: #e1f5fe;
-        border-radius: 8px;
-        transition: all 0.3s ease;
-      }
-
-      .bottle {
-        width: 40px;
-        height: 60px;
-        background-color: #4fc3f7;
-        border-radius: 6px;
-        position: relative;
-        cursor: grab;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-weight: bold;
-        color: rgba(0, 0, 0, 0.7);
-        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
-        transition: transform 0.2s ease, box-shadow 0.2s ease;
-      }
-
-      .bottle:hover {
-        transform: translateY(-3px);
-        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
-      }
-
-      .bottle.dragging {
-        opacity: 0.8;
-        transform: scale(1.05);
-        cursor: grabbing;
-      }
-
-      .stats-container {
-        background-color: #e3f2fd;
-        border-radius: 15px;
-        padding: 20px;
-        display: flex;
-        flex-direction: column;
-        gap: 15px;
-      }
-
-      .stats-row {
-        display: flex;
-        justify-content: space-between;
-        padding: 10px;
-        background: white;
-        border-radius: 8px;
-        font-size: 1.1rem;
-      }
-
-      .stats-value {
-        font-weight: bold;
-        color: #2196f3;
-      }
-
-      .average-display {
-        text-align: center;
-        font-size: 1.3rem;
-        padding: 15px;
-        background: #bbdefb;
-        border-radius: 10px;
-        font-weight: bold;
-        margin-top: 10px;
-      }
-
-      .controls {
-        display: flex;
-        justify-content: center;
-        gap: 20px;
-        margin-top: 10px;
-      }
-
-      button {
-        padding: 12px 25px;
-        font-size: 1.1rem;
-        border: none;
-        border-radius: 50px;
-        background: linear-gradient(90deg, #2196f3, #21cbf3);
-        color: white;
-        cursor: pointer;
-        box-shadow: 0 4px 8px rgba(33, 150, 243, 0.3);
-        transition: all 0.3s ease;
-      }
-
-      button:hover {
-        transform: translateY(-3px);
-        box-shadow: 0 6px 12px rgba(33, 150, 243, 0.4);
-      }
-
-      button:active {
-        transform: translateY(1px);
-      }
-
-      .success-message {
-        position: fixed;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        background: rgba(255, 255, 255, 0.95);
-        padding: 30px 50px;
-        border-radius: 20px;
-        text-align: center;
-        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-        z-index: 100;
-        display: none;
-      }
-
-      .success-message h2 {
-        color: #4caf50;
-        font-size: 2.5rem;
-        margin-bottom: 20px;
-      }
-
-      .success-message p {
-        font-size: 1.3rem;
-        margin-bottom: 25px;
-        line-height: 1.6;
-      }
-
-      .overlay {
-        position: fixed;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background: rgba(0, 0, 0, 0.5);
-        display: none;
-        z-index: 99;
-      }
-
-      @media (max-width: 768px) {
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', 'Microsoft YaHei', sans-serif;
+        }
+        
+        body {
+            background: linear-gradient(135deg, #e3f2fd, #bbdefb);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        
+        .container {
+            width: 100%;
+            max-width: 1100px;
+            background-color: white;
+            border-radius: 25px;
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.18);
+            overflow: hidden;
+            position: relative;
+        }
+        
+        header {
+            background: linear-gradient(90deg, #1976d2, #2196f3);
+            color: white;
+            padding: 25px;
+            text-align: center;
+            position: relative;
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 8px;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+        
+        .subtitle {
+            font-size: 1.3rem;
+            opacity: 0.95;
+            max-width: 700px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+        
         .content {
-          flex-direction: column;
+            display: flex;
+            padding: 25px;
+            gap: 25px;
         }
-
+        
+        .instructions {
+            flex: 1;
+            background-color: #f8fdff;
+            border-radius: 18px;
+            padding: 25px;
+            box-shadow: inset 0 0 12px rgba(33, 150, 243, 0.15);
+            border: 2px solid #e3f2fd;
+        }
+        
+        .instructions h2 {
+            color: #1976d2;
+            margin-bottom: 20px;
+            font-size: 1.8rem;
+            text-align: center;
+            padding-bottom: 12px;
+            border-bottom: 3px solid #bbdefb;
+        }
+        
+        .instructions ol {
+            padding-left: 30px;
+            margin-bottom: 25px;
+        }
+        
+        .instructions li {
+            margin-bottom: 16px;
+            line-height: 1.6;
+            font-size: 1.15rem;
+            padding-left: 10px;
+        }
+        
+        .formula-box {
+            background: #e3f2fd;
+            border-left: 5px solid #2196f3;
+            padding: 18px;
+            border-radius: 0 12px 12px 0;
+            margin: 25px 0;
+            font-size: 1.4rem;
+            text-align: center;
+            font-weight: bold;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+        }
+        
+        .animation-area {
+            flex: 2;
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+        }
+        
         .groups-container {
-          flex-direction: column;
-          align-items: center;
+            background-color: #f5f9ff;
+            border-radius: 18px;
+            padding: 25px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            gap: 25px;
+            min-height: 350px;
+            box-shadow: inset 0 0 12px rgba(33, 150, 243, 0.1);
+            border: 2px solid #e1f5fe;
         }
-
+        
         .group {
-          width: 100%;
-          max-width: 250px;
+            background-color: white;
+            border-radius: 15px;
+            padding: 20px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+            width: 200px;
+            text-align: center;
+            transition: all 0.3s ease;
+            border: 2px solid #e3f2fd;
         }
-      }
+        
+        .group-title {
+            font-weight: bold;
+            margin-bottom: 18px;
+            color: #1976d2;
+            font-size: 1.3rem;
+            background: #e3f2fd;
+            padding: 8px;
+            border-radius: 8px;
+        }
+        
+        .bottles-container {
+            min-height: 220px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            justify-content: center;
+            align-items: flex-end;
+            padding: 15px;
+            background: #e1f5fe;
+            border-radius: 12px;
+            transition: all 0.3s ease;
+            border: 2px dashed #90caf9;
+        }
+        
+        .bottle {
+            width: 50px;
+            height: 80px;
+            position: relative;
+            cursor: grab;
+            display: flex;
+            justify-content: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .bottle:hover {
+            transform: translateY(-5px);
+        }
+        
+        .bottle.dragging {
+            cursor: grabbing;
+            opacity: 0.9;
+            transform: scale(1.1);
+            z-index: 10;
+        }
+        
+        .bottle-cap {
+            width: 25px;
+            height: 10px;
+            background: #e0e0e0;
+            border-radius: 4px 4px 0 0;
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        
+        .bottle-body {
+            width: 40px;
+            height: 65px;
+            background: #4fc3f7;
+            border-radius: 6px;
+            position: absolute;
+            top: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
+            color: rgba(0, 0, 0, 0.7);
+            box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+            border: 2px solid #29b6f6;
+        }
+        
+        .bottle-label {
+            position: absolute;
+            bottom: 5px;
+            font-size: 0.9rem;
+            color: #01579b;
+            font-weight: bold;
+        }
+        
+        .stats-container {
+            background-color: #e3f2fd;
+            border-radius: 18px;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 18px;
+            border: 2px solid #bbdefb;
+        }
+        
+        .stats-row {
+            display: flex;
+            justify-content: space-between;
+            padding: 12px 15px;
+            background: white;
+            border-radius: 10px;
+            font-size: 1.2rem;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+        }
+        
+        .stats-value {
+            font-weight: bold;
+            color: #1976d2;
+            font-size: 1.3rem;
+        }
+        
+        .average-display {
+            text-align: center;
+            font-size: 1.4rem;
+            padding: 18px;
+            background: linear-gradient(90deg, #2196f3, #29b6f6);
+            border-radius: 12px;
+            font-weight: bold;
+            margin-top: 12px;
+            color: white;
+            box-shadow: 0 4px 10px rgba(33, 150, 243, 0.4);
+        }
+        
+        .controls {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            margin-top: 15px;
+        }
+        
+        button {
+            padding: 14px 32px;
+            font-size: 1.2rem;
+            border: none;
+            border-radius: 50px;
+            background: linear-gradient(90deg, #1976d2, #2196f3);
+            color: white;
+            cursor: pointer;
+            box-shadow: 0 6px 12px rgba(25, 118, 210, 0.35);
+            transition: all 0.3s ease;
+            font-weight: bold;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        button:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 16px rgba(25, 118, 210, 0.45);
+        }
+        
+        button:active {
+            transform: translateY(2px);
+        }
+        
+        .conclusion-panel {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) scale(0.9);
+            background: white;
+            width: 90%;
+            max-width: 800px;
+            padding: 40px;
+            border-radius: 25px;
+            text-align: center;
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.25);
+            z-index: 100;
+            display: none;
+            opacity: 0;
+            transition: all 0.5s ease;
+        }
+        
+        .conclusion-panel.active {
+            display: block;
+            opacity: 1;
+            transform: translate(-50%, -50%) scale(1);
+        }
+        
+        .conclusion-panel h2 {
+            color: #1976d2;
+            font-size: 2.4rem;
+            margin-bottom: 25px;
+        }
+        
+        .conclusion-content {
+            background: #e3f2fd;
+            border-radius: 18px;
+            padding: 30px;
+            margin-bottom: 30px;
+            text-align: left;
+            font-size: 1.25rem;
+            line-height: 1.8;
+        }
+        
+        .conclusion-content p {
+            margin-bottom: 20px;
+        }
+        
+        .conclusion-content .highlight {
+            color: #d32f2f;
+            font-weight: bold;
+            font-size: 1.3rem;
+        }
+        
+        .overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.7);
+            display: none;
+            z-index: 99;
+        }
+        
+        .view-conclusion-btn {
+            display: none;
+            background: linear-gradient(90deg, #388e3c, #4caf50);
+            margin-top: 20px;
+            animation: pulse 2s infinite;
+        }
+        
+        .group-count {
+            font-weight: bold;
+            margin-top: 15px;
+            font-size: 1.2rem;
+            color: #1976d2;
+        }
+        
+        @keyframes pulse {
+            0% { box-shadow: 0 0 0 0 rgba(76, 175, 80, 0.7); }
+            70% { box-shadow: 0 0 0 15px rgba(76, 175, 80, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(76, 175, 80, 0); }
+        }
+        
+        @media (max-width: 900px) {
+            .content {
+                flex-direction: column;
+            }
+            
+            .groups-container {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .group {
+                width: 100%;
+                max-width: 300px;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+        }
     </style>
-  </head>
-  <body>
+</head>
+<body>
     <div class="container">
-      <header>
-        <h1>平均数：移多补少法</h1>
-        <div class="subtitle">通过移动矿泉水瓶理解平均数的概念</div>
-      </header>
-
-      <div class="content">
-        <div class="instructions">
-          <h2>活动说明</h2>
-          <ol>
-            <li>四个小组收集了不同数量的矿泉水瓶</li>
-            <li>通过拖拽瓶子，使每个小组的瓶子数量相等</li>
-            <li>观察"移多补少"的过程</li>
-            <li>理解平均数的意义：代表整体的平均水平</li>
-            <li>成功条件：所有小组的瓶子数都等于平均数</li>
-          </ol>
-
-          <div class="formula-box">平均数 = 总瓶数 ÷ 小组数量</div>
-
-          <p><strong>教学提示：</strong></p>
-          <p>引导学生思考：为什么平均数可能不是整数？移动瓶子后总数改变了吗？平均数有什么实际意义？</p>
-        </div>
-
-        <div class="animation-area">
-          <div class="groups-container" id="groupsContainer">
-            <!-- 小组将由JS动态生成 -->
-          </div>
-
-          <div class="stats-container">
-            <div class="stats-row">
-              <span>总瓶数：</span>
-              <span class="stats-value" id="totalBottles">24</span>
+        <header>
+            <h1>平均数：矿泉水瓶收集活动</h1>
+            <div class="subtitle">通过移动矿泉水瓶，让每个小组的瓶子数量相同，理解平均数的概念</div>
+        </header>
+        
+        <div class="content">
+            <div class="instructions">
+                <h2>活动指南</h2>
+                <ol>
+                    <li>四个环保小组收集了不同数量的矿泉水瓶</li>
+                    <li><strong>拖拽瓶子</strong>在小组之间移动，使每个小组的瓶子数量相同</li>
+                    <li>观察总瓶数和平均数的变化</li>
+                    <li>完成任务后，点击"检查结果"按钮</li>
+                    <li>成功后可查看"移多补少"的数学思想</li>
+                </ol>
+                
+                <div class="formula-box">
+                    平均数 = 总瓶数 ÷ 小组数量
+                </div>
+                
+                <p><strong>教学提示：</strong></p>
+                <p>引导学生思考：移动瓶子后总数改变了吗？平均数代表什么含义？为什么这种方法叫"移多补少"？</p>
             </div>
-            <div class="stats-row">
-              <span>小组数量：</span>
-              <span class="stats-value" id="groupCount">4</span>
+            
+            <div class="animation-area">
+                <div class="groups-container" id="groupsContainer">
+                    <!-- 小组将由JS动态生成 -->
+                </div>
+                
+                <div class="stats-container">
+                    <div class="stats-row">
+                        <span>总瓶数：</span>
+                        <span class="stats-value" id="totalBottles">24</span>
+                    </div>
+                    <div class="stats-row">
+                        <span>小组数量：</span>
+                        <span class="stats-value" id="groupCount">4</span>
+                    </div>
+                    <div class="average-display">
+                        平均数：<span id="averageValue">6</span>
+                    </div>
+                </div>
+                
+                <div class="controls">
+                    <button id="resetBtn">重置活动</button>
+                    <button id="checkBtn">检查结果</button>
+                    <button id="viewConclusionBtn" class="view-conclusion-btn">查看数学思想</button>
+                </div>
             </div>
-            <div class="average-display">平均数：<span id="averageValue">6</span></div>
-          </div>
-
-          <div class="controls">
-            <button id="resetBtn">重置</button>
-            <button id="checkBtn">检查结果</button>
-          </div>
         </div>
-      </div>
     </div>
-
+    
     <div class="overlay" id="overlay"></div>
-    <div class="success-message" id="successMessage">
-      <h2>任务完成！</h2>
-      <p>恭喜你通过"移多补少"的方法使所有小组的瓶子数量相等！</p>
-      <p>你成功理解了平均数的概念：</p>
-      <p>平均数 = 总瓶数 ÷ 小组数量 = <span id="finalAverage">6</span></p>
-      <button id="closeSuccess">继续探索</button>
+    
+    <div class="conclusion-panel" id="conclusionPanel">
+        <h2>移多补少：平均数的数学思想</h2>
+        <div class="conclusion-content">
+            <p>通过刚才的活动，你实践了数学中一个重要的思想方法：<span class="highlight">移多补少</span>。</p>
+            
+            <p><strong>什么是移多补少？</strong></p>
+            <p>移多补少就是把数量多的部分拿出来，补给数量少的部分，使各个部分的数量变得相等。这种方法体现了数学中的公平思想和均衡思想。</p>
+            
+            <p><strong>为什么移多补少能得到平均数？</strong></p>
+            <p>1. 总量保持不变：在移动瓶子的过程中，总瓶数始终是24个没有变化</p>
+            <p>2. 重新分配：从数量多的小组取出瓶子，补给数量少的小组</p>
+            <p>3. 达到平衡：当所有小组的瓶子数量相等时，这个数量就是平均数</p>
+            
+            <p><strong>移多补少与公式的关系：</strong></p>
+            <p>平均数 = 总数量 ÷ 总份数</p>
+            <p>在我们的例子中：24 ÷ 4 = 6</p>
+            
+            <p>移多补少是计算平均数的直观方法，而公式是计算平均数的数学表达。两种方法相辅相成，帮助我们理解平均数的本质。</p>
+        </div>
+        <button id="closeConclusion">返回活动</button>
     </div>
-
+    
     <script>
-      document.addEventListener('DOMContentLoaded', () => {
-        // 初始数据：小组名称和瓶子数量
-        const groupsData = [
-          { name: '第一组', bottles: 6 },
-          { name: '第二组', bottles: 4 },
-          { name: '第三组', bottles: 5 },
-          { name: '第四组', bottles: 9 },
-        ]
-
-        const groupsContainer = document.getElementById('groupsContainer')
-        const totalBottlesEl = document.getElementById('totalBottles')
-        const averageValueEl = document.getElementById('averageValue')
-        const resetBtn = document.getElementById('resetBtn')
-        const checkBtn = document.getElementById('checkBtn')
-        const successMessage = document.getElementById('successMessage')
-        const overlay = document.getElementById('overlay')
-        const closeSuccess = document.getElementById('closeSuccess')
-        const finalAverageEl = document.getElementById('finalAverage')
-
-        let bottles = []
-        let draggingBottle = null
-        let sourceGroup = null
-
-        // 计算总瓶数和平均数
-        function calculateStats() {
-          const totalBottles = groupsData.reduce((sum, group) => sum + group.bottles, 0)
-          const average = totalBottles / groupsData.length
-
-          totalBottlesEl.textContent = totalBottles
-          averageValueEl.textContent = average.toFixed(1)
-
-          return { totalBottles, average }
-        }
-
-        // 渲染小组和瓶子
-        function renderGroups() {
-          groupsContainer.innerHTML = ''
-
-          groupsData.forEach((group, groupIndex) => {
-            const groupEl = document.createElement('div')
-            groupEl.className = 'group'
-            groupEl.dataset.index = groupIndex
-
-            groupEl.innerHTML = `
+        document.addEventListener('DOMContentLoaded', () => {
+            // 初始数据：小组名称和瓶子数量
+            const groupsData = [
+                { name: "阳光小组", bottles: 6, color: "#4fc3f7" },
+                { name: "绿叶小组", bottles: 4, color: "#81c784" },
+                { name: "水滴小组", bottles: 5, color: "#fff176" },
+                { name: "彩虹小组", bottles: 9, color: "#ff8a65" }
+            ];
+            
+            const groupsContainer = document.getElementById('groupsContainer');
+            const totalBottlesEl = document.getElementById('totalBottles');
+            const averageValueEl = document.getElementById('averageValue');
+            const resetBtn = document.getElementById('resetBtn');
+            const checkBtn = document.getElementById('checkBtn');
+            const viewConclusionBtn = document.getElementById('viewConclusionBtn');
+            const conclusionPanel = document.getElementById('conclusionPanel');
+            const overlay = document.getElementById('overlay');
+            const closeConclusion = document.getElementById('closeConclusion');
+            
+            let bottles = [];
+            let draggingBottle = null;
+            let sourceGroup = null;
+            
+            // 计算总瓶数和平均数
+            function calculateStats() {
+                const totalBottles = groupsData.reduce((sum, group) => sum + group.bottles, 0);
+                const average = totalBottles / groupsData.length;
+                
+                totalBottlesEl.textContent = totalBottles;
+                averageValueEl.textContent = average.toFixed(1);
+                
+                return { totalBottles, average };
+            }
+            
+            // 渲染小组和瓶子
+            function renderGroups() {
+                groupsContainer.innerHTML = '';
+                
+                groupsData.forEach((group, groupIndex) => {
+                    const groupEl = document.createElement('div');
+                    groupEl.className = 'group';
+                    groupEl.dataset.index = groupIndex;
+                    
+                    groupEl.innerHTML = `
                         <div class="group-title">${group.name}</div>
                         <div class="bottles-container" id="bottles-${groupIndex}">
                             <!-- 瓶子将由JS动态添加 -->
                         </div>
                         <div class="group-count">数量: <span>${group.bottles}</span></div>
-                    `
-
-            groupsContainer.appendChild(groupEl)
-
-            const bottlesContainer = groupEl.querySelector('.bottles-container')
-
-            // 创建瓶子元素
-            for (let i = 0; i < group.bottles; i++) {
-              const bottle = document.createElement('div')
-              bottle.className = 'bottle'
-              bottle.textContent = groupIndex + 1
-              bottle.dataset.group = groupIndex
-              bottle.draggable = true
-
-              // 添加拖拽事件
-              bottle.addEventListener('dragstart', handleDragStart)
-              bottle.addEventListener('dragend', handleDragEnd)
-
-              bottlesContainer.appendChild(bottle)
-              bottles.push(bottle)
+                    `;
+                    
+                    groupsContainer.appendChild(groupEl);
+                    
+                    const bottlesContainer = groupEl.querySelector('.bottles-container');
+                    
+                    // 创建瓶子元素
+                    for (let i = 0; i < group.bottles; i++) {
+                        const bottle = document.createElement('div');
+                        bottle.className = 'bottle';
+                        bottle.dataset.group = groupIndex;
+                        bottle.draggable = true;
+                        
+                        // 瓶子结构
+                        bottle.innerHTML = `
+                            <div class="bottle-cap"></div>
+                            <div class="bottle-body" style="background: ${group.color}">
+                                <div class="bottle-label">${groupIndex + 1}</div>
+                            </div>
+                        `;
+                        
+                        // 添加拖拽事件
+                        bottle.addEventListener('dragstart', handleDragStart);
+                        bottle.addEventListener('dragend', handleDragEnd);
+                        
+                        bottlesContainer.appendChild(bottle);
+                        bottles.push(bottle);
+                    }
+                });
+                
+                // 添加放置区域的拖拽事件
+                const bottleContainers = document.querySelectorAll('.bottles-container');
+                bottleContainers.forEach(container => {
+                    container.addEventListener('dragover', handleDragOver);
+                    container.addEventListener('dragenter', handleDragEnter);
+                    container.addEventListener('dragleave', handleDragLeave);
+                    container.addEventListener('drop', handleDrop);
+                });
             }
-          })
-
-          // 添加放置区域的拖拽事件
-          const bottleContainers = document.querySelectorAll('.bottles-container')
-          bottleContainers.forEach((container) => {
-            container.addEventListener('dragover', handleDragOver)
-            container.addEventListener('dragenter', handleDragEnter)
-            container.addEventListener('dragleave', handleDragLeave)
-            container.addEventListener('drop', handleDrop)
-          })
-        }
-
-        // 拖拽事件处理函数
-        function handleDragStart(e) {
-          draggingBottle = this
-          sourceGroup = parseInt(this.dataset.group)
-
-          setTimeout(() => {
-            this.classList.add('dragging')
-          }, 0)
-        }
-
-        function handleDragEnd() {
-          this.classList.remove('dragging')
-          draggingBottle = null
-          sourceGroup = null
-        }
-
-        function handleDragOver(e) {
-          e.preventDefault()
-        }
-
-        function handleDragEnter(e) {
-          e.preventDefault()
-          this.classList.add('drag-over')
-        }
-
-        function handleDragLeave() {
-          this.classList.remove('drag-over')
-        }
-
-        function handleDrop(e) {
-          e.preventDefault()
-          this.classList.remove('drag-over')
-
-          if (draggingBottle) {
-            const targetGroup = parseInt(this.parentElement.dataset.index)
-
-            // 如果拖拽到不同的组
-            if (sourceGroup !== targetGroup) {
-              // 更新数据
-              groupsData[sourceGroup].bottles--
-              groupsData[targetGroup].bottles++
-
-              // 更新瓶子所属组
-              draggingBottle.dataset.group = targetGroup
-
-              // 重新渲染
-              renderGroups()
-              calculateStats()
+            
+            // 拖拽事件处理函数
+            function handleDragStart(e) {
+                draggingBottle = this;
+                sourceGroup = parseInt(this.dataset.group);
+                
+                // 设置拖拽图片
+                const dragImage = this.cloneNode(true);
+                dragImage.style.position = 'fixed';
+                dragImage.style.left = '-1000px';
+                document.body.appendChild(dragImage);
+                e.dataTransfer.setDragImage(dragImage, 25, 40);
+                
+                setTimeout(() => {
+                    this.classList.add('dragging');
+                    document.body.removeChild(dragImage);
+                }, 0);
             }
-          }
-        }
-
-        // 检查结果
-        function checkResult() {
-          const { average } = calculateStats()
-          const isSuccess = groupsData.every((group) => group.bottles === average)
-
-          if (isSuccess) {
-            finalAverageEl.textContent = average
-            successMessage.style.display = 'block'
-            overlay.style.display = 'block'
-          } else {
-            alert('还没有完成！继续尝试让每个小组的瓶子数量都等于平均数。')
-          }
-        }
-
-        // 重置功能
-        function resetGame() {
-          groupsData[0].bottles = 6
-          groupsData[1].bottles = 4
-          groupsData[2].bottles = 5
-          groupsData[3].bottles = 9
-
-          renderGroups()
-          calculateStats()
-        }
-
-        // 初始化
-        renderGroups()
-        calculateStats()
-
-        // 事件监听
-        resetBtn.addEventListener('click', resetGame)
-        checkBtn.addEventListener('click', checkResult)
-        closeSuccess.addEventListener('click', () => {
-          successMessage.style.display = 'none'
-          overlay.style.display = 'none'
-        })
-      })
+            
+            function handleDragEnd() {
+                this.classList.remove('dragging');
+                draggingBottle = null;
+                sourceGroup = null;
+            }
+            
+            function handleDragOver(e) {
+                e.preventDefault();
+            }
+            
+            function handleDragEnter(e) {
+                e.preventDefault();
+                this.classList.add('drag-over');
+            }
+            
+            function handleDragLeave() {
+                this.classList.remove('drag-over');
+            }
+            
+            function handleDrop(e) {
+                e.preventDefault();
+                this.classList.remove('drag-over');
+                
+                if (draggingBottle) {
+                    const targetGroup = parseInt(this.parentElement.dataset.index);
+                    
+                    // 如果拖拽到不同的组
+                    if (sourceGroup !== targetGroup) {
+                        // 更新数据
+                        groupsData[sourceGroup].bottles--;
+                        groupsData[targetGroup].bottles++;
+                        
+                        // 重新渲染
+                        renderGroups();
+                        calculateStats();
+                    }
+                }
+            }
+            
+            // 检查结果
+            function checkResult() {
+                const { average } = calculateStats();
+                const isSuccess = groupsData.every(group => group.bottles === average);
+                
+                if (isSuccess) {
+                    // 显示查看结论按钮
+                    viewConclusionBtn.style.display = 'block';
+                    alert('恭喜！所有小组的瓶子数量都相等了。现在可以查看"移多补少"的数学思想。');
+                } else {
+                    alert('还没有完成！继续尝试让每个小组的瓶子数量都等于平均数。');
+                }
+            }
+            
+            // 重置功能
+            function resetGame() {
+                groupsData[0].bottles = 6;
+                groupsData[1].bottles = 4;
+                groupsData[2].bottles = 5;
+                groupsData[3].bottles = 9;
+                
+                // 隐藏结论按钮
+                viewConclusionBtn.style.display = 'none';
+                
+                renderGroups();
+                calculateStats();
+            }
+            
+            // 显示结论面板
+            function showConclusion() {
+                conclusionPanel.classList.add('active');
+                overlay.style.display = 'block';
+            }
+            
+            // 关闭结论面板
+            function closeConclusionPanel() {
+                conclusionPanel.classList.remove('active');
+                overlay.style.display = 'none';
+            }
+            
+            // 初始化
+            renderGroups();
+            calculateStats();
+            
+            // 事件监听
+            resetBtn.addEventListener('click', resetGame);
+            checkBtn.addEventListener('click', checkResult);
+            viewConclusionBtn.addEventListener('click', showConclusion);
+            closeConclusion.addEventListener('click', closeConclusionPanel);
+            overlay.addEventListener('click', closeConclusionPanel);
+        });
     </script>
-  </body>
+</body>
 </html>
